@@ -61,3 +61,55 @@
     }
   }
 }
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@mixin _apply-props($args, $props...) {
+  @for $i from 1 through length($args) {
+    $val: nth($args, $i);
+
+    @if $val != null {
+      #{nth($props, $i)}: $val;
+    }
+  }
+}
+
+// position: position(top, right, bottom, left)
+@mixin position($args...) {
+  @include _apply-props($args, top, right, bottom, left)
+}
+
+// flex(flex-direction, align-items, justify-content, flex-wrap);
+@mixin flex($args...) {
+  @include _apply-props($args, flex-direction, align-items, justify-content, flex-wrap);
+  display: flex;
+}
+
+// inline-flex(flex-direction, align-items, justify-content, flex-wrap);
+@mixin inline-flex($args...) {
+  @include _apply-props($args, flex-direction, align-items, justify-content, flex-wrap);
+  display: inline-flex;
+}
+
+// flex-self(align-self, justify-self)
+@mixin flex-self($align-self: center, $justify-self: $align-self) {
+  @include _apply-props(($align-self, $justify-self), align-self, justify-self);
+}
