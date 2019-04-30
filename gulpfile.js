@@ -33,7 +33,7 @@ const paths = {
     watch: "./src/views/**/*.pug"
   },
   styles: {
-    src: "./src/styles/main.scss",
+    src: "./src/styles/**.scss",
     dist: "./dist/styles/",
     watch: "./src/styles/**/*.scss"
   },
@@ -99,7 +99,7 @@ gulp.task('styles', function () {
       .pipe(plumber())
       .pipe(sass())
       .pipe(groupmediaqueries())
-      .pipe(concat('main.css'))
+      .pipe(rename({suffix: '.min'}))
       .pipe(plumber.stop())
       .pipe(autoprefixer({
         browsers: ['last 16 versions'],
