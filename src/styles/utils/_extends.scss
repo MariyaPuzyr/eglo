@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.default-btn {
+  color: $white;
+  background: $default;
+  border: 1px solid $small-title;
+  margin-left: 60px;
+  margin-right: 45px;
+  transition: .3s;
+  border-radius: 5px;
+  padding: 7px 58px;
+  font-size: 14px;
+  line-height: normal;
+  font-family: $font;
+  text-decoration: none;
+  &:hover {
+    background: $title;
+    border-color: transparent;
+  }
+}

@@ -1,15 +1,10 @@
-@import "libs";
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/extends";
-@import "utils/support";
 @import "utils/fonts";
-@import "includes/header";
-@import "includes/footer";
-@import "components/component";
-@import "sections/section";
 
-h1, h2, h3, h4, ul {
-  padding: 0;
-  margin: 0;
+.top-info {
+  span, .default-btn {
+    display: none;
+  }
 }
