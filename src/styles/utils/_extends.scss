@@ -20,3 +20,17 @@ body {
     border-color: transparent;
   }
 }
+* {
+  box-sizing: border-box;
+}
+.content {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

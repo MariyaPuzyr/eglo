@@ -1,57 +1,200 @@
 .header-top-menu
   .content
-    a(href='/').header-top-menu__logo
-      img(src='/img/svg/logo.svg')
-    .header-top-menu__menu-item
-      li
-        a(href='#').header-top-menu__menu-item--link
-          .header-top-menu__menu-item--hamburger-icon
-            span.line.line-1
-            span.line.line-2
-            span.line.line-3
-          span Меню
-        ul.header-top-menu__menu-item--dropdown
-          li
-            a(href='#') Акции
-          li
-            a(href='#') Доставка и оплата
-          li
-            a(href='#') Новости
-          li
-            a(href='#') Вопросы
-          li
-            a(href='#') Гарантии
-          li
-            a(href='#') Контакты
-          li
-            a(href='#') О нас
-      li
-        a(href='#')
-          +sprite('catalog-ico', 'catalog')
-          | Каталог
-        ul.header-top-menu__menu-item--mega-menu
-          .catalog-item
-            .catalog-item__top
-              +sprite('icon sconce-ico', 'chandelier-ico')
-              | Люстры
-            ul.catalog-item__list
-              li
-                a(href='#') Люстры подвесные
-              li
-                a(href='#') Люстры припотолочные
-              li
-                a(href='#') Люстры - подвесы
+    .header-top-menu--item
+      a(href='/').header-top-menu__logo
+        img(src='/img/svg/logo.svg')
+      ul.header-top-menu__menu-item
+        li
+          a(href='#').header-top-menu__menu-item--link
+            .header-top-menu__menu-item--hamburger-icon
+              span.line.line-1
+              span.line.line-2
+              span.line.line-3
+            span Меню
+          ul.header-top-menu__menu-item--dropdown
+            li
+              a(href='#') Акции
+            li
+              a(href='#') Доставка и оплата
+            li
+              a(href='#') Новости
+            li
+              a(href='#') Вопросы
+            li
+              a(href='#') Гарантии
+            li
+              a(href='#') Контакты
+            li
+              a(href='#') О нас
+        li
+          a(href='#').header-top-menu__menu-item--link.catalog-link
+            +sprite('icons catalog-ico', 'catalog-ico')
+            | Каталог
+          ul.header-top-menu__menu-item--mega-menu
+            li.catalog-item.icons_1
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-1')
+                | Люстры
+              ul.catalog-item__list
+                li
+                  a(href='#') Люстры подвесные
+                li
+                  a(href='#') Люстры припотолочные
+                li
+                  a(href='#') Люстры - подвесы
 
-          .catalog-item
-            .catalog-item__top
-              +sprite('icon sconce-ico', 'sconce lamp')
-              | бра
-            ul.catalog-item__list
-              li
-                a(href='#') Бра декоративные
-              li
-                a(href='#') Бра с абажуром
-              li
-                a(href='#') Бра подсветки
-              li
-                a(href='#') Подсветки мебельные и кухонные
+            li.catalog-item.icons_2
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-2')
+                | Бра
+              ul.catalog-item__list
+                li
+                  a(href='#') Бра декоративные
+                li
+                  a(href='#') Бра с абажуром
+                li
+                  a(href='#') Бра подсветки
+                li
+                  a(href='#') Подсветки мебельные и кухонные
+
+            li.catalog-item.icons_3
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-3')
+                | Торшеры
+              ul.catalog-item__list
+                li
+                  a(href='#') Торшеры декоративные
+                li
+                  a(href='#') Торшеры с абажуром
+                li
+                  a(href='#') Торшеры с лампой для чтения
+
+            li.catalog-item.icons_4
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-4')
+                | Настольные лампы
+              ul.catalog-item__list
+                li
+                a(href='#') Торшеры декоративные
+                li
+                a(href='#') Торшеры с абажуром
+                li
+                a(href='#') Торшеры с лампой для чтения
+
+            li.catalog-item.icons_5
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-5')
+                | Для ванной
+              ul.catalog-item__list
+                li
+                  a(href='#') Светильники потолочные
+                li
+                  a(href='#') Бра
+                li
+                  a(href='#') Подсветки для зеркал
+
+            li.catalog-item.icons_6
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-6')
+                | Настенно-
+                | потолочные
+              ul.catalog-item__list
+                li
+                  a(href='#') Круглые, овальные светильники
+                li
+                  a(href='#') Прямоугольные светильники
+                li
+                  a(href='#') Споты
+                li
+                  a(href='#') Трековые светильники
+                li
+                  a(href='#') Точки врезные
+                li
+                  a(href='#') Точки накладные
+            li.catalog-item.icons_7
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-7')
+                | Детские
+              ul.catalog-item__list
+                li
+                  a(href='#') Люстры
+                li
+                  a(href='#') Потолочные светильники
+                li
+                  a(href='#') Бра
+                li
+                  a(href='#') Настольные лампы
+
+            li.catalog-item.icons_8
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', "icons-8")
+                | Уличные
+              ul.catalog-item__list
+                li
+                  a(href='#') Люстры
+                li
+                  a(href='#') Потолочные светильники
+                li
+                  a(href='#') Бра
+                li
+                  a(href='#') Настольные лампы
+            li.catalog-item.icons_9
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', "icons-9")
+                | Умный дом
+              ul.catalog-item__list
+                li
+                  a(href='#') Люстры
+                li
+                  a(href='#') Потолочные светильники
+                li
+                  a(href='#') Бра
+                li
+                  a(href='#') Настольные лампы
+
+            li.catalog-item.icons_10
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', "icons-10")
+                | Проф свет
+              ul.catalog-item__list
+                li
+                  a(href='#') Торшеры декоративные
+                li
+                  a(href='#') Торшеры с абажуром
+                li
+                  a(href='#') Торшеры с лампой для чтения
+            li.catalog-item.icons_11
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-11')
+                | Аксесуары
+              ul.catalog-item__list
+                li
+                  a(href='#') Абажуры
+                li
+                  a(href='#') Cтёкла и плафоны
+                li
+                  a(href='#') Дистанционное управление
+                li
+                  a(href='#') Декор
+                li
+                  a(href='#') LED лента
+
+            li.catalog-item.icons_12
+              a(href='#').catalog-item__top
+                +sprite('icon sconce-ico', 'icons-12')
+                | Лампочки
+              ul.catalog-item__list
+                li
+                  a(href='#') LED лампочки
+                li
+                  a(href='#') Смарт лампочки
+                li
+                  a(href='#') Галогеновые лампочки
+                li
+                  a(href='#') Люминесцентные лампочки
+                li
+                  a(href='#') Декоративные лампочки
+        li
+          .search-item
+        li
+          a(href='#').header-top-menu__menu-item--link

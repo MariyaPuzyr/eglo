@@ -2,9 +2,4 @@
 @import "utils/mixins";
 @import "utils/extends";
 @import "utils/fonts";
-
-.top-info {
-  span, .default-btn {
-    display: none;
-  }
-}
+@import "sections/top-info-767";
