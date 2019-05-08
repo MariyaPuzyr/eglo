@@ -195,6 +195,31 @@
                 li
                   a(href='#') Декоративные лампочки
         li
-          .search-item
-        li
+          form(action='#').search-item
+            .search-item--form
+              .search-item--form__prepend
+              input(type='text' placeholder='Поиск').search-item--form__control
+        li.phone-items
           a(href='#').header-top-menu__menu-item--link
+            span.header-top-menu__menu-item--phone +38 044 595 55 22
+            ul.header-top-menu__menu-item--phone__dropdown
+              li
+                a(href='#') +38 044 595 55 22
+              li
+                a(href='#') +38 044 595 55 22
+              li
+                a(href='#').get-call Заказать звонок
+        li
+          a(href='#').header-top-menu__menu-item--link.lang-select Ru
+        li
+          a(href='#').header-top-menu__menu-item--link.login
+            .login-ico
+            span Вход / Регистрация
+        li
+          a(href='#').header-top-menu__menu-item--link.cart-item
+            .cart-ico
+            .cart-count 3
+        li.mobile-logo
+          a(href='#') Eglo.ua
+
+
