@@ -1,11 +1,15 @@
 .header-top-menu
   .content
     .header-top-menu--item
+      .mobile-menu--hamburger-icon
+        span.line.line-1
+        span.line.line-2
+        span.line.line-3
       a(href='/').header-top-menu__logo
         img(src='/img/svg/logo.svg')
       ul.header-top-menu__menu-item
         li
-          a(href='#').header-top-menu__menu-item--link
+          a(href='#').header-top-menu__menu-item--link.menu-call
             .header-top-menu__menu-item--hamburger-icon
               span.line.line-1
               span.line.line-2
@@ -27,7 +31,7 @@
             li
               a(href='#') О нас
         li
-          a(href='#').header-top-menu__menu-item--link.catalog-link
+          a(href='#').header-top-menu__menu-item--link.catalog-link.menu-call
             +sprite('icons catalog-ico', 'catalog-ico')
             | Каталог
           ul.header-top-menu__menu-item--mega-menu
@@ -200,23 +204,23 @@
               .search-item--form__prepend
               input(type='text' placeholder='Поиск').search-item--form__control
         li.phone-items
-          a(href='#').header-top-menu__menu-item--link
+          a(href='#').header-top-menu__menu-item--link.menu-call
             span.header-top-menu__menu-item--phone +38 044 595 55 22
-            ul.header-top-menu__menu-item--phone__dropdown
-              li
-                a(href='#') +38 044 595 55 22
-              li
-                a(href='#') +38 044 595 55 22
-              li
-                a(href='#').get-call Заказать звонок
+          ul.header-top-menu__menu-item--phone__dropdown
+            li
+              a(href='#') +38 044 595 55 22
+            li
+              a(href='#') +38 044 595 55 22
+            li
+              a(href='#').get-call Заказать звонок
         li
-          a(href='#').header-top-menu__menu-item--link.lang-select Ru
+          a(href='#').header-top-menu__menu-item--link.menu-call.lang-select Ru
         li
-          a(href='#').header-top-menu__menu-item--link.login
+          a(href='#').header-top-menu__menu-item--link.login.menu-call
             .login-ico
             span Вход / Регистрация
         li
-          a(href='#').header-top-menu__menu-item--link.cart-item
+          a(href='#').header-top-menu__menu-item--link.cart-item.menu-call
             .cart-ico
             .cart-count 3
         li.mobile-logo

@@ -3,6 +3,9 @@
   &--item {
     display: flex;
     position: relative;
+    .mobile-menu--hamburger-icon {
+      display: none;
+    }
   }
   &__logo {
     max-width: 106px;
@@ -14,7 +17,10 @@
     align-items: stretch;
     flex-direction: row;
     border-left: 1px solid $border;
+    justify-content: space-between;
+    width: 100%;
     li {
+      width: 100%;
       &.show {
         .header-top-menu__menu-item--link {
           color: $white;
@@ -29,7 +35,8 @@
         .icons {
           fill: $white;
         }
-        .header-top-menu__menu-item--mega-menu {
+        .header-top-menu__menu-item--mega-menu,
+        .header-top-menu__menu-item--phone__dropdown {
           display: flex;
         }
       }
@@ -280,6 +287,9 @@
         display: flex;
         height: 100%;
         align-items: center;
+        border: none;
+        padding-left: 6px;
+        position: relative;
       }
       &-ico {
         width: 15px;
@@ -300,12 +310,17 @@
         line-height: 11px;
         font-family: $font;
         background: $default;
+        position: absolute;
+        top: 14px;
+        right: 22px;
       }
     }
     .mobile-logo {
       display: none;
     }
     .login {
+      padding-right: 6px;
+      border-right: none;
       span {
         display: none;
       }
@@ -319,23 +334,47 @@
       }
     }
     &--phone {
+      display: flex;
+      align-items: center;
       &::after {
         content: '';
         width: 10px;
         height: 18px;
         mask: url('../img/svg/arrow-down.svg') no-repeat center;
-        mask-size: cover;
+        mask-size: contain;
         background: currentColor;
+        margin-left: 10px;
       }
       &__dropdown {
         position: absolute;
         background: $white;
         width: 100%;
+        font-family: $font;
         border: 1px solid #F2F2F2;
+        display: none;
+        flex-direction: column;
+        a {
+          padding: 20px 40px;
+          border-bottom: 1px solid #F2F2F2;
+          color: $title;
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.1em;
+          display: flex;
+          justify-content: center;
+          transition: .3s;
+        }
+        .get-call {
+          border: 1px solid #B6B6B6;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 20px;
+        }
       }
     }
     .phone-items {
       position: relative;
+      min-width: 225px;
     }
   }
 }

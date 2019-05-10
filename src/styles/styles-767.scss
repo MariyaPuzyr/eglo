@@ -3,3 +3,9 @@
 @import "utils/extends";
 @import "utils/fonts";
 @import "sections/top-info-767";
+@import "sections/header-top-menu-767";
+
+h1, h2, h3, h4, ul {
+  padding: 0;
+  margin: 0;
+}

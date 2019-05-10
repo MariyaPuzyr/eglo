@@ -1,0 +1,51 @@
+.header-top-menu {
+  &__logo {
+    order: 2;
+  }
+  &--item {
+    display: flex;
+    .mobile-menu--hamburger-icon {
+      height: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 10px;
+      .line {
+        width: 16px;
+        height: 1px;
+        background: #000;
+        display: block;
+      }
+    }
+  }
+  &__menu-item {
+    position: absolute;
+    transition: .3s;
+    &--link {
+      span {
+        display: none;
+      }
+    }
+    &--hamburger-icon {
+      display: none;
+    }
+    &--mega-menu {
+      background: $bg;
+    }
+    .catalog {
+      &-link {
+        display: none;
+      }
+      &-item {
+        &__top {
+          .icon {
+            display: none;
+          }
+        }
+        &__list {
+          display: none;
+        }
+      }
+    }
+  }
+}
