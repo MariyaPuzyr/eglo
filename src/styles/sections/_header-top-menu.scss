@@ -3,9 +3,6 @@
   &--item {
     display: flex;
     position: relative;
-    .mobile-menu--hamburger-icon {
-      display: none;
-    }
   }
   &__logo {
     max-width: 106px;
@@ -78,6 +75,8 @@
         font-family: $font;
         line-height: 20px;
         color: #000000;
+        margin-bottom: 10px;
+        display: table;
       }
     }
     .catalog {
@@ -245,79 +244,6 @@
         }
       }
     }
-    .search-item {
-      width: 300px;
-      height: 58px;
-      &--form {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        &__prepend {
-          width: 14px;
-          height: 14px;
-          mask: url('../img/svg/search.svg') no-repeat center;
-          mask-size: cover;
-          background: $title;
-          position: absolute;
-          margin-left: 30px;
-          flex: 0 0 auto;
-        }
-        &__control {
-          padding: 0 30px 0 54px;
-          background: $bg;
-          border: none;
-          font-size: 14px;
-          font-family: $font;
-          color: $title;
-          line-height: 19px;
-          letter-spacing: 0.1em;
-          width: 100%;
-          height: 100%;
-          &::placeholder {
-            color: $title;
-          }
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-    }
-    .cart {
-      &-item {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        border: none;
-        padding-left: 6px;
-        position: relative;
-      }
-      &-ico {
-        width: 15px;
-        height: 16px;
-        mask: url('../img/svg/cart-ico.svg') no-repeat center;
-        mask-size: cover;
-        background: #000000;
-      }
-      &-count {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $white;
-        font-size: 9px;
-        line-height: 11px;
-        font-family: $font;
-        background: $default;
-        position: absolute;
-        top: 14px;
-        right: 22px;
-      }
-    }
-    .mobile-logo {
-      display: none;
-    }
     .login {
       padding-right: 6px;
       border-right: none;
@@ -354,7 +280,7 @@
         display: none;
         flex-direction: column;
         a {
-          padding: 20px 40px;
+          padding: 20px 30px;
           border-bottom: 1px solid #F2F2F2;
           color: $title;
           font-size: 14px;
@@ -375,6 +301,80 @@
     .phone-items {
       position: relative;
       min-width: 225px;
+      border-left: 1px solid $border;
     }
   }
+  .cart {
+    &-item {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      border: none;
+      padding-left: 6px;
+      position: relative;
+    }
+    &-ico {
+      width: 15px;
+      height: 16px;
+      mask: url('../img/svg/cart-ico.svg') no-repeat center;
+      mask-size: cover;
+      background: #000000;
+    }
+    &-count {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-size: 9px;
+      line-height: 11px;
+      font-family: $font;
+      background: $default;
+      position: absolute;
+      top: 14px;
+      right: 22px;
+    }
+  }
+  .search-item {
+    width: 300px;
+    height: 58px;
+    &--form {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      &__prepend {
+        width: 14px;
+        height: 14px;
+        mask: url('../img/svg/search.svg') no-repeat center;
+        mask-size: cover;
+        background: $title;
+        position: absolute;
+        margin-left: 30px;
+        flex: 0 0 auto;
+      }
+      &__control {
+        padding: 0 30px 0 54px;
+        background: $bg;
+        border: none;
+        font-size: 14px;
+        font-family: $font;
+        color: $title;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        width: 100%;
+        height: 100%;
+        &::placeholder {
+          color: $title;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+.mobile {
+  display: none !important;
 }

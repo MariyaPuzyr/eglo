@@ -17,3 +17,13 @@ $(document).click(function (e) {
 $('.close').click(function () {
   $(this).parents('.top-info').hide();
 });
+
+
+/* show mobile list */
+$('.mobile-menu--hamburger-icon').click(function () {
+  $('.header-top-menu__menu-item').addClass('show');
+});
+$('.close-menu').click(function () {
+  $('.header-top-menu__menu-item').removeClass('show');
+});
+/* show mobile list end */
