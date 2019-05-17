@@ -1,0 +1,121 @@
+.header-catalog-menu {
+  &--items {
+    display: flex;
+    justify-content: space-between;
+    li {
+      position: relative;
+      &.show {
+        .header-catalog-menu__dropdown {
+          display: flex;
+          z-index: 1;
+          top: 94px;
+        }
+      }
+      &:last-child, &:nth-last-child(2) {
+        .header-catalog-menu__dropdown {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+    a {
+      margin-top: 20px;
+      color: $title;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-family: $font-l;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .icon {
+      width: 73px;
+      height: 75px;
+      margin: auto auto 10px;
+      transition: .3s;
+    }
+    .chandeliers-ico {
+      fill: #579dc0;
+    }
+    .sconce-ico {
+      fill: #F7B229;
+    }
+    .torchere-ico {
+      fill: #EF8830;
+    }
+    .table-ico {
+      fill: #985BC5;
+    }
+    .wall-ico {
+      fill: #EC4363;
+    }
+    .bathroom-ico {
+      fill: #21A697;
+    }
+    .baby-ico {
+      fill: #5BA861;
+    }
+    .street-ico {
+      fill: #5A89CB;
+    }
+    .smart-house-ico {
+      fill: #BAD432;
+    }
+    .proff-ico {
+      fill: #F2A50D;
+    }
+    .lightbulb-ico {
+      fill: #F3723D;
+    }
+    .accessory-ico {
+      fill: #666C73;
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    background: $white;
+    border: 1px solid #F2F2F2;
+    flex-direction: column;
+    width: 240px;
+    left: 0;
+    transition: .3s;
+    top: 94px;
+    display: none;
+    &--title {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      color: $title;
+      margin: 30px 20px 5px 40px;
+      font-family: $font;
+    }
+    &--list {
+      padding: 0 10px 30px 40px;
+      a {
+        font-size: 10px;
+        font-family: $font;
+        text-align: left;
+        margin: 0 0 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        &::before {
+          content: '';
+          width: 10px;
+          height: 1px;
+          background: currentColor;
+          margin-right: 10px;
+        }
+      }
+      &-img {
+        width: 100%;
+        display: flex;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
