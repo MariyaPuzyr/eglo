@@ -1,0 +1,11 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/extends";
+@import "utils/fonts";
+@import "sections/top-info-992";
+@import "sections/header-top-menu-992";
+
+h1, h2, h3, h4, ul {
+  padding: 0;
+  margin: 0;
+}
