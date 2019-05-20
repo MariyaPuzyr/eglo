@@ -1,5 +1,7 @@
 .header-top-menu {
   border-bottom: 1px solid $border;
+  z-index: 1;
+  position: relative;
   &--item {
     display: flex;
     position: relative;
@@ -14,10 +16,11 @@
     align-items: stretch;
     flex-direction: row;
     border-left: 1px solid $border;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     li {
-      width: 100%;
+      max-width: 100%;
+      width: auto;
       &.show {
         .header-top-menu__menu-item--link {
           color: $white;

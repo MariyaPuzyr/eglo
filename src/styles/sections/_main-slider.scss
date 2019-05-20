@@ -27,6 +27,7 @@
     line-height: 58px;
     margin-top: 0;
     margin-bottom: 25px;
+    font-weight: normal;
   }
   p {
     font-family: $font;
@@ -51,5 +52,67 @@
     width: 100%;
     padding: 11px 0;
     justify-content: center;
+  }
+}
+
+.slick-prev, .slick-next {
+  top: auto;
+  bottom: 25px;
+  z-index: 2;
+  opacity: 1;
+  transform: none;
+  width: 27px;
+  height: 16px;
+  &::before {
+    content: '';
+    mask: url('../img/svg/arrow-down.svg') no-repeat center;
+    mask-size: contain;
+    background: $white;
+    width: 27px;
+    display: flex;
+    transform: rotate(90deg);
+    height: 16px;
+    transition: .3s;
+    opacity: 1;
+  }
+  &:hover::before {
+    background: $small-title;
+  }
+}
+
+.slick-prev {
+  left: 80px;
+}
+
+.slick-next {
+  right: 80px;
+  &::before {
+    transform: rotate(-90deg);
+  }
+}
+
+.slick-dots {
+  bottom: 30px;
+  li {
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      padding: 0;
+      margin: 0;
+      background: $white;
+      transition: .3s;
+      &::before {
+        display: none;
+      }
+    }
+    &.slick-active {
+      button {
+        background: $small-title;
+      }
+    }
   }
 }
