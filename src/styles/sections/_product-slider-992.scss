@@ -151,4 +151,21 @@
       transform: rotate(-90deg);
     }
   }
+  &-link {
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font;
+    color: $title;
+    border-radius: 5px;
+    border: 1px solid $title;
+    padding: 16px 65px;
+    &__item {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
 }

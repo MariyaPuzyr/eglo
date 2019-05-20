@@ -98,3 +98,19 @@ $('.promotional-offers-slide').slick({
     }
   ]
 });
+
+/* news slider */
+var width = window.innerWidth || document.body.clientWidth;
+
+if (width < 992) {
+  $('.news-slider').slick({
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    slidesToShow: 1,
+    useTransform: false,
+    adaptiveHeight: true,
+    slidesToScroll: 1
+  });
+}
+/* news slider end */
