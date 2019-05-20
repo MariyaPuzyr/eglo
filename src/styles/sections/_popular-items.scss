@@ -1,0 +1,36 @@
+.popular-items {
+  .product {
+    &__item {
+      position: relative;
+      margin-bottom: 30px;
+      background: $white;
+      max-width: 270px;
+      border: 1px solid #EAEAEA;
+      &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__ico {
+        width: 100%;
+        height: 215px;
+      }
+    }
+    &--title {
+      margin-top: 25px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      padding: 0 15px;
+      color: #000000;
+      font-size: 16px;
+      font-family: $font;
+      line-height: 22px;
+    }
+    &__price {
+      font-size: 16px;
+      line-height: 22px;
+      font-family: $font-b;
+      margin-bottom: 5px;
+    }
+  }
+}
