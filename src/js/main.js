@@ -110,7 +110,21 @@ if (width < 992) {
     slidesToShow: 1,
     useTransform: false,
     adaptiveHeight: true,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 610,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 }
 /* news slider end */
