@@ -50,7 +50,7 @@ $('.single-item').slick({
 /* slider end */
 
 /* product items slider */
-var $slick = $('.product');
+var $slick = $('.product-slider');
 $slick.slick({
   rows: 2,
   dots: false,
@@ -58,6 +58,30 @@ $slick.slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 610,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+/* product items slider end */
+
+/* */
+$('.promotional-offers-slide').slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  rows: 1,
   responsive: [
     {
       breakpoint: 992,
