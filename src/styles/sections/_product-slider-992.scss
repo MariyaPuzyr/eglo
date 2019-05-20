@@ -3,7 +3,7 @@
     position: relative;
     margin-bottom: 30px;
     background: $white;
-    max-width: 220px;
+    max-width: calc(100% - 20px);
     height: 372px;
     border: 1px solid #EAEAEA;
     overflow: hidden;

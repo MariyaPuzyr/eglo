@@ -81,17 +81,19 @@ $('.promotional-offers-slide').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  rows: 1,
+  // useTransform: false,
+  variableWidth: false,
   responsive: [
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 4
       }
     }, {
       breakpoint: 610,
       settings: {
-        slidesToShow: 1
+        variableWidth: false,
+        slidesToShow: 2
       }
     }
   ]
