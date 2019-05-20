@@ -56,15 +56,18 @@ $slick.slick({
   dots: false,
   arrows: true,
   infinite: true,
-  speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 610,
+      settings: {
+        slidesToShow: 1
       }
     }
   ]
