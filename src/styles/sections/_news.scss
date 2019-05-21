@@ -12,7 +12,7 @@
   }
   &-slider {
     display: flex;
-    height: 530px;
+    height: 560px;
     flex-direction: row;
     flex-flow: column wrap;
   }
@@ -20,23 +20,24 @@
     width: calc(25% - 15px);
     box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.15);
     background: $white;
-    margin: 15px 15px 0 0;
+    margin: 30px 15px 0 0;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: calc(50% - 15px);
+    height: calc(50% - 30px);
+    justify-content: flex-end;
+    flex-shrink: 0;
     &__img {
       width: 100%;
-      height: 140px;
+      height: 100%;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
     &__info {
       position: relative;
-      padding: 10px;
-      height: 100%;
+      padding: 20px 15px;
       &::after {
         content: '';
         width: 9px;
@@ -62,15 +63,15 @@
           &::before {
             content: '';
             mask: url("../img/svg/arrow-right.svg") no-repeat center;
-            width: 8px;
-            height: 8px;
+            width: 11px;
+            height: 11px;
             margin-right: 5px;
             background: $small-title;
             mask-size: contain;
           }
         }
         .date {
-          margin: auto 20px auto auto;
+          margin-left: 20px;
           font-size: 12px;
           line-height: 16px;
           font-family: $font-l;
@@ -78,15 +79,40 @@
         }
       }
       &--name {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 22px;
         color: $title;
-        font-family: $font-b;
+        font-family: $font;
+        position: relative;
+        z-index: 1;
       }
     }
     &.main-news {
       width: calc(50% - 15px);
-      height: 100%;
+      height: 530px;
+      .news-item {
+        &__img {
+          flex: 0 0 auto;
+        }
+        &__info{
+          &::before {
+            content: '';
+            mask: url('../img/svg/news-bg.svg') no-repeat center;
+            mask-size: cover;
+            width: 149px;
+            height: 100%;
+            background: $small-title;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          &--name {
+            font-size: 24px;
+            line-height: 33px;
+            font-family: $font-b;
+          }
+        }
+      }
     }
   }
   .product-link__item {
