@@ -387,7 +387,7 @@
     .wpml-ls-item {
       height: 100%;
       transition: .3s;
-      &:hover {
+      &:hover a.wpml-ls-item-toggle{
         color: $white;
         background: $small-title;
       }
@@ -427,6 +427,7 @@
       flex-direction: column;
       a {
         padding: 20px 30px;
+        border: none;
         border-bottom: 1px solid #F2F2F2;
         color: #121B1B;
         font-size: 14px;
@@ -435,6 +436,10 @@
         display: flex;
         justify-content: center;
         transition: .3s;
+        &:hover {
+          color: $white;
+          background: $small-title;
+        }
       }
     }
   }
