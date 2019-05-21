@@ -11,6 +11,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px;
+      z-index: 1;
       .discount {
         mask: url('../img/svg/discount-ico.svg') no-repeat center;
         mask-size: contain;
@@ -62,23 +63,6 @@
     }
     .slick-next {
       right: 0;
-    }
-    &-link {
-      font-size: 18px;
-      line-height: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: $font;
-      color: $title;
-      border-radius: 5px;
-      border: 1px solid $title;
-      padding: 16px 65px;
-      &__item {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
     }
   }
 }
