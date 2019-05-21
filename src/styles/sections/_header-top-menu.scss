@@ -378,6 +378,38 @@
       }
     }
   }
+
+  /* language dropdown */
+  .wpml-ls-legacy-dropdown {
+    width: auto;
+    height: 100%;
+    display: flex;
+    .wpml-ls-item {
+      height: 100%;
+    }
+    a.wpml-ls-item-toggle {
+      color: #121B1B;
+      font-size: 14px;
+      font-family: $font;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 19px 30px;
+      height: 100%;
+      border: none;
+      border-right: 1px solid #EAEAEA;
+      position: relative;
+      &::after {
+        content: '';
+        width: 10px;
+        height: 18px;
+        mask: url('../img/svg/arrow-down.svg') no-repeat center;
+        mask-size: contain;
+        background: currentColor;
+        margin-left: 10px;
+      }
+    }
+  }
 }
 .mobile {
   display: none !important;
