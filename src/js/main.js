@@ -128,3 +128,30 @@ if (width < 992) {
   });
 }
 /* news slider end */
+
+/* counter */
+if ($(".cart-item--info__count").length > 0) {
+  var counter = 0;
+
+  $(".cart-item--info__count--plus").click(function () {
+    counter++;
+    $(this).prev(".cart-item--info__count--control").val(counter);
+  });
+
+  $(".cart-item--info__count--minus").click(function () {
+    counter--;
+    $(this).next(".cart-item--info__count--control").val(counter);
+  });
+}
+/* counter end */
+
+/* show cart popup */
+$('.cart-item').click(function () {
+  $('body').addClass('show-cart-popup');
+  $('.cart-popup').addClass('open');
+});
+$('.cart-close').click(function () {
+  $('body').removeClass('show-cart-popup');
+  $('.cart-popup').removeClass('open');
+});
+/* show cart popup end */
