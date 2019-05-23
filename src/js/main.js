@@ -155,7 +155,7 @@ $('.tabs__header--title, .login-form--registration').on('click', function () {
 
 /* show recovery password tab */
 $('.login-form--restore-pass').click(function () {
-  $(this).parents('.form-item').hide();
+  $('.form-item').hide();
   $('.recovery-password').addClass('open');
 });
 $('.login-form--remembered-pass').click(function () {

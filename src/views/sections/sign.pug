@@ -30,6 +30,14 @@
             .login-form--remembered-pass Я вспомнил пароль
           .login-form--btns
             button(type='submit').login-form--sign отправить
+      .instructions(style='display: none;')
+        .login-form--btns
+          .instructions--title Инструкции высланы
+          p Проверьте вашу почту с инструкциями по смене пароля
+          .no-email Не получили электронное сообщение?
+          p Проверьте, нет ли письма в папке, предназначенной для спама и рекламных сообщений (Spam/Junk).
+          .login-form--restore-pass Отправить повторно
+          button(type='submit').login-form--sign отправить
 
 
     #registration.tabs__content
