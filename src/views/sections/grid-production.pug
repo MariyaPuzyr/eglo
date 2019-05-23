@@ -1,0 +1,36 @@
+.grid-produstion
+  .content
+    .grid-produstion--header
+      include ../components/breadcrumbs
+      h2.grid-produstion--title Люстры
+    .grid-produstion--body
+      .filters
+        .filters-title Фильтры:
+        .filters-body
+      .catalog
+        .catalog-top
+          .catalog-top--result Результатов:
+            span 634 товара
+          .catalog-top--filters
+            .catalog-top--filters__view
+              span Вид:
+              .views.column.active
+              .views.grid
+            .catalog-top--filters__dropdown
+              .catalog-top--filters__dropdown-select От дешевых к дорогим
+              ul.catalog-top--filters__dropdown-list
+                li
+                  a(href='#') От дешевых к дорогим
+                li
+                  a(href='#') От дешевых к дорогим
+                li
+                  a(href='#') От дешевых к дорогим
+                li
+                  a(href='#') От дешевых к дорогим
+        .catalog-body
+          +product
+          +product
+          +product
+          +product
+        .catalog-pagination
+          include ../components/pagination
