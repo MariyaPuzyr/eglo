@@ -139,3 +139,33 @@ $('.cart-close').click(function () {
   $('.cart-popup').removeClass('open');
 });
 /* show cart popup end */
+
+/* tabs */
+$('.tabs__header--title, .login-form--registration').on('click', function () {
+  var openTab = $(this).data('tab');
+
+  $('.tabs__header--title').removeClass('active');
+  $(this).addClass('active');
+  $('.tabs__content').removeClass('active');
+  $(openTab).addClass('active');
+  $('.recovery-password').removeClass('open');
+  $('.form-item').show();
+});
+/* tabs end */
+
+/* show recovery password tab */
+$('.login-form--restore-pass').click(function () {
+  $(this).parents('.form-item').hide();
+  $('.recovery-password').addClass('open');
+});
+$('.login-form--remembered-pass').click(function () {
+  $('.form-item').show();
+  $('.recovery-password').removeClass('open');
+});
+/* show recovery password tab end */
+
+/* show login popup on click */
+$('.login').click(function () {
+  $('.sign').addClass('open');
+});
+/* show login popup on click end */
