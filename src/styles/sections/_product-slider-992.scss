@@ -42,6 +42,16 @@
         display: none;
       }
     }
+    .availability {
+      font-size: 10px;
+      line-height: 14px;
+      font-family: $font-b;
+      color: $small-title;
+      transition: .3s;
+      &.under-order {
+        color: $order;
+      }
+    }
   }
   &__title {
     margin-top: 25px;
@@ -68,16 +78,6 @@
       line-height: 16px;
       font-family: $font;
       margin-bottom: 15px;
-    }
-  }
-  .availability {
-    font-size: 10px;
-    line-height: 14px;
-    font-family: $font-b;
-    color: $small-title;
-    transition: .3s;
-    &.under-order {
-      color: $order;
     }
   }
   &__popup {
