@@ -3,6 +3,9 @@
 @import "utils/mixins";
 @import "utils/extends";
 @import "utils/fonts";
+@import "components/breadcrumbs-767";
+@import "components/pagination-767";
+@import "components/filters-767";
 @import "sections/top-info-767";
 @import "sections/header-top-menu-767";
 @import "sections/header-catalog-menu-767";
@@ -18,6 +21,7 @@
 @import "sections/error-767";
 @import "sections/result-order-767";
 @import "sections/search-767";
+@import "sections/grid-772";
 
 h1, h2, h3, h4, ul {
   padding: 0;

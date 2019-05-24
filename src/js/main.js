@@ -126,6 +126,13 @@ if (width < 992) {
       }
     ]
   });
+
+  /* show and hide filters */
+  $('.filters-title').click(function () {
+    $(this).toggleClass('open');
+    $(this).next().toggleClass('open');
+  });
+  /* show and hide filters end*/
 }
 /* news slider end */
 
