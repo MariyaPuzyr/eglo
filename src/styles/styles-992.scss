@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/extends";
 @import "utils/fonts";
+@import "components/component";
 @import "sections/top-info-992";
 @import "sections/header-top-menu-992";
 @import "sections/header-catalog-menu-992";
@@ -18,6 +19,7 @@
 @import "sections/error";
 @import "sections/result-order";
 @import "sections/search";
+@import "sections/grid-992";
 
 h1, h2, h3, h4, ul {
   padding: 0;

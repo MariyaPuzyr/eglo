@@ -19,12 +19,14 @@
   }
   .price_slider_wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .widget_price_filter {
     .price_slider_amount {
+      display: flex;
+      flex-direction: column-reverse;
       .button {
-        display: none;
+
       }
       .price_label {
         font-size: 0;
@@ -85,6 +87,9 @@
         &:focus {
           outline: none;
         }
+        &:last-child {
+          margin-left: -.5rem;
+        }
       }
     }
   }
@@ -103,6 +108,9 @@
       height: 16px;
       border: 1px solid $price;
       border-radius: 4px;
+      box-sizing: border-box;
+      line-height: 15px;
+      overflow: hidden;
     }
     a {
       color: $title;

@@ -165,7 +165,7 @@ $('.login-form--remembered-pass').click(function () {
 /* show recovery password tab end */
 
 /* show login popup on click */
-$('.login').click(function () {
+$('.login-open').click(function () {
   $('.sign').addClass('open');
 });
 /* show login popup on click end */

@@ -1,4 +1,4 @@
-.pagination {
+.pagination, ul.page-numbers {
   display: flex;
   align-items: baseline;
   margin: 20px 115px 50px;
@@ -19,20 +19,15 @@
   }
   .prev, .next {
     margin: auto auto auto 0;
-    a {
-      mask: url("../img/svg/arrow.svg") no-repeat center;
-      mask-size: cover;
-      width: 100px;
-      height: 20px;
-      background: $title;
-      display: flex;
-
-    }
+    mask: url("../img/svg/arrow.svg") no-repeat center;
+    mask-size: cover;
+    width: 100px;
+    height: 20px;
+    background: $title;
+    display: flex;
   }
   .next {
     margin: auto 0 auto auto;
-    a {
-      transform: rotate(180deg);
-    }
+    transform: rotate(180deg);
   }
 }
