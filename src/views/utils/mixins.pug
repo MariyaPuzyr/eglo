@@ -53,3 +53,22 @@ mixin one-product
         .availability в наличии
         a(href='#').add-cart В корзину
         a(href='#').buy Купить в 1 клик
+
+mixin cart-position
+  .cart-item-position
+    .cart-item--img
+      a(href='#').cart-item--img__link
+        img(src='/img/product.png' alt='')
+      .cart-item--delete
+    .cart-item--info
+      .cart-item--info-top
+        a(href='#').cart-item--info__name 96188  SALOBRENA 1
+          .cart-item--info__description 40W; 4300 lm
+            br
+            | L 595, B 595, H 50
+        .cart-item--info__price 6 055 грн
+      form(action='#')
+        .cart-item--info__count
+          .cart-item--info__count--minus
+          input(type='text' placeholder='1').cart-item--info__count--control
+          .cart-item--info__count--plus
