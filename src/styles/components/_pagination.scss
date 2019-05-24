@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   align-items: baseline;
-  margin: 55px 115px;
+  margin: 20px 115px 50px;
   li {
     font-size: 18px;
     line-height: 25px;
@@ -18,15 +18,21 @@
     }
   }
   .prev, .next {
-    mask: url("../img/svg/arrow.svg") no-repeat center;
-    mask-size: cover;
-    width: 100px;
-    height: 20px;
-    background: $title;
     margin: auto auto auto 0;
+    a {
+      mask: url("../img/svg/arrow.svg") no-repeat center;
+      mask-size: cover;
+      width: 100px;
+      height: 20px;
+      background: $title;
+      display: flex;
+
+    }
   }
   .next {
-    transform: rotate(180deg);
     margin: auto 0 auto auto;
+    a {
+      transform: rotate(180deg);
+    }
   }
 }
