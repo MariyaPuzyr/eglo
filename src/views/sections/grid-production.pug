@@ -57,29 +57,30 @@
                 input(type='hidden', name='filter_tsokol', value='')
 
       .catalog
-        .catalog-top
-          .catalog-top--result Результатов:
-            span 634 товара
-          .catalog-top--filters
-            .catalog-top--filters__view
-              span Вид:
-              .views.column.active
-              .views.grid
-            form.woocommerce-ordering(method='get')
-              select.orderby(name='orderby', aria-label='Заказ в магазине')
-                option(value='menu_order', selected='selected') Исходная сортировка
-                option(value='popularity') По популярности
-                option(value='rating') По рейтингу
-                option(value='date') Сортировка по более позднему
-                option(value='price') Цены: по возрастанию
-                option(value='price-desc') Цены: по убыванию
-              input(type='hidden', name='paged', value='1')
-              input(type='hidden', name='filter_lm', value='2100lm')
+        .catalog-items
+          .catalog-top
+            .catalog-top--result Результатов:
+              span 634 товара
+            .catalog-top--filters
+              .catalog-top--filters__view
+                span Вид:
+                .views.column.active
+                .views.grid
+              form.woocommerce-ordering(method='get')
+                select.orderby(name='orderby', aria-label='Заказ в магазине')
+                  option(value='menu_order', selected='selected') Исходная сортировка
+                  option(value='popularity') По популярности
+                  option(value='rating') По рейтингу
+                  option(value='date') Сортировка по более позднему
+                  option(value='price') Цены: по возрастанию
+                  option(value='price-desc') Цены: по убыванию
+                input(type='hidden', name='paged', value='1')
+                input(type='hidden', name='filter_lm', value='2100lm')
 
-        .catalog-body
-          +product
-          +product
-          +product
-          +product
+          .catalog-body
+            +product
+            +product
+            +product
+            +product
         .catalog-pagination
           include ../components/pagination
