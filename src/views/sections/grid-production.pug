@@ -5,6 +5,9 @@
       h2.grid-produstion--title Люстры
     .grid-produstion--body
       .filters
+        .catalog-top.mobile
+          .catalog-top--result Результатов:
+            span 634 товара
         .filters-title Фильтры:
         .filters-body
           #secondary.widget-area(role='complementary')
@@ -55,6 +58,18 @@
                         b(role='presentation')
                   span.dropdown-wrapper(aria-hidden='true')
                 input(type='hidden', name='filter_tsokol', value='')
+
+          .catalog-top--filters.mobile
+            form.woocommerce-ordering(method='get')
+              select.orderby(name='orderby', aria-label='Заказ в магазине')
+                option(value='menu_order', selected='selected') Исходная сортировка
+                option(value='popularity') По популярности
+                option(value='rating') По рейтингу
+                option(value='date') Сортировка по более позднему
+                option(value='price') Цены: по возрастанию
+                option(value='price-desc') Цены: по убыванию
+              input(type='hidden', name='paged', value='1')
+              input(type='hidden', name='filter_lm', value='2100lm')
 
       .catalog
         .catalog-items
