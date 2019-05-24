@@ -16,17 +16,6 @@
     }
     &--body {
       display: flex;
-      .filters {
-        border-right: 1px solid #E0E0E0;
-        padding: 0 10px;
-        &-title {
-          font-size: 24px;
-          line-height: 33px;
-          font-family: $font-b;
-          letter-spacing: 0.05em;
-          color: #fb992f;
-        }
-      }
       .catalog {
         margin-left: 30px;
         width: 100%;
