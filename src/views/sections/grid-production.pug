@@ -65,17 +65,17 @@
               span Вид:
               .views.column.active
               .views.grid
-            .catalog-top--filters__dropdown
-              .catalog-top--filters__dropdown-select От дешевых к дорогим
-              ul.catalog-top--filters__dropdown-list
-                li
-                  a(href='#') От дешевых к дорогим
-                li
-                  a(href='#') От дешевых к дорогим
-                li
-                  a(href='#') От дешевых к дорогим
-                li
-                  a(href='#') От дешевых к дорогим
+            form.woocommerce-ordering(method='get')
+              select.orderby(name='orderby', aria-label='Заказ в магазине')
+                option(value='menu_order', selected='selected') Исходная сортировка
+                option(value='popularity') По популярности
+                option(value='rating') По рейтингу
+                option(value='date') Сортировка по более позднему
+                option(value='price') Цены: по возрастанию
+                option(value='price-desc') Цены: по убыванию
+              input(type='hidden', name='paged', value='1')
+              input(type='hidden', name='filter_lm', value='2100lm')
+
         .catalog-body
           +product
           +product

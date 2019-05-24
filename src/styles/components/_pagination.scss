@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  align-items: baseline;
+  margin: 55px 85px;
+  li {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $font;
+    color: $title;
+    margin: 0 3px;
+    a {
+      color: $title;
+    }
+    &.active {
+      font-family: $font-b;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+  .prev, .next {
+    mask: url("../img/svg/arrow.svg") no-repeat center;
+    mask-size: cover;
+    width: 100px;
+    height: 20px;
+    background: $title;
+    margin: auto auto auto 0;
+  }
+  .next {
+    transform: rotate(180deg);
+    margin: auto 0 auto auto;
+  }
+}
