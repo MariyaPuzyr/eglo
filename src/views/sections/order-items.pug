@@ -32,13 +32,13 @@
 
         .order-item--details
           .order-item--title Контактные данные
-            input(type='text' placeholder='Имя')
-            input(type='text' placeholder='Фамилия')
-            input(type='phone' placeholder='+38 0__ ___ __ __ ')
-            input(type='email' placeholder='Email')
-            input(type='text' placeholder='Область')
-            input(type='text' placeholder='Город')
-            input(type='text' placeholder='Отделение новой почты')
+          input(type='text' placeholder='Имя').order-item--details-control
+          input(type='text' placeholder='Фамилия').order-item--details-control
+          input(type='phone' placeholder='+38 0__ ___ __ __ ').order-item--details-control
+          input(type='email' placeholder='Email').order-item--details-control
+          input(type='text' placeholder='Область').order-item--details-control
+          input(type='text' placeholder='Город').order-item--details-control
+          input(type='text' placeholder='Отделение новой почты').order-item--details-control
         .order-item--order
           .order-item--order-title Сумма заказа: 10 293 грн
           .order-item--order__items
@@ -52,7 +52,7 @@
               .order-item--order-position-item
                 a(href='#').cart-item--img__link
                   img(src='/img/product.png' alt='')
-                a(href='#').cart-item--info__name 96188  SALOBRENA 1
+                a(href='#').cart-item--info__name 96188  Светильник настенно-потолочный LANCIANO
               .order-item--order__count Х 1
             .order-item--order-position
               .order-item--order-position-item
@@ -60,3 +60,5 @@
                   img(src='/img/product.png' alt='')
                 a(href='#').cart-item--info__name 96188  SALOBRENA 1
               .order-item--order__count Х 1
+          a(href='#').cart-amount--buy Подтвердить заказ
+          a(href='cart.html').back-to-cart назад в корзину
