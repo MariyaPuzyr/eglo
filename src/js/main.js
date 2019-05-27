@@ -176,3 +176,23 @@ $('.login-open').click(function () {
   $('.sign').addClass('open');
 });
 /* show login popup on click end */
+
+/* product slider with nav blocks */
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  // adaptiveHeight: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+/* product slider with nav blocks end */
