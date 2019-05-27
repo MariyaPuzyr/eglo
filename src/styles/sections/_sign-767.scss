@@ -8,6 +8,7 @@
   display: none;
   &.open {
     display: flex;
+    z-index: 2;
   }
   .tabs {
     margin: 150px 8px 0;

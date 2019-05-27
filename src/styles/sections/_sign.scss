@@ -10,6 +10,7 @@
   display: none;
   &.open {
     display: flex;
+    z-index: 2;
   }
   .tabs {
     margin: 0 auto;

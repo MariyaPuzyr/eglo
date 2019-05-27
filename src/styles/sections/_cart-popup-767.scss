@@ -43,21 +43,7 @@
       color: $title;
       font-family: $font-b;
       &--buy {
-        width: 222px;
-        color: $white;
-        background: $small-title;
-        border: 1px solid $small-title;
-        border-radius: 5px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 0.05em;
-        font-family: $font;
-        padding: 9px 0;
-        margin: 25px auto 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .3s;
+        @extend .cart-amount--buy-mobile;
       }
     }
   }
