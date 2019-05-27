@@ -137,7 +137,7 @@ if (width < 992) {
 /* news slider end */
 
 /* show cart popup */
-$('.cart-item').click(function () {
+$('.cart-item.header-top-menu__menu-item--link').click(function () {
   $('body').addClass('show-cart-popup');
   $('.cart-popup').addClass('open');
 });
