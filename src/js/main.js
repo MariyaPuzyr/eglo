@@ -183,8 +183,16 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  // adaptiveHeight: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        adaptiveHeight: true,
+        arrows: true
+      }
+    }
+  ]
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
@@ -193,6 +201,14 @@ $('.slider-nav').slick({
   dots: false,
   arrows: true,
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        unslick: true
+      }
+    }
+  ]
 });
 /* product slider with nav blocks end */
