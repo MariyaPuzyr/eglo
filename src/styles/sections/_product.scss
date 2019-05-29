@@ -153,14 +153,10 @@
           width: 11px;
           height: 11px;
         }
-        //input.star:checked ~ label.star:before,
         .active:before {
           background: url('../img/svg/star-active.svg') no-repeat center !important;
           transition: all .25s;
         }
-        //.active:before {
-        //  background: url('../img/svg/star-active.svg') no-repeat center !important;
-        //}
       }
       &__wishlist, .simplefavorite-button {
         display: flex;
@@ -170,6 +166,8 @@
         line-height: 16px;
         color: $title;
         font-family: $font;
+        background: none;
+        border: none;
         &::before {
           content: '';
           mask: url("../img/svg/wishlist-ico.svg") no-repeat center;

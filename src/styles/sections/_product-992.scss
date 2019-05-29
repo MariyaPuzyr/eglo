@@ -172,6 +172,8 @@
         line-height: 16px;
         color: $title;
         font-family: $font;
+        background: none;
+        border: none;
         &::before {
           content: '';
           mask: url("../img/svg/wishlist-ico.svg") no-repeat center;

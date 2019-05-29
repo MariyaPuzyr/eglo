@@ -176,3 +176,18 @@
     }
   }
 }
+.submit {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font;
+  color: $title;
+  border-radius: 5px;
+  border: 1px solid $title;
+  padding: 9px 30px;
+  min-width: 192px;
+  cursor: pointer;
+  background: $white;
+}
