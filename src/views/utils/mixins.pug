@@ -7,7 +7,7 @@ mixin sprite(name, id)
 mixin product
   .product__item.item
     .product__item__info
-      a(href='#').product__item__ico(style="background-image: url('img/product.png')")
+      a(href='product.html').product__item__ico(style="background-image: url('img/product.png')")
       .product__popup
         a.product__title Sendero
         .product__price 96 188 грн
@@ -17,7 +17,7 @@ mixin product
         a(href='#').buy Купить в 1 клик
   .product__item.item
     .product__item__info
-      a(href='#').product__item__ico(style="background-image: url('img/product-2.png')")
+      a(href='product.html').product__item__ico(style="background-image: url('img/product-2.png')")
       .product__popup
         a.product__title Sendero
         .product__price 96 188 грн
@@ -33,7 +33,7 @@ mixin one-product
       .product__item__info--top
         .discount -60%
         .promo-label.new-position новинка
-      a(href='#').product__item__ico(style="background-image: url('img/product.png')")
+      a(href='product.html').product__item__ico(style="background-image: url('img/product.png')")
       .product__popup
         a.product__title Sendero
         .product__price 96 188 грн
@@ -45,7 +45,7 @@ mixin one-product
     .product__item__info
       .product__item__info--top
         .promo-label.bestseller хит продаж
-      a(href='#').product__item__ico(style="background-image: url('img/product-2.png')")
+      a(href='product.html').product__item__ico(style="background-image: url('img/product-2.png')")
       .product__popup
         a.product__title Sendero
         .product__price 96 188 грн
@@ -58,7 +58,7 @@ mixin cart-position
   .cart-item-position
     .cart-item--img
       a(href='#').cart-item--img__link
-        img(src='/img/product.png' alt='')
+        img(src='./img/product.png' alt='')
       .cart-item--delete
     .cart-item--info
       .cart-item--info-top
