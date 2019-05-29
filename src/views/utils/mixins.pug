@@ -72,3 +72,25 @@ mixin cart-position
           .cart-item--info__count--minus
           input(type='text' placeholder='1').cart-item--info__count--control
           .cart-item--info__count--plus
+
+
+mixin reviews(user_name, description)
+  .reviews-item
+    .reviews-avatar
+      img(src='./img/avatar-ico.png' alt='')
+    .reviews-info
+      .reviews-info__name= user_name
+      .reviews-info__review= description
+      .reviews-info__bottom
+        .reviews-info__raiting
+          input#star-10.star.star-5(type='radio', name='star-review')
+          label.star.star-5(for='star-10')
+          input#star-9.star.star-4(type='radio', name='star-review')
+          label.star.star-4(for='star-9')
+          input#star-8.star.star-3(type='radio', name='star-review')
+          label.star.star-3(for='star-8')
+          input#star-7.star.star-2(type='radio', name='star-review')
+          label.star.star-2.active(for='star-7')
+          input#star-6.star.star-1(type='radio', name='star-review')
+          label.star.star-1.active(for='star-6')
+        .reviews-info__date — 16 марта 2018

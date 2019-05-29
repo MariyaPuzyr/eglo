@@ -162,6 +162,8 @@
     border-radius: 5px;
     border: 1px solid $title;
     padding: 16px 65px;
+    cursor: pointer;
+    background: $white;
     &__item {
       display: flex;
       justify-content: center;

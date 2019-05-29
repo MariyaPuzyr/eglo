@@ -213,6 +213,8 @@
     border: 1px solid $title;
     padding: 16px 65px;
     min-width: 255px;
+    cursor: pointer;
+    background: $white;
     &__item {
       display: flex;
       justify-content: center;
