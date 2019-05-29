@@ -119,14 +119,14 @@
         }
       }
     }
-    &-info{
+    &-info {
       &--order {
         border-top: 1px solid #EAEAEA;
         font-family: $font;
         &-top {
           display: flex;
           justify-content: space-between;
-          padding: 25px  15px 5px;
+          padding: 25px 15px 5px;
           &__info {
             display: flex;
             flex-direction: column;
@@ -214,14 +214,18 @@
             }
           }
         }
-        &-title {
-          font-size: 16px;
-          line-height: 22px;
-          font-family: $font-b;
-          color: $title;
-          margin-top: 30px;
-        }
+      }
+      &-title {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $font-b;
+        color: $title;
+        margin-top: 30px;
       }
     }
   }
+}
+
+.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
+  color: $default;
 }
