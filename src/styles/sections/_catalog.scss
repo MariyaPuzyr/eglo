@@ -19,19 +19,107 @@
   }
 
   &-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
+    position: relative;
+    &__column {
+      column-count: 2;
+    }
     &__item {
-      width: 50%;
+      width: 100%;
       max-width: 570px;
       background: $white;
-      box-shadow: 0 0 8px rgba(18, 27, 27, 0.1);
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: flex-start;
       &--img {
-        width: 100%;
+        width: 50%;
         height: 405px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 8px rgba(18, 27, 27, 0.1);
+      }
+      &--list {
+        width: 50%;
+        border: 1px solid currentColor;
+        box-shadow: 0 0 8px rgba(18, 27, 27, 0.1);
+        min-height: 405px;
+        &-link {
+          font-size: 24px;
+          line-height: 33px;
+          font-family: $font-b;
+          color: $title;
+          margin-top: 15px;
+          margin-left: 65px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          a {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 25px;
+            color: $title;
+            font-family: $font;
+            margin-bottom: 30px;
+            &::before {
+              content: '';
+              width: 20px;
+              height: 1px;
+              background: currentColor;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      &--ico {
+        position: absolute;
+        top: 0;
+        background: $white;
+        width: 71px;
+        height: 71px;
+        z-index: 2;
+      }
+    }
+    .catalog {
+      &-chandelier {
+        color: #579dc0;
+      }
+      &-sconce {
+        color: #f7b229;
+      }
+      &-torchere {
+        color: #EF8830;
+      }
+      &-lamps {
+        color: #985BC5;
+      }
+      &-wall {
+        color: #EC4363;
+      }
+      &-bathroom {
+        color: #579DC0;
+      }
+      &-baby {
+        color: #5BA861;
+      }
+      &-street {
+        color: #5A89CB;
+      }
+      &-smart-house {
+        color: #BAD432;
+      }
+      &-proff {
+        color: #F2A50D;
+      }
+      &-accessory {
+        color: #666C73;
+      }
+      &-lightbulb {
+        color: #F3723D;
       }
     }
   }
