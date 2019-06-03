@@ -212,3 +212,22 @@ $('.slider-nav').slick({
   ]
 });
 /* product slider with nav blocks end */
+
+/* faq accordion */
+if ($(".faq").length > 0) {
+  var accordionHeader = $('.accordion__header'),
+      accordionContent = $('.accordion__content');
+  $(accordionHeader).click(function () {
+    if ($(this).hasClass('is-active')) {
+      $(this).next(accordionContent).slideUp('slow');
+      $(this).removeClass('is-active');
+    }
+    else {
+      $(accordionHeader).not(this).next(accordionContent).slideUp('slow');
+      $(accordionHeader).not(this).removeClass('is-active');
+      $(this).next(accordionContent).slideDown('slow');
+      $(this).addClass('is-active');
+    }
+  });
+}
+/* faq accordion end */
