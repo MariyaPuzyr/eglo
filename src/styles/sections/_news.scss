@@ -94,7 +94,7 @@
         &__img {
           flex: 0 0 auto;
         }
-        &__info{
+        &__info {
           &::before {
             content: '';
             mask: url('../img/svg/news-bg.svg') no-repeat center;
@@ -118,5 +118,66 @@
   .product-link__item {
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+
+  &-list {
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .main-news {
+      height: 500px;
+    }
+  }
+  &-items {
+    margin-top: 95px;
+    .breadcrumbs li {
+      font-family: $font-l;
+    }
+    .grid-produstion--title {
+      margin-bottom: 30px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      .page-numbers {
+        justify-content: center;
+      }
+    }
+  }
+  &-article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 360px;
+    overflow: hidden;
+    &--img {
+      width: 50%;
+      height: 100%;
+      box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
+      background: $white;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
+    &--description {
+      width: calc(50% + 25px);
+      position: relative;
+      left: -25px;
+      background: $white;
+      box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
+      padding: 35px 55px;
+      min-height: 182px;
+      .news-item__info--name {
+        font-size: 24px;
+        line-height: 33px;
+        color: $title;
+        font-family: $font-b;
+        margin-top: 10px;
+      }
+    }
   }
 }
