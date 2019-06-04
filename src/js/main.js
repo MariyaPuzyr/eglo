@@ -231,3 +231,20 @@ if ($(".faq").length > 0) {
   });
 }
 /* faq accordion end */
+
+/* offers slider */
+if ($(".offers-slider").length > 0) {
+  $('.offers-slider').slick({
+    dots: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: false
+        }
+      }
+    ]
+  });
+}
+/* offers slider end */
