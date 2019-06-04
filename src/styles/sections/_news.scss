@@ -60,6 +60,7 @@
           display: flex;
           align-items: center;
           color: $small-title;
+          margin-right: 20px;
           &::before {
             content: '';
             mask: url("../img/svg/arrow-right.svg") no-repeat center;
@@ -71,7 +72,6 @@
           }
         }
         .date {
-          margin-left: 20px;
           font-size: 12px;
           line-height: 16px;
           font-family: $font-l;
@@ -171,6 +171,9 @@
       box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
       padding: 35px 55px;
       min-height: 182px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       .news-item__info--name {
         font-size: 24px;
         line-height: 33px;
