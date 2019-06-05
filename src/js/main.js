@@ -1,5 +1,5 @@
 /* show catalog menu */
-$('.menu-call, .header-catalog-menu--items__link').click(function () {
+$('.menu-call, .header-catalog-menu--items__link').hover(function () {
   var classnow = $(this).parents().attr('class');
   $('.header-top-menu__menu-item li, .header-catalog-menu--items li').removeClass('show');
   if (classnow != 'show')
