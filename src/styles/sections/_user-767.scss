@@ -1,0 +1,111 @@
+.user {
+  &-settings {
+    padding: 0 8px;
+    margin-top: 5px;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    color: $title;
+    &__avatar {
+      width: 96px;
+      height: 96px;
+      margin: auto;
+      border-radius: 50%;
+    }
+    &__settings {
+      &--info {
+        margin-top: 30px;
+      }
+      &--name {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        &-label {
+          font-size: 10px;
+          line-height: 14px;
+          font-family: $font-l;
+          margin-bottom: 5px;
+          width: 100%;
+        }
+        span {
+          font-size: 14px;
+          line-height: 19px;
+          font-family: $font-b;
+        }
+      }
+      &--edit {
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+        background: url('../img/svg/edit-ico.svg') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+      }
+    }
+    &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &--out {
+      max-width: 192px;
+      width: 100%;
+      border: 1px solid $title;
+      border-radius: 5px;
+      margin: 25px auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.05em;
+      color: $title;
+      font-size: 12px;
+      line-height: 16px;
+      font-family: $font;
+      padding: 8px 10px;
+    }
+    &--change-pass {
+      font-size: 10px;
+      line-height: 14px;
+      font-family: $font;
+      color: $title;
+      margin-bottom: 25px;
+    }
+    &__discount {
+      display: none;
+    }
+  }
+
+  &-orders {
+    &--title {
+      background: #F6F6F6;
+      font-size: 10px;
+      line-height: 14px;
+      padding: 12px 15px;
+      color: $title;
+      font-family: $font;
+      margin-bottom: 40px;
+    }
+    &__list {
+      &-header {
+        display: none;
+      }
+      &-body {
+        &__item {
+          padding: 0 15px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px;
+          &-cover {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  &-favorites {
+
+  }
+}
