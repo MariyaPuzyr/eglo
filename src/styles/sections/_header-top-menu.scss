@@ -24,6 +24,13 @@
         .header-top-menu__menu-item--link {
           color: $white;
           background: $small-title;
+          &.menu-call {
+            background: $white;
+            color: $title;
+            .header-top-menu__menu-item--phone::after {
+             transform: rotate(180deg);
+            }
+          }
         }
         .header-top-menu__menu-item--dropdown {
           display: block;
@@ -273,6 +280,7 @@
         mask-size: contain;
         background: currentColor;
         margin-left: 10px;
+        transition: .3s;
       }
       &__dropdown {
         position: absolute;

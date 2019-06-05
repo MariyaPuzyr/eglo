@@ -30,7 +30,7 @@
       border: 1px solid $small-title;
       cursor: pointer;
       .product__popup {
-        background: rgba($new, .06);
+        background:#F0F9FA;
         padding-bottom: 50px;
         top: -50px;
         .add-cart, .buy {
@@ -43,12 +43,9 @@
       .old-price, .availability {
         display: none;
       }
-      .product__item__ico {
-        transform: scale(.9);
-      }
     }
     .availability {
-      font-size: 10px;
+      font-size: 12px;
       line-height: 14px;
       font-family: $font-b;
       color: $small-title;
@@ -189,16 +186,21 @@
       width: 13px;
       height: 7px;
       mask-size: contain;
+      position: relative;
     }
   }
   .slick-prev {
     left: auto;
     right: 70px;
+    &::before {
+      left: -1px;
+    }
   }
   .slick-next {
     right: 0;
     &::before {
       transform: rotate(-90deg);
+      right: -1px;
     }
   }
   &-link {
