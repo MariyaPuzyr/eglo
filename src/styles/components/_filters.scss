@@ -136,6 +136,10 @@
       opacity: .7;
       margin: auto 0 auto auto;
     }
+    &::before {
+      content: "\f00c";
+      font-size: 13px;
+    }
   }
   .select2-container--default {
     margin-bottom: 20px;

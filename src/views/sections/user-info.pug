@@ -1,0 +1,75 @@
+.content
+  .user-settings
+    .user-info
+      img(src='./img/avatar.jpg').user-info__avatar
+      .user-info__settings--info
+        .user-info__settings
+          .user-info__settings--name
+            .user-info__settings--name-label Пользователь:
+            span Пахом Коломийко
+            a(href='#').user-info__settings--edit
+        .user-info__settings
+          .user-info__settings--name
+            .user-info__settings--name-label Email:
+            span Mark@mail.com
+            a(href='#').user-info__settings--edit
+    .user-info
+      .user-info__links
+        a(href='#').user-info--out Выход
+        a(href='#').user-info--change-pass Изменить пароль
+      .user-info__discount Личная скидка:
+        span 3%
+  .user-orders
+    .mobile.user-orders--title Товары
+    .user-orders__list
+      .user-orders__list-header
+        .user-orders__list-header__item Фото
+        .user-orders__list-header__item Название
+        .user-orders__list-header__item Дата
+        .user-orders__list-header__item Количество, шт.
+        .user-orders__list-header__item Цена, грн.
+      .user-orders__list-body
+        .user-orders__list-body__item
+          .user-orders__list-body__item-cover
+            .cart-item--img
+              a(href='#').cart-item--img__link
+                img(src='./img/product.png' alt='')
+              .cart-item--delete
+            a(href='#').cart-item--info__name 96188  SALOBRENA 1
+              .cart-item--info__description 40W; 4300 lm
+                br
+                | L 595, B 595, H 50
+            .date 23.05.18
+            form(action='#')
+              .cart-item--info__count
+                .cart-item--info__count--minus
+                input(type='text' placeholder='1').cart-item--info__count--control
+                .cart-item--info__count--plus
+            .cart-item--info__price 6 055 грн
+          a(href='#').user-orders__get-order Заказать повторно
+
+        .user-orders__list-body__item
+          .user-orders__list-body__item-cover
+            .cart-item--img
+              a(href='#').cart-item--img__link
+                img(src='./img/product.png' alt='')
+              .cart-item--delete
+            a(href='#').cart-item--info__name 96188  SALOBRENA 1
+              .cart-item--info__description 40W; 4300 lm
+                br
+                | L 595, B 595, H 50
+            .date 23.05.18
+            form(action='#')
+              .cart-item--info__count
+                .cart-item--info__count--minus
+                input(type='text' placeholder='1').cart-item--info__count--control
+                .cart-item--info__count--plus
+            .cart-item--info__price 6 055 грн
+          a(href='#').user-orders__get-order Заказать повторно
+  .user-favorites
+    h2 Избранные товары
+    .search-body
+      +product
+      +product
+    .product-link__item
+      a(href='#').product-link Открыть избранное

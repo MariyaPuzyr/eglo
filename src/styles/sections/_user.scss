@@ -1,0 +1,110 @@
+.user {
+  &-settings {
+    margin-top: 85px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: $title;
+    &__avatar {
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+      margin-right: 20px;
+    }
+    &__settings {
+      display: flex;
+      align-items: center;
+      &:first-child {
+        margin-bottom: 15px;
+      }
+      &--info {
+        display: flex;
+        flex-direction: column;
+      }
+      &--name {
+        font-family: $font-l;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: baseline;
+        &-label {
+          width: 100px;
+          text-align: right;
+        }
+        span {
+          font-size: 18px;
+          line-height: 25px;
+          font-family: $font-b;
+          margin: 0 20px;
+        }
+      }
+      &--edit {
+        width: 18px;
+        height: 18px;
+        background: url('../img/svg/edit-ico.svg') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+      }
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 40px;
+    }
+    &--out {
+      cursor: pointer;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      padding: 10px 40px;
+      border: 2px solid $title;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      transition: .3s;
+      color: $title;
+    }
+    &--change-pass {
+      font-size: 15px;
+      line-height: 20px;
+      color: $title;
+      font-family: $font-m;
+    }
+    &__discount {
+      background: #F6F6F6;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 104px;
+      padding: 25px 35px 25px 25px;
+      font-size: 18px;
+      line-height: 25px;
+      font-style: italic;
+      font-family: $font;
+      span {
+        font-size: 40px;
+        line-height: 54px;
+        font-style: normal;
+        font-family: $font-b;
+        color: $default;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &-orders {
+    &__list {
+      &-header {
+        
+      }
+    }
+  }
+}
