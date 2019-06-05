@@ -253,6 +253,20 @@
         letter-spacing: 0.05em;
         font-family: $font;
         cursor: pointer;
+        transition: .3s;
+        &:hover {
+          background: $small-title;
+          border-color: $small-title;
+        }
+        &.wpcf7-form-control.wpcf7-submit {
+          background-color: $title;
+          border-color: $title;
+          color: $white;
+          &:hover {
+            background: $small-title;
+            border-color: $small-title;
+          }
+        }
       }
     }
   }

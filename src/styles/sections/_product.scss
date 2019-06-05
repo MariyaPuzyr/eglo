@@ -201,10 +201,13 @@
               font-size: 28px;
               line-height: 38px;
               color: $title;
+              font-family: $font-b;
               span {
                 margin-bottom: 0;
                 font-size: 16px;
                 line-height: 22px;
+                font-family: $font;
+                margin-left: 3px;
               }
             }
           }
