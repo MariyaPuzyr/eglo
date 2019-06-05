@@ -31,41 +31,45 @@
       .user-orders__list-body
         .user-orders__list-body__item
           .user-orders__list-body__item-cover
-            .cart-item--img
+            .cart-item--img.order-items
               a(href='#').cart-item--img__link
                 img(src='./img/product.png' alt='')
               .cart-item--delete
-            a(href='#').cart-item--info__name 96188  SALOBRENA 1
+            a(href='#').cart-item--info__name.order-items 96188  SALOBRENA 1
               .cart-item--info__description 40W; 4300 lm
                 br
                 | L 595, B 595, H 50
-            .date 23.05.18
-            form(action='#')
+            .date.order-items 23.05.18
+            form(action='#').order-items
               .cart-item--info__count
                 .cart-item--info__count--minus
                 input(type='text' placeholder='1').cart-item--info__count--control
                 .cart-item--info__count--plus
-            .cart-item--info__price 6 055 грн
-          a(href='#').user-orders__get-order Заказать повторно
+            .cart-item--info__price.order-items 6 055 грн
+          a(href='#').user-orders__get-order Заказать
+            br
+            | повторно
 
         .user-orders__list-body__item
           .user-orders__list-body__item-cover
-            .cart-item--img
+            .cart-item--img.order-items
               a(href='#').cart-item--img__link
                 img(src='./img/product.png' alt='')
               .cart-item--delete
-            a(href='#').cart-item--info__name 96188  SALOBRENA 1
+            a(href='#').cart-item--info__name.order-items 96188  SALOBRENA 1
               .cart-item--info__description 40W; 4300 lm
                 br
                 | L 595, B 595, H 50
-            .date 23.05.18
-            form(action='#')
+            .date.order-items 23.05.18
+            form(action='#').order-items
               .cart-item--info__count
                 .cart-item--info__count--minus
                 input(type='text' placeholder='1').cart-item--info__count--control
                 .cart-item--info__count--plus
-            .cart-item--info__price 6 055 грн
-          a(href='#').user-orders__get-order Заказать повторно
+            .cart-item--info__price.order-items 6 055 грн
+          a(href='#').user-orders__get-order Заказать
+            br
+            |повторно
   .user-favorites
     h2 Избранные товары
     .search-body
