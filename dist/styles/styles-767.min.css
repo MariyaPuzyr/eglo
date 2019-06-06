@@ -1757,7 +1757,7 @@ ul.page-numbers .next {
   margin: 0 2px;
 }
 
-.promotional-offers .product__item__info--top {
+.product__item__info--top {
   position: absolute;
   top: 0;
   left: 0;
@@ -1777,7 +1777,7 @@ ul.page-numbers .next {
   padding: 10px;
 }
 
-.promotional-offers .product__item__info--top .discount {
+.product__item__info--top .discount {
   -webkit-mask: url("../img/svg/discount-ico.svg") no-repeat center;
   mask: url("../img/svg/discount-ico.svg") no-repeat center;
   -webkit-mask-size: contain;
@@ -1801,7 +1801,7 @@ ul.page-numbers .next {
   height: 26px;
 }
 
-.promotional-offers .product__item__info--top .discount::after {
+.product__item__info--top .discount::after {
   content: '';
   width: 4px;
   height: 4px;
@@ -1812,7 +1812,7 @@ ul.page-numbers .next {
   background: #ffffff;
 }
 
-.promotional-offers .product__item__info--top .promo-label {
+.product__item__info--top .promo-label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1837,11 +1837,11 @@ ul.page-numbers .next {
   white-space: nowrap;
 }
 
-.promotional-offers .product__item__info--top .promo-label.new-position {
+.product__item__info--top .promo-label.new-position {
   background: #009BA5;
 }
 
-.promotional-offers .product__item__info--top .promo-label.bestseller {
+.product__item__info--top .promo-label.bestseller {
   background: #FF0000;
 }
 
