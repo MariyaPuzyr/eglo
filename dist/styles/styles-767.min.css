@@ -693,6 +693,7 @@ ul.page-numbers .next {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -1044,6 +1045,7 @@ ul.page-numbers .next {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 10px;
+  min-height: 37px;
 }
 
 .header-top-menu .search-item--form {
@@ -1188,6 +1190,7 @@ ul.page-numbers .next {
   -webkit-order: -2;
   -ms-flex-order: -2;
   order: -2;
+  display: table;
 }
 
 .header-top-menu__menu-item li:nth-child(4) {
@@ -1259,7 +1262,8 @@ ul.page-numbers .next {
   display: table;
   -webkit-background-size: 100% 100%;
   background-size: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
+  min-height: 64px;
 }
 
 .header-top-menu__menu-item .mobile-logo--link {
@@ -3209,6 +3213,7 @@ ul.page-numbers .next {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0 15px;
 }
 
 .grid-produstion--title {
