@@ -1,6 +1,5 @@
 .header-top-menu {
   border-bottom: 1px solid $border;
-  //z-index: 1;
   position: relative;
   &__logo {
     order: 2;
@@ -120,7 +119,7 @@
     }
   }
   &__menu-item {
-    position: absolute;
+    position: fixed;
     transition: .3s;
     border-right: 1px solid $border;
     width: 240px;
@@ -247,6 +246,8 @@
       width: 100%;
       padding-top: 25px;
       padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
       a {
         letter-spacing: 0.1em;
         margin-bottom: 15px;

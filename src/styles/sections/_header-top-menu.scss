@@ -19,7 +19,7 @@
           }
           &--mega-menu {
             display: flex;
-            z-index: 2;
+            z-index: 3;
           }
         }
       }
@@ -40,33 +40,6 @@
     li {
       max-width: 100%;
       width: auto;
-      //&.show {
-      //  .header-top-menu__menu-item--link {
-      //    color: $white;
-      //    background: $small-title;
-      //    &.menu-call {
-      //      background: $white;
-      //      color: $title;
-      //      .header-top-menu__menu-item--phone::after {
-      //        transform: rotate(180deg);
-      //      }
-      //    }
-      //  }
-      //  .header-top-menu__menu-item--dropdown {
-      //    display: block;
-      //  }
-      //.line {
-      //  background: $white;
-      //}
-      //  .icons {
-      //    fill: $white;
-      //  }
-      //.header-top-menu__menu-item--mega-menu,
-      //  .header-top-menu__menu-item--phone__dropdown {
-      //    display: flex;
-      //    z-index: 2;
-      //  }
-      //}
     }
     &--link {
       color: $title;

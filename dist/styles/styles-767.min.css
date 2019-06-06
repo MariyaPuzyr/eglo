@@ -1129,7 +1129,7 @@ ul.page-numbers .next {
 }
 
 .header-top-menu__menu-item {
-  position: absolute;
+  position: fixed;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -1309,6 +1309,15 @@ ul.page-numbers .next {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .header-top-menu__menu-item--dropdown a {
@@ -4484,147 +4493,147 @@ p.stars a:after,
   flex-direction: column;
 }
 
-.catalog-list .catalog-chandelier {
+.catalog-list .catalog-1 {
   color: #579dc0;
 }
 
-.catalog-list .catalog-chandelier .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-1 .catalog-list__item--list ul a:hover {
   color: #579dc0;
 }
 
-.catalog-list .catalog-chandelier .catalog-list__item--list ul a::before {
+.catalog-list .catalog-1 .catalog-list__item--list ul a::before {
   background: #579dc0;
 }
 
-.catalog-list .catalog-sconce {
+.catalog-list .catalog-2 {
   color: #f7b229;
 }
 
-.catalog-list .catalog-sconce .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-2 .catalog-list__item--list ul a:hover {
   color: #f7b229;
 }
 
-.catalog-list .catalog-sconce .catalog-list__item--list ul a::before {
+.catalog-list .catalog-2 .catalog-list__item--list ul a::before {
   background: #f7b229;
 }
 
-.catalog-list .catalog-torchere {
+.catalog-list .catalog-3 {
   color: #EF8830;
 }
 
-.catalog-list .catalog-torchere .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-3 .catalog-list__item--list ul a:hover {
   color: #EF8830;
 }
 
-.catalog-list .catalog-torchere .catalog-list__item--list ul a::before {
+.catalog-list .catalog-3 .catalog-list__item--list ul a::before {
   background: #ef8830;
 }
 
-.catalog-list .catalog-lamps {
+.catalog-list .catalog-4 {
   color: #985BC5;
 }
 
-.catalog-list .catalog-lamps .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-4 .catalog-list__item--list ul a:hover {
   color: #985BC5;
 }
 
-.catalog-list .catalog-lamps .catalog-list__item--list ul a::before {
+.catalog-list .catalog-4 .catalog-list__item--list ul a::before {
   background: #985bc5;
 }
 
-.catalog-list .catalog-wall {
+.catalog-list .catalog-5 {
   color: #EC4363;
 }
 
-.catalog-list .catalog-wall .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-5 .catalog-list__item--list ul a:hover {
   color: #EC4363;
 }
 
-.catalog-list .catalog-wall .catalog-list__item--list ul a::before {
+.catalog-list .catalog-5 .catalog-list__item--list ul a::before {
   background: #ec4363;
 }
 
-.catalog-list .catalog-bathroom {
+.catalog-list .catalog-6 {
   color: #579DC0;
 }
 
-.catalog-list .catalog-bathroom .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-6 .catalog-list__item--list ul a:hover {
   color: #579DC0;
 }
 
-.catalog-list .catalog-bathroom .catalog-list__item--list ul a::before {
+.catalog-list .catalog-6 .catalog-list__item--list ul a::before {
   background: #579dc0;
 }
 
-.catalog-list .catalog-baby {
+.catalog-list .catalog-7 {
   color: #5BA861;
 }
 
-.catalog-list .catalog-baby .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-7 .catalog-list__item--list ul a:hover {
   color: #5BA861;
 }
 
-.catalog-list .catalog-baby .catalog-list__item--list ul a::before {
+.catalog-list .catalog-7 .catalog-list__item--list ul a::before {
   background: #5ba861;
 }
 
-.catalog-list .catalog-street {
+.catalog-list .catalog-8 {
   color: #5A89CB;
 }
 
-.catalog-list .catalog-street .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-8 .catalog-list__item--list ul a:hover {
   color: #5A89CB;
 }
 
-.catalog-list .catalog-street .catalog-list__item--list ul a::before {
+.catalog-list .catalog-8 .catalog-list__item--list ul a::before {
   background: #5a89cb;
 }
 
-.catalog-list .catalog-smart-house {
+.catalog-list .catalog-9 {
   color: #BAD432;
 }
 
-.catalog-list .catalog-smart-house .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-9 .catalog-list__item--list ul a:hover {
   color: #BAD432;
 }
 
-.catalog-list .catalog-smart-house .catalog-list__item--list ul a::before {
+.catalog-list .catalog-9 .catalog-list__item--list ul a::before {
   background: #bad432;
 }
 
-.catalog-list .catalog-proff {
+.catalog-list .catalog-10 {
   color: #F2A50D;
 }
 
-.catalog-list .catalog-proff .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-10 .catalog-list__item--list ul a:hover {
   color: #F2A50D;
 }
 
-.catalog-list .catalog-proff .catalog-list__item--list ul a::before {
+.catalog-list .catalog-10 .catalog-list__item--list ul a::before {
   background: #f2a50d;
 }
 
-.catalog-list .catalog-accessory {
+.catalog-list .catalog-11 {
   color: #666C73;
 }
 
-.catalog-list .catalog-accessory .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-11 .catalog-list__item--list ul a:hover {
   color: #666C73;
 }
 
-.catalog-list .catalog-accessory .catalog-list__item--list ul a::before {
+.catalog-list .catalog-11 .catalog-list__item--list ul a::before {
   background: #666c73;
 }
 
-.catalog-list .catalog-lightbulb {
+.catalog-list .catalog-12 {
   color: #F3723D;
 }
 
-.catalog-list .catalog-lightbulb .catalog-list__item--list ul a:hover {
+.catalog-list .catalog-12 .catalog-list__item--list ul a:hover {
   color: #F3723D;
 }
 
-.catalog-list .catalog-lightbulb .catalog-list__item--list ul a::before {
+.catalog-list .catalog-12 .catalog-list__item--list ul a::before {
   background: #f3723d;
 }
 
