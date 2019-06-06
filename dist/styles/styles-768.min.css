@@ -882,6 +882,16 @@ ul.page-numbers .next {
   overflow-x: hidden;
 }
 
+.main-slider .slider-navigation {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  left: -webkit-calc(50% - 585px);
+  left: calc(50% - 585px);
+  bottom: 0;
+}
+
 .main-slide h2 {
   font-family: "Montserrat-Medium";
   font-size: 59px;
@@ -979,11 +989,11 @@ ul.page-numbers .next {
 }
 
 .slick-prev {
-  left: 80px;
+  left: 0;
 }
 
 .slick-next {
-  right: 80px;
+  right: 0;
 }
 
 .slick-next::before {

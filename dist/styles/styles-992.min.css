@@ -1542,42 +1542,6 @@ ul.page-numbers .next {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /*.chandeliers-ico {
-      fill: #579dc0;
-    }
-    .sconce-ico {
-      fill: #F7B229;
-    }
-    .torchere-ico {
-      fill: #EF8830;
-    }
-    .table-ico {
-      fill: #985BC5;
-    }
-    .wall-ico {
-      fill: #EC4363;
-    }
-    .bathroom-ico {
-      fill: #21A697;
-    }
-    .baby-ico {
-      fill: #5BA861;
-    }
-    .street-ico {
-      fill: #5A89CB;
-    }
-    .smart-house-ico {
-      fill: #BAD432;
-    }
-    .proff-ico {
-      fill: #F2A50D;
-    }
-    .lightbulb-ico {
-      fill: #F3723D;
-    }
-    .accessory-ico {
-      fill: #666C73;
-    }*/
 }
 
 .header-catalog-menu--items li {
@@ -1595,7 +1559,7 @@ ul.page-numbers .next {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: 5;
   top: 94px;
 }
 

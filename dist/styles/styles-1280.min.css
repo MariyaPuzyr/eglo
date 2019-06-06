@@ -1210,55 +1210,10 @@ a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /*.chandeliers-ico {
-      fill: #579dc0;
-    }
-    .sconce-ico {
-      fill: #F7B229;
-    }
-    .torchere-ico {
-      fill: #EF8830;
-    }
-    .table-ico {
-      fill: #985BC5;
-    }
-    .wall-ico {
-      fill: #EC4363;
-    }
-    .bathroom-ico {
-      fill: #21A697;
-    }
-    .baby-ico {
-      fill: #5BA861;
-    }
-    .street-ico {
-      fill: #5A89CB;
-    }
-    .smart-house-ico {
-      fill: #BAD432;
-    }
-    .proff-ico {
-      fill: #F2A50D;
-    }
-    .lightbulb-ico {
-      fill: #F3723D;
-    }
-    .accessory-ico {
-      fill: #666C73;
-    }*/
 }
 
 .header-catalog-menu--items li {
   position: relative;
-}
-
-.header-catalog-menu--items li.show .header-catalog-menu__dropdown {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 1;
-  top: 94px;
 }
 
 .header-catalog-menu--items li:last-child .header-catalog-menu__dropdown,
@@ -1272,7 +1227,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: 5;
   top: 94px;
 }
 
@@ -1811,6 +1766,16 @@ ul.page-numbers .next {
   overflow-x: hidden;
 }
 
+.main-slider .slider-navigation {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  left: -webkit-calc(50% - 585px);
+  left: calc(50% - 585px);
+  bottom: 0;
+}
+
 .main-slide h2 {
   font-family: "Montserrat-Medium";
   font-size: 59px;
@@ -1908,11 +1873,11 @@ ul.page-numbers .next {
 }
 
 .slick-prev {
-  left: 80px;
+  left: 0;
 }
 
 .slick-next {
-  right: 80px;
+  right: 0;
 }
 
 .slick-next::before {

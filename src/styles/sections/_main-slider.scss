@@ -19,6 +19,14 @@
     width: 100%;
     position: relative;
     overflow-x: hidden;
+    .slider-navigation {
+      max-width: 1170px;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      left: calc(50% - 585px);
+      bottom: 0;
+    }
   }
   h2 {
     font-family: $font-m;
@@ -87,11 +95,11 @@
 }
 
 .slick-prev {
-  left: 80px;
+  left: 0;
 }
 
 .slick-next {
-  right: 80px;
+  right: 0;
   &::before {
     transform: rotate(-90deg);
   }

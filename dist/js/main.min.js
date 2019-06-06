@@ -20,6 +20,7 @@ $('.single-item').slick({
   infinite: true,
   slidesToShow: 1,
   adaptiveHeight: true,
+  appendArrows: '.slider-navigation',
   responsive: [
     {
       breakpoint: 767,
