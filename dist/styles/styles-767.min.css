@@ -1175,6 +1175,7 @@ ul.page-numbers .next {
   -webkit-order: -10;
   -ms-flex-order: -10;
   order: -10;
+  display: table;
 }
 
 .header-top-menu__menu-item li:nth-child(8) {
@@ -2736,7 +2737,7 @@ ul.page-numbers .next {
 }
 
 .sign .tabs {
-  margin: 150px 8px 0;
+  margin: 50px 8px 0;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -2784,8 +2785,8 @@ ul.page-numbers .next {
   display: none;
   -webkit-box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
   box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
-  -webkit-border-radius: 0 5px 5px;
-  border-radius: 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .sign .tabs__content.active {

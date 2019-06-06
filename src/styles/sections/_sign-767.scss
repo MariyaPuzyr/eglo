@@ -20,7 +20,7 @@
     z-index: 2;
   }
   .tabs {
-    margin: 150px 8px 0;
+    margin: 50px 8px 0;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -54,7 +54,7 @@
       background: $white;
       display: none;
       box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
-      border-radius: 0 5px 5px;
+      border-radius: 0 0 5px 5px;
       &.active {
         display: block;
       }
