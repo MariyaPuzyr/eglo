@@ -116,6 +116,16 @@
       &:focus {
         outline: none;
       }
+      &.wpcf7-form-control.wpcf7-submit {
+        border-color: #A0A0A0;
+        background-color: $white;
+        color: $title;
+        &:hover {
+          background: #59C7BF;
+          border-color: #59C7BF;
+          color: $white;
+        }
+      }
     }
   }
 }

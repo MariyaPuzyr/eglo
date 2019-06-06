@@ -2916,10 +2916,22 @@ ul.page-numbers .next {
   outline: none;
 }
 
+.contacts__form--btn:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+  color: #ffffff;
+}
+
 .contacts__form--btn.wpcf7-form-control.wpcf7-submit {
   border-color: #A0A0A0;
   background-color: #ffffff;
   color: #121B1B;
+}
+
+.contacts__form--btn.wpcf7-form-control.wpcf7-submit:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+  color: #ffffff;
 }
 
 .cart-popup {

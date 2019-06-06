@@ -2188,6 +2188,18 @@ ul.page-numbers .next {
   padding: 9px 0;
 }
 
+.contacts__form--btn.wpcf7-form-control.wpcf7-submit {
+  border-color: #A0A0A0;
+  background-color: #ffffff;
+  color: #121B1B;
+}
+
+.contacts__form--btn.wpcf7-form-control.wpcf7-submit:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+  color: #ffffff;
+}
+
 .contacts__form-control {
   background: #F6F6F6;
   border: 1px solid #F0F0F0;
