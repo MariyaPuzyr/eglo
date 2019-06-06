@@ -31,7 +31,7 @@
       border: 1px solid $small-title;
       cursor: pointer;
       .product__popup {
-        background:#F0F9FA;
+        background: #F0F9FA;
         padding-bottom: 50px;
         top: -50px;
         .add-cart, .buy {
@@ -94,6 +94,10 @@
     position: relative;
     transition: .3s;
     top: 0;
+    .product__title {
+      height: 45px;
+      overflow: hidden;
+    }
     .add-cart {
       width: 100%;
       color: $white;

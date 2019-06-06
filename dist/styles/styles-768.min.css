@@ -1206,6 +1206,11 @@ ul.page-numbers .next {
   top: 0;
 }
 
+.product__popup .product__title {
+  height: 45px;
+  overflow: hidden;
+}
+
 .product__popup .add-cart {
   width: 100%;
   color: #ffffff;

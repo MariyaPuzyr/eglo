@@ -137,9 +137,12 @@
     z-index: 2;
     li {
       display: flex;
+      width: 100%;
+      &.menu-catalog {
+        display: table;
+      }
       &:nth-child(1) {
         order: -10;
-        display: table;
       }
       &:nth-child(8) {
         order: -3;
@@ -147,11 +150,9 @@
       }
       &:nth-child(5) {
         order: -2;
-        display: table;
       }
       &:nth-child(4) {
         order: -1;
-        display: table;
       }
       a {
         display: flex;
