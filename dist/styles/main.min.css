@@ -2082,11 +2082,11 @@ ul.page-numbers .next {
   margin-top: 25px;
   margin-bottom: 5px;
   text-transform: uppercase;
-  padding: 0 15px;
   color: #000000;
   font-size: 16px;
   font-family: "OpenSans-Regular";
   line-height: 22px;
+  text-align: center;
 }
 
 .product__title:focus {

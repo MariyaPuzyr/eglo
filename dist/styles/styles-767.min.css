@@ -1391,6 +1391,7 @@ ul.page-numbers .next {
   line-height: 14px;
   letter-spacing: 0.05em;
   max-width: 400px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -1568,6 +1569,7 @@ ul.page-numbers .next {
   text-overflow: ellipsis;
   width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 
 .product__title:focus {
@@ -1831,7 +1833,8 @@ ul.page-numbers .next {
   font-family: "OpenSans-SemiBold";
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  padding: 0 9px;
+  padding: 0 5px;
+  white-space: nowrap;
 }
 
 .promotional-offers .product__item__info--top .promo-label.new-position {
@@ -2121,7 +2124,7 @@ ul.page-numbers .next {
 .contacts__form--title {
   font-size: 15px;
   line-height: 20px;
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-SemiBold";
   color: #121B1B;
   margin-top: 25px;
   margin-bottom: 10px;

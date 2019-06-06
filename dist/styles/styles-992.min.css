@@ -1764,6 +1764,7 @@ ul.page-numbers .next {
   line-height: 25px;
   letter-spacing: 0.05em;
   max-width: 400px;
+  margin-top: 0;
   margin-bottom: 25px;
 }
 
@@ -1998,7 +1999,7 @@ ul.page-numbers .next {
   margin-top: 25px;
   margin-bottom: 5px;
   text-transform: uppercase;
-  padding: 0 15px;
+  text-align: center;
   color: #000000;
   font-size: 16px;
   font-family: "OpenSans-Regular";
