@@ -6,17 +6,24 @@
     justify-content: space-between;
     li {
       position: relative;
-      &.show {
-        .header-catalog-menu__dropdown {
-          display: flex;
-          z-index: 1;
-          top: 94px;
-        }
-      }
+      //&.show {
+      //  .header-catalog-menu__dropdown {
+      //    display: flex;
+      //    z-index: 1;
+      //    top: 94px;
+      //  }
+      //}
       &:last-child, &:nth-last-child(2) {
         .header-catalog-menu__dropdown {
           left: auto;
           right: 0;
+        }
+      }
+      &:hover {
+        .header-catalog-menu__dropdown {
+          display: flex;
+          z-index: 1;
+          top: 94px;
         }
       }
     }

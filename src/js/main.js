@@ -1,9 +1,9 @@
 /* show catalog menu */
-$('.menu-call, .header-catalog-menu--items__link').hover(function () {
+$('.menu-call').hover(function () {
   var classnow = $(this).parents().attr('class');
-  $('.header-top-menu__menu-item li, .header-catalog-menu--items li').removeClass('show');
+  $('.header-top-menu__menu-item li').removeClass('show');
   if (classnow != 'show')
-    $(this).parents('.header-top-menu__menu-item li, .header-catalog-menu--items li').toggleClass('show');
+    $(this).parents('.header-top-menu__menu-item li').toggleClass('show');
 });
 /* show catalog menu end */
 

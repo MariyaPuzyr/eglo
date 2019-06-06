@@ -36,7 +36,7 @@
               <li>
                 <div class="close-menu mobile"></div>
               </li>
-              <li><a class="header-top-menu__menu-item--link menu-call" href="#">
+              <li class="menu-catalog"><a class="header-top-menu__menu-item--link" href="#">
                   <div class="header-top-menu__menu-item--hamburger-icon"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div><span>Меню</span></a>
                 <ul class="header-top-menu__menu-item--dropdown">
                   <li><a href="#">Акции</a></li>
@@ -48,10 +48,9 @@
                   <li><a href="#">О нас</a></li>
                 </ul>
               </li>
-              <li><a class="header-top-menu__menu-item--link catalog-link menu-call" href="#">
-                  <svg class="icons catalog-ico">
-                    <use xlink:href="./img/sprites/sprite.svg#catalog-ico"></use>
-                  </svg>Каталог</a>
+              <li class="menu-catalog"><a class="header-top-menu__menu-item--link catalog-link" href="#">
+                  <!--+sprite('icons catalog-ico', 'catalog-ico')-->
+                  <div class="catalog-ico"></div>Каталог</a>
                 <ul class="header-top-menu__menu-item--mega-menu">
                   <li class="catalog-item icons_1"><a class="catalog-item__top" href="#"><img class="icon" src="./img/svg/icons-1.svg" alt="">Люстры</a>
                     <ul class="catalog-item__list">
@@ -182,7 +181,7 @@
       <div class="header-catalog-menu">
         <div class="content">
           <ul class="header-catalog-menu--items">
-            <li class="active"><a class="header-catalog-menu--items__link" href="#"><img class="icon" src="./img/svg/icons-1.svg" alt="">Люстры</a>
+            <li><a class="header-catalog-menu--items__link" href="#"><img class="icon" src="./img/svg/icons-1.svg" alt="">Люстры</a>
               <div class="header-catalog-menu__dropdown">
                 <div class="header-catalog-menu__dropdown--title">люстры</div>
                 <ul class="header-catalog-menu__dropdown--list">

@@ -4,6 +4,26 @@
   &--item {
     display: flex;
     position: relative;
+    .menu-catalog {
+      &:hover {
+        .header-top-menu__menu-item {
+          &--link {
+            background: $small-title;
+            color: $white;
+            .line, .catalog-ico {
+              background: $white;
+            }
+          }
+          &--dropdown {
+            display: block;
+          }
+          &--mega-menu {
+            display: flex;
+            z-index: 2;
+          }
+        }
+      }
+    }
   }
   &__logo {
     max-width: 106px;
@@ -28,20 +48,20 @@
             background: $white;
             color: $title;
             .header-top-menu__menu-item--phone::after {
-             transform: rotate(180deg);
+              transform: rotate(180deg);
             }
           }
         }
         .header-top-menu__menu-item--dropdown {
           display: block;
         }
-        .line {
-          background: $white;
-        }
+        //.line {
+        //  background: $white;
+        //}
         .icons {
           fill: $white;
         }
-        .header-top-menu__menu-item--mega-menu,
+        //.header-top-menu__menu-item--mega-menu,
         .header-top-menu__menu-item--phone__dropdown {
           display: flex;
           z-index: 2;
@@ -103,9 +123,12 @@
         width: 14px;
         height: 14px;
         margin-right: 10px;
-        path {
-          fill: $default;
-        }
+        mask: url('../img/svg/catalog-ico.svg') no-repeat center;
+        background: $default;
+        mask-size: contain;
+        //path {
+        //  fill: $default;
+        //}
       }
     }
     &--mega-menu {
@@ -394,7 +417,7 @@
     .wpml-ls-item {
       height: 100%;
       transition: .3s;
-      &:hover a.wpml-ls-item-toggle{
+      &:hover a.wpml-ls-item-toggle {
         color: $white;
         background: $small-title;
       }
@@ -451,6 +474,7 @@
     }
   }
 }
+
 .mobile {
   display: none !important;
 }

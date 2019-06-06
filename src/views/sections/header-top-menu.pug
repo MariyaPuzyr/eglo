@@ -12,8 +12,8 @@
           a(href='#').mobile-logo.mobile
         li
           .close-menu.mobile
-        li
-          a(href='#').header-top-menu__menu-item--link.menu-call
+        li.menu-catalog
+          a(href='#').header-top-menu__menu-item--link
             .header-top-menu__menu-item--hamburger-icon
               span.line.line-1
               span.line.line-2
@@ -34,9 +34,10 @@
               a(href='#') Контакты
             li
               a(href='#') О нас
-        li
-          a(href='#').header-top-menu__menu-item--link.catalog-link.menu-call
-            +sprite('icons catalog-ico', 'catalog-ico')
+        li.menu-catalog
+          a(href='#').header-top-menu__menu-item--link.catalog-link
+            //+sprite('icons catalog-ico', 'catalog-ico')
+            .catalog-ico
             | Каталог
           ul.header-top-menu__menu-item--mega-menu
             li.catalog-item.icons_1

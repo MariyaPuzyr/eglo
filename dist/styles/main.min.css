@@ -3066,6 +3066,7 @@ ul.page-numbers .next {
 .cart-popup .cart-body,
 .cart-popup .cart-amount {
   padding: 0 40px;
+  border-right: none;
 }
 
 .cart-popup .cart-amount {

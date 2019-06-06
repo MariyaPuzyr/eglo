@@ -19,6 +19,13 @@
           right: 0;
         }
       }
+      &:hover {
+        .header-catalog-menu__dropdown {
+          display: flex;
+          z-index: 1;
+          top: 94px;
+        }
+      }
     }
     a {
       margin-top: 20px;
@@ -123,6 +130,7 @@
           max-width: 100%;
           height: auto;
           max-height: 285px;
+          width: 100%;
         }
       }
     }
