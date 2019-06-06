@@ -2738,7 +2738,6 @@ ul.page-numbers .next {
   width: 100%;
   margin: auto;
   position: relative;
-  z-index: 10;
 }
 
 .footer ul li {

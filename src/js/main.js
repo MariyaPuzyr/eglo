@@ -158,6 +158,9 @@ $('.login-form--remembered-pass').click(function () {
 $('.login-open').click(function () {
   $('.sign').addClass('open');
 });
+$('.sign-out').click(function () {
+  $('.sign').removeClass('open');
+});
 /* show login popup on click end */
 
 /* product slider with nav blocks */
