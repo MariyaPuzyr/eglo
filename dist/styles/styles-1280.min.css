@@ -1973,7 +1973,8 @@ ul.page-numbers .next {
   position: relative;
   margin-bottom: 30px;
   background: #ffffff;
-  margin-left: 18px;
+  margin-left: 9px;
+  margin-right: 10px;
   width: -webkit-calc(100% - 20px) !important;
   width: calc(100% - 20px) !important;
   height: 372px;
@@ -2289,7 +2290,7 @@ ul.page-numbers .next {
 }
 
 .product .slick-next {
-  right: 0;
+  right: 10px;
 }
 
 .product .slick-next::before {
@@ -2438,7 +2439,7 @@ ul.page-numbers .next {
 }
 
 .promotional-offers .product .slick-next {
-  right: 0;
+  right: 10px;
 }
 
 .news {

@@ -3,7 +3,8 @@
     position: relative;
     margin-bottom: 30px;
     background: $white;
-    margin-left: 18px;
+    margin-left: 9px;
+    margin-right: 10px;
     width: calc(100% - 20px) !important;
     height: 372px;
     border: 1px solid #EAEAEA;
@@ -197,7 +198,7 @@
     }
   }
   .slick-next {
-    right: 0;
+    right: 10px;
     &::before {
       transform: rotate(-90deg);
       right: -1px;
