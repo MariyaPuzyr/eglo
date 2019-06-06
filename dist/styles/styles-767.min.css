@@ -1168,6 +1168,7 @@ ul.page-numbers .next {
   -webkit-order: -10;
   -ms-flex-order: -10;
   order: -10;
+  display: table;
 }
 
 .header-top-menu__menu-item li:nth-child(8) {
@@ -1175,6 +1176,7 @@ ul.page-numbers .next {
   -webkit-order: -3;
   -ms-flex-order: -3;
   order: -3;
+  display: table;
 }
 
 .header-top-menu__menu-item li:nth-child(5) {
@@ -1182,6 +1184,7 @@ ul.page-numbers .next {
   -webkit-order: -2;
   -ms-flex-order: -2;
   order: -2;
+  display: table;
 }
 
 .header-top-menu__menu-item li:nth-child(4) {
@@ -1189,6 +1192,7 @@ ul.page-numbers .next {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
+  display: table;
 }
 
 .header-top-menu__menu-item li a {
@@ -1204,6 +1208,7 @@ ul.page-numbers .next {
 
 .header-top-menu__menu-item.show {
   left: 0;
+  z-index: 3;
 }
 
 .header-top-menu__menu-item--link.cart-item {
@@ -2691,13 +2696,29 @@ ul.page-numbers .next {
 }
 
 .sign {
+  display: none;
+  position: fixed;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.sign-out {
   width: 100%;
   height: 100vh;
   position: fixed;
   background: rgba(18, 27, 27, 0.5);
   top: 0;
   left: 0;
-  display: none;
 }
 
 .sign.open {

@@ -3119,10 +3119,8 @@ ul.page-numbers .next {
 }
 
 .sign {
-  width: 100%;
-  height: 100vh;
+  display: none;
   position: fixed;
-  background: rgba(18, 27, 27, 0.5);
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -3133,7 +3131,17 @@ ul.page-numbers .next {
   justify-content: center;
   top: 0;
   left: 0;
-  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.sign-out {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(18, 27, 27, 0.5);
+  top: 0;
+  left: 0;
 }
 
 .sign.open {
