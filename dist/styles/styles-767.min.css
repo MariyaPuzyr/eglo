@@ -404,6 +404,11 @@ a {
   transition: .3s;
 }
 
+.cart-amount--buy:hover {
+  background: #ffffff;
+  color: #121B1B;
+}
+
 .cart-amount--buy-mobile,
 .cart-popup .cart-amount--buy,
 .cart-order-info .cart-amount--buy,
@@ -436,6 +441,15 @@ a {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+.cart-amount--buy-mobile:hover,
+.cart-popup .cart-amount--buy:hover,
+.cart-order-info .cart-amount--buy:hover,
+.order-item--order .cart-amount--buy:hover,
+.product-characteristic-info--order-body .cart-amount--buy:hover {
+  background: #ffffff;
+  color: #121B1B;
 }
 
 .d-center {
@@ -956,20 +970,8 @@ ul.page-numbers .next {
 }
 
 .header-top-menu--item .mobile-menu--hamburger-icon {
-  height: 14px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  height: 15px;
+  display: inline-grid;
   margin-right: 10px;
 }
 
@@ -1757,6 +1759,12 @@ ul.page-numbers .next {
   background: #ffffff;
 }
 
+.product-link:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+  color: #ffffff;
+}
+
 .product-link__item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2465,6 +2473,22 @@ ul.page-numbers .next {
 .cart-item--img img {
   max-width: 100%;
   height: auto;
+  max-height: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-item--img__link {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cart-item--delete {
@@ -2865,6 +2889,10 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
+.sign .login-form--restore-pass:hover {
+  text-decoration: none;
+}
+
 .sign .login-form--btns {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2908,6 +2936,11 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
+.sign .login-form--sign:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+}
+
 .sign .login-form--registration {
   font-size: 14px;
   line-height: 19px;
@@ -2919,6 +2952,10 @@ ul.page-numbers .next {
   -o-transition: .3s;
   transition: .3s;
   cursor: pointer;
+}
+
+.sign .login-form--registration:hover {
+  text-decoration: none;
 }
 
 .sign .login-text {
@@ -2954,6 +2991,10 @@ ul.page-numbers .next {
   transition: .3s;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+
+.sign .recovery-password .login-form--remembered-pass:hover {
+  text-decoration: none;
 }
 
 .sign .recovery-password p {

@@ -165,6 +165,11 @@
     padding: 16px 65px;
     cursor: pointer;
     background: $white;
+    &:hover {
+      background: $small-title;
+      border-color: $small-title;
+      color: $white;
+    }
     &__item {
       display: flex;
       justify-content: center;

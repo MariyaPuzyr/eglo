@@ -300,6 +300,11 @@
           border-radius: 5px;
           padding: 10px;
           margin: 20px;
+          &:hover {
+            background: $small-title;
+            border-color: $small-title;
+            color: $white;
+          }
         }
       }
     }

@@ -16,10 +16,10 @@
     justify-content: space-between;
     padding: 10px 22px 10px 15px;
     .mobile-menu--hamburger-icon {
-      height: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      height: 15px;
+      display: inline-grid;
+      //flex-direction: column;
+      //justify-content: space-between;
       margin-right: 10px;
       .line {
         width: 16px;

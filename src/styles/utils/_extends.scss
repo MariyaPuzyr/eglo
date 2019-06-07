@@ -70,6 +70,10 @@ a {
   align-items: center;
   justify-content: center;
   transition: .3s;
+  &:hover {
+    background: $white;
+    color: $title;
+  }
 }
 
 .cart-amount--buy-mobile {
@@ -88,6 +92,10 @@ a {
   align-items: center;
   justify-content: center;
   transition: .3s;
+  &:hover {
+    background: $white;
+    color: $title;
+  }
 }
 
 .d-center {

@@ -107,6 +107,9 @@
         margin-bottom: 30px;
         cursor: pointer;
         transition: .3s;
+        &:hover {
+          text-decoration: none;
+        }
       }
       &--btns {
         display: flex;
@@ -131,6 +134,10 @@
         margin-right: 30px;
         cursor: pointer;
         transition: .3s;
+        &:hover {
+          background: $small-title;
+          border-color: $small-title;
+        }
       }
       &--registration {
         font-size: 14px;
@@ -140,6 +147,9 @@
         color: $price;
         transition: .3s;
         cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     &-text {
@@ -189,6 +199,9 @@
         color: $price;
         cursor: pointer;
         transition: .3s;
+        &:hover {
+          text-decoration: none;
+        }
       }
       &--btns {
         margin-left: 0;
