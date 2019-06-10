@@ -115,6 +115,7 @@ a {
   color: $white;
   transition: .3s;
   cursor: pointer;
+  width: 100%;
   &:hover {
     color: $title;
     background: $white;

@@ -146,6 +146,11 @@
   .slick-prev {
     left: auto;
     right: 50px;
+    &::before {
+      left: -1px;
+      position: relative;
+      top: 1px;
+    }
   }
   .slick-next {
     transform: rotate(-90deg);

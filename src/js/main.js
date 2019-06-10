@@ -34,27 +34,79 @@ $('.single-item').slick({
 /* slider end */
 
 /* product items slider */
+// var $slick = $('.product-slider');
+// $slick.slick({
+//   rows: 2,
+//   dots: false,
+//   arrows: true,
+//   infinite: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   responsive: [
+//     {
+//       breakpoint: 992,
+//       settings: {
+//         slidesToShow: 2
+//       }
+//     }, {
+//       breakpoint: 610,
+//       settings: {
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+var width = window.innerWidth || document.body.clientWidth;
 var $slick = $('.product-slider');
-$slick.slick({
-  rows: 2,
-  dots: false,
-  arrows: true,
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2
+
+if (width < 992) {
+  $slick.slick({
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 610,
+        settings: {
+          slidesToShow: 2
+        }
       }
-    }, {
-      breakpoint: 610,
-      settings: {
-        slidesToShow: 1
-      }
+    ]
+  });
+} else {
+  $slick.slick({
+    rows: 2,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+}
+
+/* progress in number  mobile slider */
+$('.progress-in-numbers__list').slick({
+  responsive: [{
+    breakpoint: 99999,
+    settings: "unslick"
+  }, {
+    breakpoint: 768,
+    settings: {
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
     }
-  ]
+  }]
 });
 /* product items slider end */
 
