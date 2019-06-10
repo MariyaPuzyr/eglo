@@ -1,4 +1,6 @@
 .product {
+  margin: 0;
+  padding: 0;
   &__item {
     position: relative;
     margin-bottom: 30px;
@@ -57,12 +59,18 @@
     margin-top: 25px;
     margin-bottom: 5px;
     text-transform: uppercase;
-    //padding: 0 15px;
     text-align: center;
     color: #000000;
     font-size: 16px;
     font-family: $font;
     line-height: 22px;
+    overflow: hidden;
+    height: 45px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
     &:focus {
       outline: none;
     }
@@ -85,7 +93,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 25px 20px;
+    padding: 0 5px 20px;
     z-index: 3;
     align-items: center;
     position: relative;

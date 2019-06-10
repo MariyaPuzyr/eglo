@@ -1952,6 +1952,11 @@ ul.page-numbers .next {
   text-shadow: none;
 }
 
+.product {
+  margin: 0;
+  padding: 0;
+}
+
 .product__item {
   position: relative;
   margin-bottom: 30px;
@@ -2056,6 +2061,14 @@ ul.page-numbers .next {
   font-size: 16px;
   font-family: "OpenSans-Regular";
   line-height: 22px;
+  overflow: hidden;
+  height: 45px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .product__title:focus {
@@ -2091,7 +2104,7 @@ ul.page-numbers .next {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  padding: 0 25px 20px;
+  padding: 0 5px 20px;
   z-index: 3;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -2251,7 +2264,7 @@ ul.page-numbers .next {
 
 .promotional-offers .product__item {
   max-width: inherit;
-  margin: 0 20px 0 0;
+  margin: 0 10px;
 }
 
 .promotional-offers .product .slick-prev {
