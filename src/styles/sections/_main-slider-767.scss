@@ -20,6 +20,9 @@
     width: 100%;
     position: relative;
     overflow-x: hidden;
+    .slick-dots {
+      display: none;
+    }
   }
   h2 {
     font-family: $font-m;

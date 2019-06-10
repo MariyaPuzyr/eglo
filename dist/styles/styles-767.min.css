@@ -1362,6 +1362,10 @@ ul.page-numbers .next {
   overflow-x: hidden;
 }
 
+.main-slider .slick-dots {
+  display: none;
+}
+
 .main-slide h2 {
   font-family: "Montserrat-Medium";
   font-size: 18px;
