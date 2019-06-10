@@ -235,11 +235,11 @@ $('.slider-for').slick({
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   asNavFor: '.slider-for',
   dots: false,
   arrows: true,
-  centerMode: true,
+  // centerMode: true,
   focusOnSelect: true,
   responsive: [
     {

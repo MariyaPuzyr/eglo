@@ -96,6 +96,17 @@
         font-family: $font-b;
         padding: 0 15px;
       }
+      .woocommerce-product-rating {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 16px;
+        color: $title;
+        font-family: $font;
+        span {
+          margin-left: 5px;
+        }
+      }
     }
     &--detail-main {
       &__raiting {
@@ -166,6 +177,10 @@
               background: $white;
               margin-top: 0;
               margin-bottom: 30px;
+              &:hover {
+                color: $white;
+                background: $small-title;
+              }
             }
           }
         }
@@ -234,8 +249,9 @@
 p.stars a:hover:after,
 p.stars a:after,
 #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
-  color: $default;
+  color: $default !important;
 }
+
 
 .star-rating span::before {
   color: #e0e0e0;

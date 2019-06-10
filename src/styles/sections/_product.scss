@@ -32,7 +32,8 @@
           justify-content: center;
           img {
             max-width: 100%;
-            height: 100%;
+            max-height: 100%;
+            height: auto;
           }
         }
       }
@@ -47,7 +48,7 @@
       }
       .slider-nav {
         .slick-slide {
-          margin: 30px 15px;
+          margin: 30px 30px 30px 0;
         }
         .slick-arrow {
           width: 45px;
@@ -120,6 +121,17 @@
         opacity: .7;
         color: $title;
         font-family: $font-b;
+      }
+      .woocommerce-product-rating {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 16px;
+        color: $title;
+        font-family: $font;
+        span {
+          margin-left: 5px;
+        }
       }
     }
     &--detail-main {
@@ -221,6 +233,10 @@
               border: 1px solid $small-title;
               background: $white;
               margin-top: 0;
+              &:hover {
+                color: $white;
+                background: $small-title;
+              }
             }
           }
         }
@@ -286,7 +302,7 @@
 p.stars a:hover:after,
 p.stars a:after,
 #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
-  color: $default;
+  color: $default !important;
 }
 
 .star-rating span::before {
