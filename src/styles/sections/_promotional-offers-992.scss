@@ -3,14 +3,14 @@
   padding: 0 15px;
   .product__item {
     max-width: inherit;
-    margin: 0 20px 0 0;
+    margin: 0 10px;
   }
   .product {
     .slick-prev {
-      right: 70px;
+      right: 85px;
     }
     .slick-next {
-      right: 0;
+      right: 20px;
     }
   }
 }

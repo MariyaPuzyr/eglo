@@ -1057,6 +1057,8 @@ ul.page-numbers .next {
   margin-top: 95px;
   margin-bottom: 50px;
   padding: 0 15px;
+  text-align: left;
+  text-shadow: none;
 }
 
 .product__item {

@@ -14,10 +14,10 @@
       width: 100%;
     }
     &__ico {
-      width: 100%;
+      width: 120px;
       height: 112px;
-      background-size: 100%;
-      background-position: center;
+      background-size: contain;
+      background-position: center bottom;
       background-repeat: no-repeat;
       &:focus {
         outline: none;
