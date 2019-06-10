@@ -2935,6 +2935,7 @@ ul.page-numbers .next {
   transition-delay: .1s;
   color: #ffffff;
   z-index: 8;
+  background: #59C7BF;
   border-color: #59C7BF;
 }
 
