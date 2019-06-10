@@ -249,8 +249,7 @@
         }
       }
       &--btn {
-        background: $title;
-        border: 2px solid $title;
+        border: 2px solid currentColor;
         border-radius: 5px;
         color: $white;
         height: 50px;
@@ -270,8 +269,7 @@
           border-color: $small-title;
         }
         &.wpcf7-form-control.wpcf7-submit {
-          background-color: $title;
-          border-color: $title;
+          border: 2px solid currentColor;
           color: $white;
           &:hover {
             background: $small-title;

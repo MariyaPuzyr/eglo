@@ -3373,8 +3373,7 @@ ul.page-numbers .next {
 }
 
 .cart-order-without-registration__form--btn {
-  background: #121B1B;
-  border: 2px solid #121B1B;
+  border: 2px solid currentColor;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #ffffff;
@@ -3406,8 +3405,7 @@ ul.page-numbers .next {
 }
 
 .cart-order-without-registration__form--btn.wpcf7-form-control.wpcf7-submit {
-  background-color: #121B1B;
-  border-color: #121B1B;
+  border: 2px solid currentColor;
   color: #ffffff;
 }
 
@@ -4021,6 +4019,7 @@ ul.page-numbers .next {
 
 .grid-produstion--body .catalog {
   width: 100%;
+  margin-top: 0;
 }
 
 .grid-produstion--body .catalog-items {
