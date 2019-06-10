@@ -464,6 +464,32 @@ a {
   align-items: center;
 }
 
+.button-filters,
+.filters .widget_price_filter .price_slider_amount .button,
+.filters .show_filter {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  font-family: "OpenSans-Regular";
+  background: #4EB1AA;
+  border: 1px solid #4EB1AA;
+  color: #ffffff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button-filters:hover,
+.filters .widget_price_filter .price_slider_amount .button:hover,
+.filters .show_filter:hover {
+  color: #121B1B;
+  background: #ffffff;
+}
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url("../fonts/OpenSans-Regular.eot");
@@ -596,28 +622,6 @@ a {
   flex-direction: column-reverse;
 }
 
-.filters .widget_price_filter .price_slider_amount .button {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-  font-family: "OpenSans-Regular";
-  background: #4EB1AA;
-  border: 1px solid #4EB1AA;
-  color: #ffffff;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  cursor: pointer;
-}
-
-.filters .widget_price_filter .price_slider_amount .button:hover {
-  color: #121B1B;
-  background: #ffffff;
-}
-
 .filters .widget_price_filter .price_slider_amount .price_label {
   font-size: 0;
   margin-bottom: 20px;
@@ -746,7 +750,7 @@ a {
 }
 
 .filters .widget_layered_nav li::before {
-  content: "\f00c";
+  content: "";
   font-size: 13px;
 }
 
@@ -4749,9 +4753,12 @@ ul.page-numbers .next {
 .quantity .minus,
 p.stars a:hover:after,
 p.stars a:after,
-.star-rating span:before,
 #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
   color: #4EB1AA;
+}
+
+.star-rating span::before {
+  color: #e0e0e0;
 }
 
 .reviews {

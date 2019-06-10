@@ -26,21 +26,7 @@
       display: flex;
       flex-direction: column-reverse;
       .button {
-        border-radius: 5px;
-        height: 50px;
-        font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.05em;
-        font-family: $font;
-        background: $default;
-        border: 1px solid $default;
-        color: $white;
-        transition: .3s;
-        cursor: pointer;
-        &:hover {
-          color: $title;
-          background: $white;
-        }
+        @extend .button-filters;
       }
       .price_label {
         font-size: 0;
@@ -137,7 +123,8 @@
       margin: auto 0 auto auto;
     }
     &::before {
-      content: "\f00c";
+      //content: "\f00c";
+      content: "";
       font-size: 13px;
     }
   }
@@ -163,5 +150,9 @@
         height: 100%;
       }
     }
+  }
+
+  .show_filter {
+    @extend .button-filters;
   }
 }

@@ -228,6 +228,15 @@
   }
 }
 
-.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
+.star-rating span:before,
+.quantity .plus,
+.quantity .minus,
+p.stars a:hover:after,
+p.stars a:after,
+#payment .payment_methods li input[type=radio]:first-child:checked + label:before {
   color: $default;
+}
+
+.star-rating span::before {
+  color: #e0e0e0;
 }
