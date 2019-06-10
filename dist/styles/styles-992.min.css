@@ -5987,3 +5987,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+h1,
+h2,
+h3 {
+  text-align: left;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
