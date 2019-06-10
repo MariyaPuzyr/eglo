@@ -1590,6 +1590,7 @@ ul.page-numbers .next {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  width: 80px;
 }
 
 .header-catalog-menu--items .icon {
@@ -1730,6 +1731,9 @@ ul.page-numbers .next {
   margin-bottom: 25px;
   color: #ffffff;
   font-weight: normal;
+  text-align: left;
+  text-shadow: none;
+  width: 300px;
 }
 
 .main-slide p {

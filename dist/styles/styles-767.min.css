@@ -1406,6 +1406,9 @@ ul.page-numbers .next {
   margin-bottom: 15px;
   font-weight: normal;
   color: #ffffff;
+  text-align: left;
+  text-shadow: none;
+  width: 300px;
 }
 
 .main-slide p {
