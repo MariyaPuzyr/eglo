@@ -690,11 +690,17 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   overflow: hidden;
 }
 
 .filters .widget_layered_nav li a {
   color: #121B1B;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .filters .widget_layered_nav li span {
@@ -769,6 +775,7 @@ a {
   font-family: "OpenSans-Regular";
   text-transform: lowercase;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .filters .show_filter::after {
@@ -779,6 +786,15 @@ a {
   border-width: 7px 4px 0 4px;
   border-color: #4eb1aa transparent transparent transparent;
   margin-left: 5px;
+}
+
+.filters .show_filter:focus {
+  outline: none;
+}
+
+.filters .woocommerce-widget-layered-nav-list {
+  max-height: 300px;
+  overflow: auto;
 }
 
 .pagination,

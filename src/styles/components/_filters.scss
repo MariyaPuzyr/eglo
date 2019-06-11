@@ -111,10 +111,13 @@
       border-radius: 4px;
       box-sizing: border-box;
       line-height: 15px;
+      flex: 0 0 auto;
       overflow: hidden;
     }
     a {
       color: $title;
+      word-wrap: break-word;
+      word-break: break-word;
     }
     span {
       font-size: 13px;
@@ -170,6 +173,7 @@
     font-family: $font;
     text-transform: lowercase;
     cursor: pointer;
+    margin-top: 10px;
     &::after {
       content: '';
       width: 0;
@@ -179,5 +183,12 @@
       border-color: #4eb1aa transparent transparent transparent;
       margin-left: 5px;
     }
+    &:focus {
+      outline: none;
+    }
+  }
+  .woocommerce-widget-layered-nav-list {
+    max-height: 300px;
+    overflow: auto;
   }
 }

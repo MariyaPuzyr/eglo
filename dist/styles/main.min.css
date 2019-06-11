@@ -1589,11 +1589,17 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   overflow: hidden;
 }
 
 .filters .widget_layered_nav li a {
   color: #121B1B;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .filters .widget_layered_nav li span {
@@ -1668,6 +1674,7 @@ a {
   font-family: "OpenSans-Regular";
   text-transform: lowercase;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .filters .show_filter::after {
@@ -1678,6 +1685,15 @@ a {
   border-width: 7px 4px 0 4px;
   border-color: #4eb1aa transparent transparent transparent;
   margin-left: 5px;
+}
+
+.filters .show_filter:focus {
+  outline: none;
+}
+
+.filters .woocommerce-widget-layered-nav-list {
+  max-height: 300px;
+  overflow: auto;
 }
 
 .pagination,
@@ -4258,15 +4274,15 @@ ul.page-numbers .next {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .grid-produstion--body .catalog-body .product__item {
   width: 270px !important;
-  margin: 0 29px 30px 0;
-}
-
-.grid-produstion--body .catalog-body .product__item:nth-child(3n) {
-  margin-right: 0;
+  margin: 0 0 30px 0;
 }
 
 .catalog-top--filters .woocommerce-ordering {
