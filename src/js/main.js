@@ -221,13 +221,13 @@ $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
+  loop: true,
   fade: true,
   asNavFor: '.slider-nav',
   responsive: [
     {
       breakpoint: 992,
       settings: {
-        // adaptiveHeight: true,
         adaptiveWidth: true,
         arrows: true
       }
@@ -236,11 +236,11 @@ $('.slider-for').slick({
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   asNavFor: '.slider-for',
   dots: false,
   arrows: true,
-  // centerMode: true,
+  loop: true,
   focusOnSelect: true,
   responsive: [
     {
