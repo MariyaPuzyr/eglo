@@ -4866,7 +4866,7 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
 }
 
-.product-characteristic-info .woocommerce-product-rating span {
+.product-characteristic-info .woocommerce-product-rating .woocommerce-review-link {
   margin-left: 5px;
 }
 
