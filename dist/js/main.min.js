@@ -228,6 +228,7 @@ $('.slider-for').slick({
       breakpoint: 992,
       settings: {
         // adaptiveHeight: true,
+        adaptiveWidth: true,
         arrows: true
       }
     }

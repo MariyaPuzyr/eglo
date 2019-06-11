@@ -2134,11 +2134,80 @@ ul.page-numbers .next {
   justify-content: center;
   padding: 8px 0;
   margin-bottom: 15px;
-  margin-top: 25px;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  margin-top: 20px;
   display: none;
+  -webkit-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  transition: 1s ease-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.product__popup .add-cart:before,
+.product__popup .add-cart:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.product__popup .add-cart:before {
+  top: 0;
+  left: -100px;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  border-right: 50px solid transparent;
+  border-bottom: 40px solid #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.product__popup .add-cart:after {
+  top: 0;
+  right: -100px;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  border-left: 50px solid transparent;
+  border-bottom: 40px solid #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product__popup .add-cart:hover {
+  cursor: pointer;
+  -webkit-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s;
+  color: #59C7BF;
+  z-index: 8;
+}
+
+.product__popup .add-cart:hover:before {
+  -webkit-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  transform: translateX(30%);
+}
+
+.product__popup .add-cart:hover:after {
+  -webkit-transform: translateX(-30%);
+  -ms-transform: translateX(-30%);
+  transform: translateX(-30%);
 }
 
 .product__popup .buy {
@@ -4525,13 +4594,12 @@ ul.page-numbers .next {
 }
 
 .product-item .product-sliders {
-  width: 100%;
+  width: 560px;
+  margin: auto;
 }
 
 .product-item .product-sliders-top-img {
   border: 1px solid #E0E0E0;
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4544,6 +4612,9 @@ ul.page-numbers .next {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 560px;
+  height: 560px;
+  margin: auto;
 }
 
 .product-item .product-sliders-top-img img {

@@ -1307,7 +1307,7 @@ ul.page-numbers .next {
   justify-content: center;
   padding: 8px 0;
   margin-bottom: 15px;
-  margin-top: 25px;
+  margin-top: 20px;
   display: none;
   -webkit-transition: 1s ease-out;
   -o-transition: 1s ease-out;
@@ -1363,8 +1363,6 @@ ul.page-numbers .next {
 }
 
 .product__popup .add-cart:hover {
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   -webkit-transition-delay: .1s;
   -o-transition-delay: .1s;

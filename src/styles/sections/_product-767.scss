@@ -12,15 +12,20 @@
     }
   }
   &-sliders {
-    margin-bottom: 80px;
-    padding: 0 15px;
+    width: 320px;
+    height: 320px;
+    margin: auto auto 80px;
     &-top-img {
       border: 1px solid #EAEAEA;
-      display: block;
+      width: 320px;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img {
         max-width: 100%;
+        max-height: 100%;
         height: auto;
-        margin: auto;
       }
     }
     .slider-nav {
@@ -251,7 +256,6 @@ p.stars a:after,
 #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
   color: $default !important;
 }
-
 
 .star-rating span::before {
   color: #e0e0e0;
