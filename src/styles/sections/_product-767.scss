@@ -135,6 +135,9 @@
           background: $default;
           margin-right: 14px;
         }
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     &-info {
@@ -229,6 +232,7 @@
             font-family: $font;
             color: $title;
             padding-bottom: 10px;
+            background: none;
             &:last-child {
               font-family: $font-b;
               color: $order;

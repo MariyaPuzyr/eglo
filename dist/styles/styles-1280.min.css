@@ -4918,6 +4918,11 @@ ul.page-numbers .next {
   margin-right: 7px;
 }
 
+.product-characteristic--detail-main__wishlist:hover,
+.product-characteristic--detail-main .simplefavorite-button:hover {
+  text-decoration: underline;
+}
+
 .product-characteristic-info--order {
   border: 1px solid #EAEAEA;
   font-family: "OpenSans-Regular";
@@ -5046,6 +5051,7 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
   color: #121B1B;
   padding-bottom: 10px;
+  background: none;
 }
 
 .product-characteristic-info--list .table td:last-child {

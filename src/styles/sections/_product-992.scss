@@ -136,7 +136,7 @@
         line-height: 16px;
         color: $title;
         font-family: $font;
-        span {
+        .woocommerce-review-link {
           margin-left: 5px;
         }
       }
@@ -195,6 +195,9 @@
           height: 11px;
           background: $default;
           margin-right: 7px;
+        }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -283,6 +286,7 @@
             font-family: $font;
             color: $title;
             padding-bottom: 10px;
+            background: none;
             &:last-child {
               font-family: $font-b;
               color: $order;
