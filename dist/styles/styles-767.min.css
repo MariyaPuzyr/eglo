@@ -290,7 +290,8 @@ a {
 }
 
 .login-form--control,
-.sign .login-form--control {
+.sign .login-form--control,
+.gallery-popup .login-form--control {
   background: #F6F6F6;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -307,22 +308,26 @@ a {
 }
 
 .login-form--control::-webkit-input-placeholder,
-.sign .login-form--control::-webkit-input-placeholder {
+.sign .login-form--control::-webkit-input-placeholder,
+.gallery-popup .login-form--control::-webkit-input-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::-moz-placeholder,
-.sign .login-form--control::-moz-placeholder {
+.sign .login-form--control::-moz-placeholder,
+.gallery-popup .login-form--control::-moz-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::-ms-input-placeholder,
-.sign .login-form--control::-ms-input-placeholder {
+.sign .login-form--control::-ms-input-placeholder,
+.gallery-popup .login-form--control::-ms-input-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::placeholder,
-.sign .login-form--control::placeholder {
+.sign .login-form--control::placeholder,
+.gallery-popup .login-form--control::placeholder {
   color: #8F8F8F;
 }
 
@@ -3054,7 +3059,8 @@ ul.page-numbers .next {
   cursor: pointer;
 }
 
-.sign {
+.sign,
+.gallery-popup {
   display: none;
   position: fixed;
   -webkit-box-align: center;
@@ -3071,7 +3077,8 @@ ul.page-numbers .next {
   height: 100vh;
 }
 
-.sign-out {
+.sign-out,
+.gallery-popup-out {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -3080,7 +3087,8 @@ ul.page-numbers .next {
   left: 0;
 }
 
-.sign.open {
+.sign.open,
+.gallery-popup.open {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3088,21 +3096,24 @@ ul.page-numbers .next {
   z-index: 2;
 }
 
-.sign .tabs {
+.sign .tabs,
+.gallery-popup .tabs {
   margin: 50px 8px 0;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.sign .tabs__header {
+.sign .tabs__header,
+.gallery-popup .tabs__header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sign .tabs__header--title {
+.sign .tabs__header--title,
+.gallery-popup .tabs__header--title {
   background: transparent;
   color: #ffffff;
   cursor: pointer;
@@ -3121,18 +3132,21 @@ ul.page-numbers .next {
   text-align: center;
 }
 
-.sign .tabs__header--title:first-child {
+.sign .tabs__header--title:first-child,
+.gallery-popup .tabs__header--title:first-child {
   -webkit-border-radius: 5px 0 0 0;
   border-radius: 5px 0 0 0;
   border-right: none;
 }
 
-.sign .tabs__header--title.active {
+.sign .tabs__header--title.active,
+.gallery-popup .tabs__header--title.active {
   background: #ffffff;
   color: #121B1B;
 }
 
-.sign .tabs__content {
+.sign .tabs__content,
+.gallery-popup .tabs__content {
   background: #ffffff;
   display: none;
   -webkit-box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
@@ -3141,11 +3155,13 @@ ul.page-numbers .next {
   border-radius: 0 0 5px 5px;
 }
 
-.sign .tabs__content.active {
+.sign .tabs__content.active,
+.gallery-popup .tabs__content.active {
   display: block;
 }
 
-.sign .form-item {
+.sign .form-item,
+.gallery-popup .form-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3159,18 +3175,21 @@ ul.page-numbers .next {
   flex-direction: column;
 }
 
-.sign .login-form {
+.sign .login-form,
+.gallery-popup .login-form {
   color: #121B1B;
 }
 
-.sign .login-form--title {
+.sign .login-form--title,
+.gallery-popup .login-form--title {
   font-size: 24px;
   line-height: 33px;
   font-family: "OpenSans-Bold";
   margin-bottom: 20px;
 }
 
-.sign .login-form--group {
+.sign .login-form--group,
+.gallery-popup .login-form--group {
   margin-bottom: 15px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3183,7 +3202,8 @@ ul.page-numbers .next {
   flex-direction: column;
 }
 
-.sign .login-form--group label {
+.sign .login-form--group label,
+.gallery-popup .login-form--group label {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -3191,7 +3211,8 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
 }
 
-.sign .login-form--restore-pass {
+.sign .login-form--restore-pass,
+.gallery-popup .login-form--restore-pass {
   font-size: 14px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -3206,11 +3227,13 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .login-form--restore-pass:hover {
+.sign .login-form--restore-pass:hover,
+.gallery-popup .login-form--restore-pass:hover {
   text-decoration: none;
 }
 
-.sign .login-form--btns {
+.sign .login-form--btns,
+.gallery-popup .login-form--btns {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3222,7 +3245,8 @@ ul.page-numbers .next {
   flex-direction: column;
 }
 
-.sign .login-form--sign {
+.sign .login-form--sign,
+.gallery-popup .login-form--sign {
   color: #ffffff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -3253,12 +3277,14 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .login-form--sign:hover {
+.sign .login-form--sign:hover,
+.gallery-popup .login-form--sign:hover {
   background: #59C7BF;
   border-color: #59C7BF;
 }
 
-.sign .login-form--registration {
+.sign .login-form--registration,
+.gallery-popup .login-form--registration {
   font-size: 14px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -3271,15 +3297,18 @@ ul.page-numbers .next {
   cursor: pointer;
 }
 
-.sign .login-form--registration:hover {
+.sign .login-form--registration:hover,
+.gallery-popup .login-form--registration:hover {
   text-decoration: none;
 }
 
-.sign .login-text {
+.sign .login-text,
+.gallery-popup .login-text {
   display: none;
 }
 
-.sign .login-with--title {
+.sign .login-with--title,
+.gallery-popup .login-with--title {
   font-size: 18px;
   line-height: 25px;
   font-family: "OpenSans-Bold";
@@ -3287,16 +3316,19 @@ ul.page-numbers .next {
   margin-top: 10px;
 }
 
-.sign .recovery-password {
+.sign .recovery-password,
+.gallery-popup .recovery-password {
   display: none;
   padding: 30px 5px;
 }
 
-.sign .recovery-password.open {
+.sign .recovery-password.open,
+.gallery-popup .recovery-password.open {
   display: block;
 }
 
-.sign .recovery-password .login-form--remembered-pass {
+.sign .recovery-password .login-form--remembered-pass,
+.gallery-popup .recovery-password .login-form--remembered-pass {
   text-decoration: underline;
   font-size: 14px;
   line-height: 19px;
@@ -3310,11 +3342,13 @@ ul.page-numbers .next {
   margin-bottom: 5px;
 }
 
-.sign .recovery-password .login-form--remembered-pass:hover {
+.sign .recovery-password .login-form--remembered-pass:hover,
+.gallery-popup .recovery-password .login-form--remembered-pass:hover {
   text-decoration: none;
 }
 
-.sign .recovery-password p {
+.sign .recovery-password p,
+.gallery-popup .recovery-password p {
   margin-bottom: 20px;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -3323,23 +3357,27 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
 }
 
-.sign .instructions {
+.sign .instructions,
+.gallery-popup .instructions {
   padding: 30px 5px;
 }
 
-.sign .instructions .login-form--restore-pass {
+.sign .instructions .login-form--restore-pass,
+.gallery-popup .instructions .login-form--restore-pass {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-.sign .instructions--title {
+.sign .instructions--title,
+.gallery-popup .instructions--title {
   font-size: 24px;
   line-height: 33px;
   font-family: "OpenSans-Bold";
   margin-bottom: 15px;
 }
 
-.sign .instructions p {
+.sign .instructions p,
+.gallery-popup .instructions p {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -3349,7 +3387,8 @@ ul.page-numbers .next {
   margin: 0;
 }
 
-.sign .instructions .no-email {
+.sign .instructions .no-email,
+.gallery-popup .instructions .no-email {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -4115,6 +4154,10 @@ ul.page-numbers .next {
   max-width: 100%;
   max-height: 100%;
   height: auto;
+}
+
+.product-sliders .slick-slide:focus {
+  outline: none;
 }
 
 .product-sliders .slider-nav {
@@ -5698,6 +5741,105 @@ p.stars a:after,
 .user-favorites .product-link__item {
   margin-top: 20px;
   margin-bottom: 55px;
+}
+
+.gallery-item {
+  margin: 0 auto;
+  width: 320px;
+  background: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.gallery-item .product-sliders-top-img {
+  border: 1px solid #E0E0E0;
+  width: 320px;
+  height: 320px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.gallery-item .product-sliders-top-img img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.gallery-slider {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+
+.gallery-slider .slick-slide:focus {
+  outline: none;
+}
+
+.gallery-slider .slick-dots li button {
+  background: #121B1B;
+}
+
+.gallery-slider .slick-dots li.slick-active button {
+  background: #59C7BF;
+}
+
+.gallery-slider .slick-arrow {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.gallery-slider .slick-arrow::before {
+  content: '';
+  -webkit-mask: url("../img/svg/arrow-down.svg") no-repeat center;
+  mask: url("../img/svg/arrow-down.svg") no-repeat center;
+  background: #121B1B;
+  width: 13px;
+  height: 7px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.gallery-slider .slick-prev {
+  left: 25px;
+}
+
+.gallery-slider .slick-next {
+  right: 25px;
+}
+
+.gallery-slider .slick-next::before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 h1,

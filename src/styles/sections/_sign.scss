@@ -1,4 +1,4 @@
-.sign {
+.sign, .gallery-popup {
   display: none;
   position: fixed;
   align-items: center;
@@ -93,7 +93,7 @@
       }
       &--control {
         @extend .login-form--control;
-        margin-right: 30px;
+        margin-right: 25px;
         width: 285px;
       }
       &--restore-pass {

@@ -212,9 +212,34 @@ $('.login-open').click(function () {
   $('.sign').addClass('open');
 });
 $('.sign-out').click(function () {
-  $('.sign').removeClass('open');
+  $('.sign, .gallery-popup').removeClass('open');
 });
 /* show login popup on click end */
+
+/* show gallery */
+$('.product-sliders-top-img').click(function () {
+  $('.gallery-popup').addClass('open');
+});
+/* show gallery end */
+
+/* gallery slider */
+$('.gallery-slider').slick({
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        dots: false
+      }
+    }
+  ]
+});
+/* gallery slider end*/
 
 /* product slider with nav blocks */
 $('.slider-for').slick({

@@ -28,6 +28,9 @@
         height: auto;
       }
     }
+    .slick-slide:focus {
+      outline: none;
+    }
     .slider-nav {
       display: none;
     }

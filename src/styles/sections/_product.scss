@@ -22,6 +22,9 @@
     .product-sliders {
       width: 610px;
       margin-right: 35px;
+      .slick-slide:focus {
+        outline: none;
+      }
       &-top {
         &-img {
           border: 1px solid #E0E0E0;
@@ -49,9 +52,6 @@
       .slider-nav {
         .slick-slide {
           margin: 30px 30px 30px 0;
-          &:focus {
-            outline: none;
-          }
         }
         .slick-arrow {
           width: 45px;
