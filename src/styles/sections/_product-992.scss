@@ -52,6 +52,9 @@
       .slider-nav {
         .slick-slide {
           margin: 30px 15px;
+          &:focus {
+            outline: none;
+          }
         }
         .slick-arrow {
           width: 45px;

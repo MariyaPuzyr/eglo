@@ -3816,6 +3816,10 @@ ul.page-numbers .next {
   margin: 30px 30px 30px 0;
 }
 
+.product-item .product-sliders .slider-nav .slick-slide:focus {
+  outline: none;
+}
+
 .product-item .product-sliders .slider-nav .slick-arrow {
   width: 45px;
   height: 45px;
