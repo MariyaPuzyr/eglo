@@ -126,7 +126,7 @@
         height: 100%;
         z-index: -5;
         transform: scale(1);
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
         box-sizing: border-box;
       }
       &:before {
@@ -135,7 +135,7 @@
         transform: translateX(-100%);
         border-right: 50px solid transparent;
         border-bottom: 35px solid $white;
-        transition: 0.5s;
+        transition: 0.3s;
         z-index: -1;
       }
       &:after {
@@ -144,7 +144,7 @@
         transform: translateX(100%);
         border-left: 50px solid transparent;
         border-bottom: 35px solid $white;
-        transition: 0.5s;
+        transition: 0.3s;
       }
       &:hover {
         cursor: pointer;
@@ -152,10 +152,10 @@
         color: $small-title;
         z-index: 8;
         &:before {
-          transform: translateX(20%);
+          transform: translateX(30%);
         }
         &:after {
-          transform: translateX(-20%);
+          transform: translateX(-30%);
         }
       }
     }
@@ -192,6 +192,14 @@
       height: 7px;
       mask-size: contain;
       position: relative;
+      transition: .3s;
+    }
+    &:hover {
+      border-color: $small-title;
+      background: $small-title;
+      &::before {
+        background: $white;
+      }
     }
   }
   .slick-prev {
@@ -206,6 +214,7 @@
     &::before {
       transform: rotate(-90deg);
       right: -1px;
+      top: 1px;
     }
   }
   &-link {

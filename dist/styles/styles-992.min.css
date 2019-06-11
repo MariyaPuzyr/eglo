@@ -1139,6 +1139,7 @@ ul.page-numbers .next {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  display: table;
 }
 
 .header-top-menu__menu-item--mega-menu .catalog-item.icons_1 .icon {
@@ -1677,6 +1678,7 @@ ul.page-numbers .next {
   height: 1px;
   background: currentColor;
   margin-right: 10px;
+  display: table;
 }
 
 .header-catalog-menu__dropdown--list-img {
@@ -2176,9 +2178,9 @@ ul.page-numbers .next {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2191,9 +2193,9 @@ ul.page-numbers .next {
   transform: translateX(-100%);
   border-right: 50px solid transparent;
   border-bottom: 40px solid #ffffff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   z-index: -1;
 }
 
@@ -2205,9 +2207,9 @@ ul.page-numbers .next {
   transform: translateX(100%);
   border-left: 50px solid transparent;
   border-bottom: 40px solid #ffffff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product__popup .add-cart:hover {
@@ -2284,6 +2286,20 @@ ul.page-numbers .next {
   height: 7px;
   -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.product .slick-prev:hover,
+.product .slick-next:hover {
+  border-color: #59C7BF;
+  background: #59C7BF;
+}
+
+.product .slick-prev:hover::before,
+.product .slick-next:hover::before {
+  background: #ffffff;
 }
 
 .product .slick-prev {
@@ -2304,6 +2320,8 @@ ul.page-numbers .next {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  right: -1px;
+  top: 1px;
 }
 
 .product-link {
@@ -4732,6 +4750,18 @@ ul.page-numbers .next {
   height: 7px;
   -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.product-item .product-sliders .slider-nav .slick-arrow:hover {
+  border-color: #59C7BF;
+  background: #59C7BF;
+}
+
+.product-item .product-sliders .slider-nav .slick-arrow:hover::before {
+  background: #ffffff;
 }
 
 .product-item .product-sliders .slider-nav .slick-prev {
