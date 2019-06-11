@@ -5815,6 +5815,7 @@ p.stars a:after,
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  z-index: 1;
 }
 
 .gallery-slider .slick-arrow::before {
@@ -5829,11 +5830,17 @@ p.stars a:after,
 }
 
 .gallery-slider .slick-prev {
-  left: 25px;
+  left: 15px;
+}
+
+.gallery-slider .slick-prev::before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .gallery-slider .slick-next {
-  right: 25px;
+  right: 15px;
 }
 
 .gallery-slider .slick-next::before {

@@ -217,7 +217,7 @@ $('.sign-out').click(function () {
 /* show login popup on click end */
 
 /* show gallery */
-$('.product-sliders-top-img.glass').click(function () {
+$('.product-sliders-top-img, .glass').click(function () {
   $('.gallery-popup').addClass('open');
 });
 /* show gallery end */

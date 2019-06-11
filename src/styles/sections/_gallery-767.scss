@@ -48,6 +48,7 @@
       align-items: center;
       justify-content: center;
       transition: .3s;
+      z-index: 1;
       &::before {
         content: '';
         mask: url("../img/svg/arrow-down.svg") no-repeat center;
@@ -59,10 +60,13 @@
       }
     }
     .slick-prev {
-      left: 25px;
+      left: 15px;
+      &::before {
+        transform: rotate(90deg);
+      }
     }
     .slick-next {
-      right: 25px;
+      right: 15px;
       &::before {
         transform: rotate(-90deg);
       }
