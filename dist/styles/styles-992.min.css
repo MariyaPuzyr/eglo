@@ -3680,6 +3680,7 @@ ul.page-numbers .next {
 .gallery-popup .recovery-password {
   display: none;
   padding: 20px;
+  color: #121B1B;
 }
 
 .sign .recovery-password.open,
@@ -3742,6 +3743,7 @@ ul.page-numbers .next {
 .sign .instructions,
 .gallery-popup .instructions {
   padding: 20px;
+  color: #121B1B;
 }
 
 .sign .instructions .login-form--btns,
