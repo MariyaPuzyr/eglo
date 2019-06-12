@@ -28,6 +28,9 @@
       right: 20px;
       transition: .3s;
       cursor: pointer;
+      &:focus {
+        outline: none;
+      }
     }
     &--items {
       display: flex;

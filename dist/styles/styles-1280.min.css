@@ -3123,6 +3123,10 @@ ul.page-numbers .next {
   cursor: pointer;
 }
 
+.cart-popup .cart-close:focus {
+  outline: none;
+}
+
 .cart-popup .cart--items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4749,6 +4753,10 @@ ul.page-numbers .next {
 
 .product-item .product-sliders .slider-nav .slick-arrow:hover::before {
   background: #ffffff;
+}
+
+.product-item .product-sliders .slider-nav .slick-arrow:focus {
+  outline: none;
 }
 
 .product-item .product-sliders .slider-nav .slick-prev {

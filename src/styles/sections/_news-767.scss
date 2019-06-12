@@ -97,6 +97,9 @@
       height: 7px;
       mask-size: contain;
     }
+    &:focus {
+      outline: none;
+    }
   }
   .slick-prev {
     left: auto;

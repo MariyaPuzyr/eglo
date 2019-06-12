@@ -2240,6 +2240,11 @@ ul.page-numbers .next {
   mask-size: contain;
 }
 
+.news .slick-prev:focus,
+.news .slick-next:focus {
+  outline: none;
+}
+
 .news .slick-prev {
   left: auto;
   right: 50px;
@@ -2655,6 +2660,10 @@ ul.page-numbers .next {
   -o-transition: .3s;
   transition: .3s;
   cursor: pointer;
+}
+
+.cart-popup .cart-close:focus {
+  outline: none;
 }
 
 .cart-popup .cart--items {
@@ -4154,6 +4163,10 @@ ul.page-numbers .next {
 
 .product-sliders .slick-arrow:hover::before {
   background: #ffffff;
+}
+
+.product-sliders .slick-arrow:focus {
+  outline: none;
 }
 
 .product-sliders .slick-prev {

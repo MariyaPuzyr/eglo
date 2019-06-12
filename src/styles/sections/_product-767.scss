@@ -67,6 +67,9 @@
           background: $white;
         }
       }
+      &:focus {
+        outline: none;
+      }
     }
     .slick-prev {
       left: auto;
