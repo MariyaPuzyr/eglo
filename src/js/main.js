@@ -6,10 +6,10 @@ $('.close').click(function () {
 
 /* show mobile list */
 $('.mobile-menu--hamburger-icon').click(function () {
-  $('.header-top-menu__menu-item').addClass('show');
+  $('.header-top-menu__menu-item, .header-top-menu__substrate').addClass('show');
 });
 $('.close-menu').click(function () {
-  $('.header-top-menu__menu-item').removeClass('show');
+  $('.header-top-menu__menu-item, .header-top-menu__substrate').removeClass('show');
 });
 /* show mobile list end */
 
@@ -320,4 +320,10 @@ if ($(window).width() < 992) {
     $('.catalog-item').removeClass('open');
     $(this).toggleClass('open');
   });
+  /* hide menu */
+  $('.header-top-menu__substrate').click(function () {
+    $(this).removeClass('show');
+    $('.header-top-menu__menu-item').removeClass('show');
+  });
+  /* hide menu end */
 }

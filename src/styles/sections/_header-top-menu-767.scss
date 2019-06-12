@@ -404,4 +404,19 @@
   .wpml-ls-legacy-dropdown {
     display: none;
   }
+
+  &__substrate {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba($title, .2);
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: .3s;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
 }
