@@ -289,9 +289,7 @@ a {
   text-decoration: none;
 }
 
-.login-form--control,
-.sign .login-form--control,
-.gallery-popup .login-form--control {
+.login-form--control {
   background: #F6F6F6;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -307,27 +305,19 @@ a {
   width: 100%;
 }
 
-.login-form--control::-webkit-input-placeholder,
-.sign .login-form--control::-webkit-input-placeholder,
-.gallery-popup .login-form--control::-webkit-input-placeholder {
+.login-form--control::-webkit-input-placeholder {
   color: #8F8F8F;
 }
 
-.login-form--control::-moz-placeholder,
-.sign .login-form--control::-moz-placeholder,
-.gallery-popup .login-form--control::-moz-placeholder {
+.login-form--control::-moz-placeholder {
   color: #8F8F8F;
 }
 
-.login-form--control::-ms-input-placeholder,
-.sign .login-form--control::-ms-input-placeholder,
-.gallery-popup .login-form--control::-ms-input-placeholder {
+.login-form--control::-ms-input-placeholder {
   color: #8F8F8F;
 }
 
-.login-form--control::placeholder,
-.sign .login-form--control::placeholder,
-.gallery-popup .login-form--control::placeholder {
+.login-form--control::placeholder {
   color: #8F8F8F;
 }
 
@@ -3111,6 +3101,11 @@ ul.page-numbers .next {
   color: #121B1B;
 }
 
+.sign .tabs__header--title:focus,
+.gallery-popup .tabs__header--title:focus {
+  outline: none;
+}
+
 .sign .tabs__content,
 .gallery-popup .tabs__content {
   background: #ffffff;
@@ -3119,6 +3114,7 @@ ul.page-numbers .next {
   box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
+  margin-top: -1px;
 }
 
 .sign .tabs__content.active,
@@ -3152,11 +3148,12 @@ ul.page-numbers .next {
   line-height: 25px;
   font-family: "OpenSans-Bold";
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .sign .login-form--group,
 .gallery-popup .login-form--group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3170,11 +3167,42 @@ ul.page-numbers .next {
 
 .sign .login-form--group label,
 .gallery-popup .login-form--group label {
-  font-size: 16px;
+  display: none;
+}
+
+.sign .login-form--control,
+.gallery-popup .login-form--control {
+  width: 100%;
+  background: #F6F6F6;
+  border: 1px solid #F0F0F0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 10px;
   line-height: 21px;
-  letter-spacing: 0.05em;
-  margin-bottom: 5px;
   font-family: "OpenSans-Regular";
+  color: #121B1B;
+}
+
+.sign .login-form--control::-webkit-input-placeholder,
+.gallery-popup .login-form--control::-webkit-input-placeholder {
+  color: #8F8F8F;
+}
+
+.sign .login-form--control::-moz-placeholder,
+.gallery-popup .login-form--control::-moz-placeholder {
+  color: #8F8F8F;
+}
+
+.sign .login-form--control::-ms-input-placeholder,
+.gallery-popup .login-form--control::-ms-input-placeholder {
+  color: #8F8F8F;
+}
+
+.sign .login-form--control::placeholder,
+.gallery-popup .login-form--control::placeholder {
+  color: #8F8F8F;
 }
 
 .sign .login-form--restore-pass,
@@ -3277,6 +3305,7 @@ ul.page-numbers .next {
 .gallery-popup .login-with--title {
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
   font-family: "OpenSans-Bold";
   color: #121B1B;
   margin-top: 10px;
