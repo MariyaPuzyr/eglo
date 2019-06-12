@@ -314,3 +314,10 @@ if ($(".offers-slider").length > 0) {
   });
 }
 /* offers slider end */
+
+if ($(window).width() < 992 || $(window).height() < 992) {
+  $(document).on('click', '.catalog-item', function () {
+    $('.catalog-item').removeClass('open');
+    $(this).toggleClass('open');
+  });
+}

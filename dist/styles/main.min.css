@@ -1334,6 +1334,10 @@ a {
   background: currentColor;
   margin-right: 10px;
   display: table;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .header-catalog-menu__dropdown--list-img {

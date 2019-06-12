@@ -223,7 +223,7 @@
           display: none;
           margin-top: 5px;
         }
-        &:hover {
+        &.open {
           .catalog-item {
             &__top {
               color: $stock;

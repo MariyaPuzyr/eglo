@@ -67,6 +67,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+        width: 100%;
         &::before {
           content: '';
           width: 10px;
@@ -74,6 +75,7 @@
           background: currentColor;
           margin-right: 10px;
           display: table;
+          flex: 0 0 auto;
         }
       }
       &-img {

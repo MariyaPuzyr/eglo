@@ -1313,18 +1313,18 @@ ul.page-numbers .next {
   margin-top: 5px;
 }
 
-.header-top-menu__menu-item .catalog-item:hover .catalog-item__top {
+.header-top-menu__menu-item .catalog-item.open .catalog-item__top {
   color: #21A697;
 }
 
-.header-top-menu__menu-item .catalog-item:hover .catalog-item__top::after {
+.header-top-menu__menu-item .catalog-item.open .catalog-item__top::after {
   background: #21A697;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.header-top-menu__menu-item .catalog-item:hover .catalog-item__list {
+.header-top-menu__menu-item .catalog-item.open .catalog-item__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1336,7 +1336,7 @@ ul.page-numbers .next {
   flex-direction: column;
 }
 
-.header-top-menu__menu-item .catalog-item:hover .catalog-item__list a::before {
+.header-top-menu__menu-item .catalog-item.open .catalog-item__list a::before {
   content: '';
   width: 10px;
   height: 1px;
@@ -3087,8 +3087,8 @@ ul.page-numbers .next {
   border: 2px solid #ffffff;
   -webkit-border-radius: 0 5px 0 0;
   border-radius: 0 5px 0 0;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 19px;
   letter-spacing: 0.05em;
   font-family: "OpenSans-Regular";
   -webkit-transition: .3s;
@@ -3132,7 +3132,7 @@ ul.page-numbers .next {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 5px;
+  padding: 20px 50px;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3148,8 +3148,8 @@ ul.page-numbers .next {
 
 .sign .login-form--title,
 .gallery-popup .login-form--title {
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 25px;
   font-family: "OpenSans-Bold";
   margin-bottom: 20px;
 }
@@ -3336,8 +3336,9 @@ ul.page-numbers .next {
 
 .sign .instructions--title,
 .gallery-popup .instructions--title {
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
   font-family: "OpenSans-Bold";
   margin-bottom: 15px;
 }
