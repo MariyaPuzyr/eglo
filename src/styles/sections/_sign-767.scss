@@ -178,6 +178,7 @@
   .recovery-password {
     display: none;
     padding: 20px 35px 30px;
+    color: $title;
     &.open {
       display: block;
     }
@@ -206,6 +207,7 @@
   }
   .instructions {
     padding: 20px 20px 30px;
+    color: $title;
     .login-form {
       &--restore-pass {
         margin-top: 5px;
