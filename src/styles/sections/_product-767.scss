@@ -60,13 +60,6 @@
         transform: rotate(90deg);
         transition: .3s;
       }
-      &:hover {
-        border-color: $small-title;
-        background: $small-title;
-        &::before {
-          background: $white;
-        }
-      }
       &:focus {
         outline: none;
       }
