@@ -65,7 +65,7 @@
     font-family: $font;
     line-height: 22px;
     overflow: hidden;
-    height: 45px;
+    max-height: 45px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;

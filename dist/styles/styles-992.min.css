@@ -2085,7 +2085,7 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
   line-height: 22px;
   overflow: hidden;
-  height: 45px;
+  max-height: 45px;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;

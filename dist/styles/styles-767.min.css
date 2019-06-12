@@ -1696,11 +1696,20 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
   line-height: 16px;
   white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  max-height: 45px;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product__title:focus {
+  outline: none;
 }
 
 .product__title:focus {
@@ -1830,18 +1839,19 @@ ul.page-numbers .next {
   transition-delay: .1s;
   color: #59C7BF;
   z-index: 8;
+  background: #ffffff;
 }
 
 .product__popup .add-cart:hover:before {
-  -webkit-transform: translateX(90%);
-  -ms-transform: translateX(90%);
-  transform: translateX(90%);
+  -webkit-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  transform: translateX(30%);
 }
 
 .product__popup .add-cart:hover:after {
-  -webkit-transform: translateX(-90%);
-  -ms-transform: translateX(-90%);
-  transform: translateX(-90%);
+  -webkit-transform: translateX(-30%);
+  -ms-transform: translateX(-30%);
+  transform: translateX(-30%);
 }
 
 .product__popup .buy {
