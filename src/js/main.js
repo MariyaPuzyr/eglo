@@ -210,6 +210,7 @@ $('.login-form--remembered-pass').click(function () {
 /* show login popup on click */
 $('.login-open').click(function () {
   $('.sign').addClass('open');
+  $('.header-top-menu__menu-item').removeClass('show');
 });
 $('.sign-out').click(function () {
   $('.sign, .gallery-popup').removeClass('open');

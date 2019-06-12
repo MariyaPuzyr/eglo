@@ -147,12 +147,11 @@
         transition-delay: .1s;
         color: $small-title;
         z-index: 8;
-        background: $white;
         &:before {
-          transform: translateX(30%);
+          transform: translateX(90%);
         }
         &:after {
-          transform: translateX(-30%);
+          transform: translateX(-90%);
         }
       }
     }

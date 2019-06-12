@@ -99,11 +99,14 @@
       color: $small-title;
       z-index: 8;
       &:before {
-        transform: translateX(20%);
+        transform: translateX(60%);
       }
       &:after {
-        transform: translateX(-20%);
+        transform: translateX(-60%);
       }
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

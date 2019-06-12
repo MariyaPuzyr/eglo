@@ -2622,7 +2622,7 @@ ul.page-numbers .next {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sign .tabs,

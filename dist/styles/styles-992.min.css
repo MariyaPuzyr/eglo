@@ -1864,6 +1864,10 @@ ul.page-numbers .next {
   transform: translateX(-20%);
 }
 
+.main-slide a:focus {
+  outline: none;
+}
+
 .slick-prev,
 .slick-next {
   top: auto;
@@ -3424,7 +3428,7 @@ ul.page-numbers .next {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sign .tabs,
