@@ -66,12 +66,8 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
-    max-height: 45px;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
+    display: block;
     &:focus {
       outline: none;
     }
@@ -120,6 +116,7 @@
       transition: 1s ease-out;
       position: relative;
       overflow: hidden;
+      min-height: 30px;
       z-index: 1;
       &:before,
       &:after {

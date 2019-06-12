@@ -774,6 +774,7 @@ a {
   letter-spacing: 0.05em;
   font-size: 16px;
   line-height: 21px;
+  border: none;
   border-bottom: 1px solid;
   color: #121B1B;
   font-family: "OpenSans-Regular";

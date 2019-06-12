@@ -880,6 +880,7 @@ ul.page-numbers .next {
   letter-spacing: 0.05em;
   font-size: 16px;
   line-height: 21px;
+  border: none;
   border-bottom: 1px solid;
   color: #121B1B;
   font-family: "OpenSans-Regular";
@@ -1699,13 +1700,9 @@ ul.page-numbers .next {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  max-height: 45px;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
+  display: block;
 }
 
 .product__title:focus {
@@ -1784,6 +1781,7 @@ ul.page-numbers .next {
   transition: 1s ease-out;
   position: relative;
   overflow: hidden;
+  min-height: 30px;
   z-index: 1;
 }
 
