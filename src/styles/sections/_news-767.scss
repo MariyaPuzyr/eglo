@@ -61,7 +61,7 @@
           }
         }
         .date {
-          margin: auto 20px auto auto;
+          margin: auto 10px auto auto;
           font-size: 10px;
           line-height: 14px;
           font-family: $font-l;
@@ -148,6 +148,10 @@
     margin-bottom: 20px;
     &--img {
       display: none;
+    }
+    &--description {
+      position: relative;
+      padding: 10px;
     }
     &__info--name {
       font-size: 14px;

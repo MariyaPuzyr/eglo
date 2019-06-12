@@ -2184,7 +2184,7 @@ ul.page-numbers .next {
 }
 
 .news-item__info--top .date {
-  margin: auto 20px auto auto;
+  margin: auto 10px auto auto;
   font-size: 10px;
   line-height: 14px;
   font-family: "OpenSans-Light";
@@ -2296,6 +2296,11 @@ ul.page-numbers .next {
 
 .news-article--img {
   display: none;
+}
+
+.news-article--description {
+  position: relative;
+  padding: 10px;
 }
 
 .news-article__info--name {
