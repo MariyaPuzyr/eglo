@@ -1238,7 +1238,7 @@ ul.page-numbers .next {
 
 .header-top-menu__menu-item.show {
   left: 0;
-  z-index: 4;
+  z-index: 100000;
 }
 
 .header-top-menu__menu-item--link.cart-item {
@@ -2623,7 +2623,7 @@ ul.page-numbers .next {
   background: #ffffff;
   height: 100vh;
   width: 100%;
-  z-index: 5;
+  z-index: 100000;
   overflow: auto;
   -webkit-box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
   box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
