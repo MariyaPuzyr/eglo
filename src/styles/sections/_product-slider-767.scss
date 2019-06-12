@@ -19,6 +19,7 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
+      display: table;
       &:focus {
         outline: none;
       }
@@ -146,6 +147,7 @@
         transition-delay: .1s;
         color: $small-title;
         z-index: 8;
+        background: $white;
         &:before {
           transform: translateX(30%);
         }
