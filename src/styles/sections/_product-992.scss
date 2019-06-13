@@ -83,9 +83,6 @@
               background: $white;
             }
           }
-          &:focus {
-            outline: none;
-          }
         }
         .slick-prev {
           left: auto;
@@ -100,9 +97,6 @@
           margin-left: 5px;
           margin-right: 5px;
         }
-      }
-      .slick-slide:focus {
-        outline: none;
       }
     }
   }

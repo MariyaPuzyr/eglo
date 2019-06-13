@@ -168,9 +168,6 @@
         color: $title;
         margin-bottom: 60px;
         resize: none;
-        &:focus {
-          outline: none;
-        }
         &::placeholder {
           color: $price;
         }

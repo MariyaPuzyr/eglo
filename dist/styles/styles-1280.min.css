@@ -465,6 +465,10 @@ a {
   transition: .3s;
 }
 
+*:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url("../fonts/OpenSans-Regular.eot");

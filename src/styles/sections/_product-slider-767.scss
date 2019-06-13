@@ -20,12 +20,8 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       display: table;
-      &:focus {
-        outline: none;
-      }
     }
     &:hover, &:focus {
-      outline: none;
       border: 1px solid $small-title;
       cursor: pointer;
       .product__popup {
@@ -34,9 +30,6 @@
         top: -20px;
         .add-cart, .buy {
           display: flex;
-          &:focus {
-            outline: none;
-          }
         }
       }
       .old-price, .availability {
@@ -68,12 +61,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
-    &:focus {
-      outline: none;
-    }
-    &:focus {
-      outline: none;
-    }
   }
   &__price {
     font-size: 13px;

@@ -5,11 +5,6 @@
       display: flex;
     }
   }
-  .slick-slide {
-    &:focus {
-      outline: none;
-    }
-  }
   &--title {
     color: $title;
     font-size: 15px;

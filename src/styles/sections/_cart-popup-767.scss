@@ -28,9 +28,6 @@
       right: 20px;
       transition: .3s;
       cursor: pointer;
-      &:focus {
-        outline: none;
-      }
     }
     &--items {
       display: none;
@@ -229,7 +226,6 @@
         width: 200px;
         text-align: center;
         &:focus {
-          outline: none;
           border-color: $small-title;
         }
         &::placeholder {

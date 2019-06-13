@@ -28,9 +28,6 @@
       right: 20px;
       transition: .3s;
       cursor: pointer;
-      &:focus {
-        outline: none;
-      }
     }
     &--items {
       display: flex;
@@ -244,7 +241,6 @@
         transition: .3s;
         color: $title;
         &:focus {
-          outline: none;
           border-color: $small-title;
         }
         &::placeholder {

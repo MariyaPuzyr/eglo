@@ -100,10 +100,6 @@
         &::placeholder {
           color: $title;
         }
-        &:focus {
-          background: $bg;
-          outline: none;
-        }
       }
     }
   }

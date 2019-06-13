@@ -49,9 +49,6 @@ a {
   &::placeholder {
     color: $price;
   }
-  &:focus {
-    outline: none;
-  }
 }
 
 .cart-amount--buy {
@@ -133,4 +130,8 @@ a {
   height: 15px;
   cursor: pointer;
   transition: .3s;
+}
+
+*:focus {
+  outline: none;
 }

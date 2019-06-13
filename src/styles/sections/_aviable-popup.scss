@@ -32,9 +32,6 @@
       &::placeholder {
         color: $price;
       }
-      &:focus {
-        outline: none;
-      }
     }
     &--btn {
       margin: auto;
@@ -56,9 +53,6 @@
         background: $small-title;
         border-color: $small-title;
         color: $white;
-      }
-      &:focus {
-        outline: none;
       }
     }
     .cart-close {

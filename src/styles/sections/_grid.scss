@@ -109,9 +109,6 @@
       font-family: $font;
       border: 2px solid #dedede;
       cursor: pointer;
-      &:focus {
-        outline: none;
-      }
     }
   }
 }

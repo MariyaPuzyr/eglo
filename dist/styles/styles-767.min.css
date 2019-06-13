@@ -461,6 +461,10 @@ a {
   transition: .3s;
 }
 
+*:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url("../fonts/OpenSans-Regular.eot");
@@ -3255,6 +3259,10 @@ ul.page-numbers .next {
 .sign .login-form--sign:hover {
   background: #59C7BF;
   border-color: #59C7BF;
+}
+
+.sign .login-form--sign:focus {
+  outline: none;
 }
 
 .sign .login-form--registration {

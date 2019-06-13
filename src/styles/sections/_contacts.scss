@@ -109,10 +109,6 @@
       &::placeholder {
         color: $price;
       }
-      &:focus {
-        outline: none;
-        border-color: $default;
-      }
     }
     &--btn {
       border: 1px solid #A0A0A0;
@@ -136,9 +132,6 @@
         border-color: $small-title;
         background: $small-title;
       }
-      &:focus {
-        outline: none;
-      }
       &.wpcf7-form-control.wpcf7-submit {
         border-color: #A0A0A0;
         background-color: $white;
@@ -148,9 +141,6 @@
           color: $white;
           border-color: $small-title;
           background: $small-title;
-        }
-        &:focus {
-          outline: none;
         }
       }
     }
