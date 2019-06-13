@@ -61,5 +61,8 @@
         outline: none;
       }
     }
+    .cart-close {
+      @extend .cart-close;
+    }
   }
 }

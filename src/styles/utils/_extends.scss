@@ -121,3 +121,16 @@ a {
     background: $white;
   }
 }
+
+.cart-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: $title;
+  mask: url('../img/svg/close.svg') no-repeat center;
+  mask-size: cover;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: .3s;
+}

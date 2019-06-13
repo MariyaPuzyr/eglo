@@ -180,6 +180,7 @@ $('.cart-item.header-top-menu__menu-item--link, .cart-item.mobile').click(functi
 $('.cart-close').click(function () {
   $('body').removeClass('show-cart-popup');
   $('.cart-popup, .aviable-popup').removeClass('open');
+  $('.gallery-popup').removeClass('open');
 });
 /* show cart popup end */
 
@@ -234,14 +235,6 @@ $('.gallery-slider').slick({
   arrows: true,
   dots: true,
   variableWidth: true,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        dots: false
-      }
-    }
-  ]
 });
 /* gallery slider end*/
 

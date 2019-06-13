@@ -1,15 +1,13 @@
 .gallery {
   &-item {
-    margin: 0 auto;
-    min-height: 300px;
-    width: 610px;
+    margin: auto;
+    width: 890px;
     background: $white;
     z-index: 1;
     position: relative;
     .product-sliders-top-img {
-      border: 1px solid #E0E0E0;
-      width: 608px;
-      height: 608px;
+      width: 890px;
+      height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -19,18 +17,29 @@
         height: auto;
       }
     }
+    .cart-close {
+      width: 29px;
+      height: 29px;
+      mask: url('../img/svg/close.svg') no-repeat center;
+      mask-size: cover;
+      background: $white;
+      position: absolute;
+      top: 0;
+      right: -55px;
+    }
   }
   &-slider {
-    width: 608px;
-    height: 608px;
+    width: 890px;
+    height: 80vh;
     margin: auto;
     .slick-slide:focus {
       outline: none;
     }
     .slick-dots {
+      bottom: -35px;
       li {
         button {
-          background: $title;
+          background: $white;
         }
         &.slick-active {
           button {
@@ -40,30 +49,34 @@
       }
     }
     .slick-arrow {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      bottom: 15px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: .3s;
+      top: 50%;
+      z-index: 2;
+      opacity: 1;
+      transform: none;
+      width: 27px;
+      height: 16px;
       &::before {
         content: '';
-        mask: url("../img/svg/arrow-down.svg") no-repeat center;
-        background: $title;
-        width: 13px;
-        height: 7px;
-        -webkit-mask-size: contain;
+        mask: url('../img/svg/arrow-down.svg') no-repeat center;
         mask-size: contain;
+        background: $white;
+        width: 27px;
+        display: flex;
+        transform: rotate(90deg);
+        height: 16px;
+        transition: .3s;
+        opacity: 1;
+      }
+      &:hover::before {
+        background: $small-title;
       }
     }
     .slick-prev {
-      left: 25px;
+      left: -70px;
     }
+
     .slick-next {
-      right: 25px;
+      right: -70px;
       &::before {
         transform: rotate(-90deg);
       }
