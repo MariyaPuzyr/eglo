@@ -247,17 +247,25 @@
         }
         &-body {
           padding: 0 30px 20px;
-          .cart-amount--buy {
-            margin-bottom: 10px;
-            &.buy-on-click {
-              color: $small-title;
-              border: 1px solid $small-title;
-              background: $white;
-              margin-top: 0;
-              &:hover {
-                color: $white;
-                background: $small-title;
+          .cart {
+            &-amount--buy {
+              margin-bottom: 10px;
+              &.buy-on-click {
+                color: $small-title;
+                border: 1px solid $small-title;
+                background: $white;
+                margin-top: 0;
+                &:hover {
+                  color: $white;
+                  background: $small-title;
+                }
               }
+            }
+            &-not-available {
+              @extend .cart-amount--buy;
+              background: #595f5f;
+              border-color: #595F5F;
+              cursor: pointer;
             }
           }
         }
@@ -326,7 +334,6 @@ p.stars a:after,
 #payment .payment_methods li input[type=radio]:first-child:checked + label:before {
   color: $default !important;
 }
-
 
 .star-rating span::before {
   color: #e0e0e0;

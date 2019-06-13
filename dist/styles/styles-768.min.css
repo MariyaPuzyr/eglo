@@ -290,8 +290,7 @@ a {
 }
 
 .login-form--control,
-.sign .login-form--control,
-.gallery-popup .login-form--control {
+.sign .login-form--control {
   background: #F6F6F6;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -308,26 +307,22 @@ a {
 }
 
 .login-form--control::-webkit-input-placeholder,
-.sign .login-form--control::-webkit-input-placeholder,
-.gallery-popup .login-form--control::-webkit-input-placeholder {
+.sign .login-form--control::-webkit-input-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::-moz-placeholder,
-.sign .login-form--control::-moz-placeholder,
-.gallery-popup .login-form--control::-moz-placeholder {
+.sign .login-form--control::-moz-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::-ms-input-placeholder,
-.sign .login-form--control::-ms-input-placeholder,
-.gallery-popup .login-form--control::-ms-input-placeholder {
+.sign .login-form--control::-ms-input-placeholder {
   color: #8F8F8F;
 }
 
 .login-form--control::placeholder,
-.sign .login-form--control::placeholder,
-.gallery-popup .login-form--control::placeholder {
+.sign .login-form--control::placeholder {
   color: #8F8F8F;
 }
 
@@ -337,7 +332,8 @@ a {
 
 .cart-amount--buy,
 .cart-popup .cart-amount--buy,
-.cart-order-info .cart-amount--buy {
+.cart-order-info .cart-amount--buy,
+.product-characteristic-info--order-body .cart-not-available {
   max-width: 400px;
   width: 100%;
   color: #ffffff;
@@ -367,7 +363,8 @@ a {
   transition: .3s;
 }
 
-.cart-amount--buy:hover {
+.cart-amount--buy:hover,
+.product-characteristic-info--order-body .cart-not-available:hover {
   background: #ffffff;
   color: #121B1B;
 }
@@ -2605,45 +2602,7 @@ ul.page-numbers .next {
   border-color: #59C7BF;
 }
 
-.sign,
-.gallery-popup {
-  display: none;
-  position: fixed;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.sign-out,
-.gallery-popup-out {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background: rgba(18, 27, 27, 0.5);
-  top: 0;
-  left: 0;
-}
-
-.sign.open,
-.gallery-popup.open {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-}
-
-.sign .tabs,
-.gallery-popup .tabs {
+.sign .tabs {
   margin: 0 auto;
   max-width: 800px;
   width: 100%;
@@ -2651,16 +2610,14 @@ ul.page-numbers .next {
   position: relative;
 }
 
-.sign .tabs__header,
-.gallery-popup .tabs__header {
+.sign .tabs__header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sign .tabs__header--title,
-.gallery-popup .tabs__header--title {
+.sign .tabs__header--title {
   background: transparent;
   color: #ffffff;
   cursor: pointer;
@@ -2677,21 +2634,18 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .tabs__header--title:first-child,
-.gallery-popup .tabs__header--title:first-child {
+.sign .tabs__header--title:first-child {
   -webkit-border-radius: 5px 0 0 0;
   border-radius: 5px 0 0 0;
   border-right: none;
 }
 
-.sign .tabs__header--title.active,
-.gallery-popup .tabs__header--title.active {
+.sign .tabs__header--title.active {
   background: #ffffff;
   color: #121B1B;
 }
 
-.sign .tabs__content,
-.gallery-popup .tabs__content {
+.sign .tabs__content {
   background: #ffffff;
   display: none;
   -webkit-box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
@@ -2701,13 +2655,11 @@ ul.page-numbers .next {
   border-radius: 0 5px 5px;
 }
 
-.sign .tabs__content.active,
-.gallery-popup .tabs__content.active {
+.sign .tabs__content.active {
   display: block;
 }
 
-.sign .form-item,
-.gallery-popup .form-item {
+.sign .form-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2715,13 +2667,11 @@ ul.page-numbers .next {
   padding: 30px 35px;
 }
 
-.sign .login-form,
-.gallery-popup .login-form {
+.sign .login-form {
   color: #121B1B;
 }
 
-.sign .login-form--title,
-.gallery-popup .login-form--title {
+.sign .login-form--title {
   font-size: 24px;
   line-height: 33px;
   font-family: "OpenSans-Bold";
@@ -2730,13 +2680,11 @@ ul.page-numbers .next {
   margin-left: 90px;
 }
 
-.sign .login-form--group,
-.gallery-popup .login-form--group {
+.sign .login-form--group {
   margin-bottom: 30px;
 }
 
-.sign .login-form--group label,
-.gallery-popup .login-form--group label {
+.sign .login-form--group label {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -2759,14 +2707,12 @@ ul.page-numbers .next {
   width: 65px;
 }
 
-.sign .login-form--control,
-.gallery-popup .login-form--control {
+.sign .login-form--control {
   margin-right: 25px;
   width: 285px;
 }
 
-.sign .login-form--restore-pass,
-.gallery-popup .login-form--restore-pass {
+.sign .login-form--restore-pass {
   margin-left: 90px;
   font-size: 14px;
   line-height: 19px;
@@ -2782,13 +2728,11 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .login-form--restore-pass:hover,
-.gallery-popup .login-form--restore-pass:hover {
+.sign .login-form--restore-pass:hover {
   text-decoration: none;
 }
 
-.sign .login-form--btns,
-.gallery-popup .login-form--btns {
+.sign .login-form--btns {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2800,8 +2744,7 @@ ul.page-numbers .next {
   margin-left: 90px;
 }
 
-.sign .login-form--sign,
-.gallery-popup .login-form--sign {
+.sign .login-form--sign {
   color: #ffffff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -2833,14 +2776,12 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .login-form--sign:hover,
-.gallery-popup .login-form--sign:hover {
+.sign .login-form--sign:hover {
   background: #59C7BF;
   border-color: #59C7BF;
 }
 
-.sign .login-form--registration,
-.gallery-popup .login-form--registration {
+.sign .login-form--registration {
   font-size: 14px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -2853,13 +2794,11 @@ ul.page-numbers .next {
   cursor: pointer;
 }
 
-.sign .login-form--registration:hover,
-.gallery-popup .login-form--registration:hover {
+.sign .login-form--registration:hover {
   text-decoration: none;
 }
 
-.sign .login-text,
-.gallery-popup .login-text {
+.sign .login-text {
   padding-bottom: 60px;
   margin-right: 60px;
   display: -webkit-box;
@@ -2880,8 +2819,7 @@ ul.page-numbers .next {
   font-family: "OpenSans-Bold";
 }
 
-.sign .login-with--title,
-.gallery-popup .login-with--title {
+.sign .login-with--title {
   font-size: 18px;
   line-height: 25px;
   font-family: "OpenSans-Bold";
@@ -2889,25 +2827,21 @@ ul.page-numbers .next {
   margin-top: 10px;
 }
 
-.sign .recovery-password,
-.gallery-popup .recovery-password {
+.sign .recovery-password {
   display: none;
   padding: 30px;
 }
 
-.sign .recovery-password.open,
-.gallery-popup .recovery-password.open {
+.sign .recovery-password.open {
   display: block;
 }
 
-.sign .recovery-password .login-form--title,
-.gallery-popup .recovery-password .login-form--title {
+.sign .recovery-password .login-form--title {
   margin-left: 0;
   margin-bottom: 25px;
 }
 
-.sign .recovery-password .login-form--group,
-.gallery-popup .recovery-password .login-form--group {
+.sign .recovery-password .login-form--group {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2918,13 +2852,11 @@ ul.page-numbers .next {
   align-items: center;
 }
 
-.sign .recovery-password .login-form--control,
-.gallery-popup .recovery-password .login-form--control {
+.sign .recovery-password .login-form--control {
   margin-right: 20px;
 }
 
-.sign .recovery-password .login-form--remembered-pass,
-.gallery-popup .recovery-password .login-form--remembered-pass {
+.sign .recovery-password .login-form--remembered-pass {
   text-decoration: underline;
   font-size: 14px;
   line-height: 19px;
@@ -2936,18 +2868,15 @@ ul.page-numbers .next {
   transition: .3s;
 }
 
-.sign .recovery-password .login-form--remembered-pass:hover,
-.gallery-popup .recovery-password .login-form--remembered-pass:hover {
+.sign .recovery-password .login-form--remembered-pass:hover {
   text-decoration: none;
 }
 
-.sign .recovery-password .login-form--btns,
-.gallery-popup .recovery-password .login-form--btns {
+.sign .recovery-password .login-form--btns {
   margin-left: 0;
 }
 
-.sign .recovery-password p,
-.gallery-popup .recovery-password p {
+.sign .recovery-password p {
   margin-bottom: 25px;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -2956,13 +2885,11 @@ ul.page-numbers .next {
   font-family: "OpenSans-Regular";
 }
 
-.sign .instructions,
-.gallery-popup .instructions {
+.sign .instructions {
   padding-bottom: 40px;
 }
 
-.sign .instructions .login-form--btns,
-.gallery-popup .instructions .login-form--btns {
+.sign .instructions .login-form--btns {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2974,22 +2901,19 @@ ul.page-numbers .next {
   align-items: flex-start;
 }
 
-.sign .instructions .login-form--restore-pass,
-.gallery-popup .instructions .login-form--restore-pass {
+.sign .instructions .login-form--restore-pass {
   margin-left: 0;
   margin-top: 15px;
 }
 
-.sign .instructions--title,
-.gallery-popup .instructions--title {
+.sign .instructions--title {
   font-size: 24px;
   line-height: 33px;
   font-family: "OpenSans-Bold";
   margin-bottom: 25px;
 }
 
-.sign .instructions p,
-.gallery-popup .instructions p {
+.sign .instructions p {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -2999,8 +2923,7 @@ ul.page-numbers .next {
   margin: 0;
 }
 
-.sign .instructions .no-email,
-.gallery-popup .instructions .no-email {
+.sign .instructions .no-email {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
@@ -3009,6 +2932,46 @@ ul.page-numbers .next {
   color: #4EB1AA;
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+.sign,
+.gallery-popup,
+.aviable-popup {
+  display: none;
+  position: fixed;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.sign-out,
+.gallery-popup-out,
+.aviable-popup-out {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(18, 27, 27, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.sign.open,
+.gallery-popup.open,
+.aviable-popup.open {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
 }
 
 .error {
@@ -3721,7 +3684,9 @@ ul.page-numbers .next {
   white-space: nowrap;
 }
 
-.order-item--order .cart-amount--buy {
+.order-item--order .cart-amount--buy,
+.order-item--order .product-characteristic-info--order-body .cart-not-available,
+.product-characteristic-info--order-body .order-item--order .cart-not-available {
   margin-top: 10px;
 }
 
@@ -4101,20 +4066,29 @@ ul.page-numbers .next {
   padding: 0 30px 20px;
 }
 
-.product-characteristic-info--order-body .cart-amount--buy {
+.product-characteristic-info--order-body .cart-amount--buy,
+.product-characteristic-info--order-body .cart-not-available {
   margin-bottom: 10px;
 }
 
-.product-characteristic-info--order-body .cart-amount--buy.buy-on-click {
+.product-characteristic-info--order-body .cart-amount--buy.buy-on-click,
+.product-characteristic-info--order-body .buy-on-click.cart-not-available {
   color: #59C7BF;
   border: 1px solid #59C7BF;
   background: #ffffff;
   margin-top: 0;
 }
 
-.product-characteristic-info--order-body .cart-amount--buy.buy-on-click:hover {
+.product-characteristic-info--order-body .cart-amount--buy.buy-on-click:hover,
+.product-characteristic-info--order-body .buy-on-click.cart-not-available:hover {
   color: #ffffff;
   background: #59C7BF;
+}
+
+.product-characteristic-info--order-body .cart-not-available {
+  background: #595f5f;
+  border-color: #595F5F;
+  cursor: pointer;
 }
 
 .product-characteristic-info--order-footer {
@@ -5497,6 +5471,108 @@ p.stars a:after,
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.aviable-item {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 60px 55px;
+  position: relative;
+  z-index: 4;
+  margin: auto;
+}
+
+.aviable-item p {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #121B1B;
+  font-family: "OpenSans-Regular";
+  max-width: 400px;
+  margin: auto auto 35px;
+}
+
+.aviable-item--control {
+  width: 290px;
+  margin: auto auto 30px;
+  height: 60px;
+  background: #F6F6F6;
+  border: 1px solid #F0F0F0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #121B1B;
+  font-family: "OpenSans-Regular";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.aviable-item--control::-webkit-input-placeholder {
+  color: #8F8F8F;
+}
+
+.aviable-item--control::-moz-placeholder {
+  color: #8F8F8F;
+}
+
+.aviable-item--control::-ms-input-placeholder {
+  color: #8F8F8F;
+}
+
+.aviable-item--control::placeholder {
+  color: #8F8F8F;
+}
+
+.aviable-item--control:focus {
+  outline: none;
+}
+
+.aviable-item--btn {
+  margin: auto;
+  border: 1px solid #A0A0A0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  color: #121B1B;
+  font-family: "OpenSans-Regular";
+  padding: 12px 65px;
+  background: #ffffff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.aviable-item--btn:hover {
+  background: #59C7BF;
+  border-color: #59C7BF;
+  color: #ffffff;
+}
+
+.aviable-item--btn:focus {
+  outline: none;
 }
 
 h1,

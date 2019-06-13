@@ -185,19 +185,28 @@
         }
         &-body {
           padding: 0 15px;
-          .cart-amount--buy {
-            @extend .cart-amount--buy-mobile;
-            margin-bottom: 10px;
-            &.buy-on-click {
-              color: $small-title;
-              border: 1px solid $small-title;
-              background: $white;
-              margin-top: 0;
-              margin-bottom: 30px;
-              &:hover {
-                color: $white;
-                background: $small-title;
+          .cart {
+            &-amount--buy {
+              @extend .cart-amount--buy-mobile;
+              margin-bottom: 10px;
+              &.buy-on-click {
+                color: $small-title;
+                border: 1px solid $small-title;
+                background: $white;
+                margin-top: 0;
+                margin-bottom: 30px;
+                &:hover {
+                  color: $white;
+                  background: $small-title;
+                }
               }
+            }
+            &-not-available {
+              @extend .cart-amount--buy;
+              background: #595f5f;
+              border-color: #595F5F;
+              cursor: pointer;
+              margin-bottom: 20px;
             }
           }
         }

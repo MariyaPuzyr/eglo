@@ -1,24 +1,4 @@
-.sign, .gallery-popup {
-  display: none;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  &-out {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background: rgba($title, .5);
-    top: 0;
-    left: 0;
-  }
-  &.open {
-    display: flex;
-    z-index: 3;
-  }
+.sign {
   .tabs {
     margin: 0 auto;
     max-width: 800px;
@@ -253,5 +233,28 @@
       margin-top: 25px;
       margin-bottom: 10px;
     }
+  }
+}
+
+.sign, .gallery-popup, .aviable-popup {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  &-out {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba($title, .5);
+    top: 0;
+    left: 0;
+  }
+  &.open {
+    display: flex;
+    z-index: 3;
   }
 }

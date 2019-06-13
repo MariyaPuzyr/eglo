@@ -179,7 +179,7 @@ $('.cart-item.header-top-menu__menu-item--link, .cart-item.mobile').click(functi
 });
 $('.cart-close').click(function () {
   $('body').removeClass('show-cart-popup');
-  $('.cart-popup').removeClass('open');
+  $('.cart-popup, .aviable-popup').removeClass('open');
 });
 /* show cart popup end */
 
@@ -213,7 +213,10 @@ $('.login-open').click(function () {
   $('.header-top-menu__menu-item').removeClass('show');
 });
 $('.sign-out').click(function () {
-  $('.sign, .gallery-popup').removeClass('open');
+  $('.sign, .gallery-popup, .aviable-popup').removeClass('open');
+});
+$('.cart-not-available').click(function () {
+  $('.aviable-popup').addClass('open');
 });
 /* show login popup on click end */
 

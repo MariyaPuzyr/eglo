@@ -411,7 +411,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product-characteristic-info--order-body"><a class="cart-amount--buy" href="#">Добавить в корзину</a><a class="cart-amount--buy buy-on-click" href="#">Купить в один клик</a></div>
+                    <div class="product-characteristic-info--order-body">
+                      <div class="cart-not-available">Сообщить когда появится</div>
+                      <!--a(href='#').cart-amount--buy Добавить в корзину-->
+                      <!--a(href='#').cart-amount--buy.buy-on-click Купить в один клик-->
+                    </div>
                     <div class="product-characteristic-info--order-footer"><a class="product-characteristic-info--order-footer__link" href="#">Скачать монтажную инструкцию<span>325 kb</span></a><a class="product-characteristic-info--order-footer__link" href="#">Скачать 3d модель<span>123 Mb</span></a></div>
                   </div>
                 </form>
@@ -1057,6 +1061,17 @@
           </div>
         </div>
       </section>
+    </div>
+    <div class="aviable-popup">
+      <div class="sign-out"></div>
+      <div class="aviable-item">
+        <div class="cart-close"></div>
+        <p>Введите свой телефон и мы вас оповестим, когда товар появится в наличии</p>
+        <form action="#">
+          <input class="aviable-item--control" type="text" placeholder="+38 0__ ___ __ __ ">
+          <button class="aviable-item--btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
     <footer class="footer">
       <div class="content">
