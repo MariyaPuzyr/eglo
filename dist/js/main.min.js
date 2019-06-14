@@ -217,6 +217,7 @@ $('.sign-out').click(function () {
   $('.sign, .gallery-popup, .aviable-popup').removeClass('open');
 });
 $('.cart-not-available').click(function () {
+  $('#text-613').val(window.location.href);
   $('.aviable-popup').addClass('open');
 });
 /* show login popup on click end */
