@@ -3094,10 +3094,6 @@ ul.page-numbers .next {
   flex-direction: column;
 }
 
-.sign .login-form--group label {
-  display: none;
-}
-
 .sign .login-form--control {
   width: 100%;
   background: #F6F6F6;

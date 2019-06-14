@@ -42,7 +42,7 @@
   .form-item {
     display: flex;
     align-items: baseline;
-    padding: 20px;
+    padding: 20px 50px;
   }
   .login {
     &-form {
@@ -58,14 +58,6 @@
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
-        label {
-          font-size: 16px;
-          line-height: 21px;
-          letter-spacing: 0.05em;
-          margin-bottom: 0;
-          font-family: $font;
-          font-weight: normal;
-        }
       }
       &--control {
         @extend .login-form--control;
@@ -125,7 +117,7 @@
       }
     }
     &-text {
-      margin: 0 40px;
+      margin: 0 40px 0 0px;
       display: flex;
       justify-content: center;
       font-size: 18px;
@@ -145,12 +137,13 @@
         font-family: $font-b;
         color: $title;
         margin-top: 10px;
+        margin-bottom: 20px;
       }
     }
   }
   .recovery-password {
     display: none;
-    padding: 20px;
+    padding: 20px 50px;
     color: $title;
     &.open {
       display: block;
@@ -190,7 +183,7 @@
     }
   }
   .instructions {
-    padding: 20px;
+    padding: 20px 50px;
     color: $title;
     .login-form {
       &--btns {

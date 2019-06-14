@@ -3424,7 +3424,7 @@ ul.page-numbers .next {
   -webkit-align-items: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 .sign .login-form {
@@ -3450,15 +3450,6 @@ ul.page-numbers .next {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.sign .login-form--group label {
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-  margin-bottom: 0;
-  font-family: "OpenSans-Regular";
-  font-weight: normal;
 }
 
 .sign .login-form--control {
@@ -3549,7 +3540,7 @@ ul.page-numbers .next {
 }
 
 .sign .login-text {
-  margin: 0 40px;
+  margin: 0 40px 0 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3576,11 +3567,12 @@ ul.page-numbers .next {
   font-family: "OpenSans-Bold";
   color: #121B1B;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .sign .recovery-password {
   display: none;
-  padding: 20px;
+  padding: 20px 50px;
   color: #121B1B;
 }
 
@@ -3635,7 +3627,7 @@ ul.page-numbers .next {
 }
 
 .sign .instructions {
-  padding: 20px;
+  padding: 20px 50px;
   color: #121B1B;
 }
 

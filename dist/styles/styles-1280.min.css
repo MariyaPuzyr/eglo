@@ -3517,7 +3517,7 @@ ul.page-numbers .next {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 35px;
+  padding: 30px 70px;
 }
 
 .sign .login-form {
@@ -3530,34 +3530,10 @@ ul.page-numbers .next {
   font-family: "OpenSans-Bold";
   margin-top: 0;
   margin-bottom: 25px;
-  margin-left: 90px;
 }
 
 .sign .login-form--group {
   margin-bottom: 30px;
-}
-
-.sign .login-form--group label {
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-  margin-bottom: 0;
-  font-family: "OpenSans-Regular";
-  font-weight: normal;
-  margin-right: 20px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  width: 65px;
 }
 
 .sign .login-form--control {
@@ -3566,7 +3542,6 @@ ul.page-numbers .next {
 }
 
 .sign .login-form--restore-pass {
-  margin-left: 90px;
   font-size: 14px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -3594,7 +3569,6 @@ ul.page-numbers .next {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 90px;
 }
 
 .sign .login-form--sign {
@@ -3653,7 +3627,8 @@ ul.page-numbers .next {
 
 .sign .login-text {
   padding-bottom: 60px;
-  margin-right: 60px;
+  margin-right: 65px;
+  margin-left: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3684,11 +3659,12 @@ ul.page-numbers .next {
   font-family: "OpenSans-Bold";
   color: #121B1B;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .sign .recovery-password {
   display: none;
-  padding: 30px;
+  padding: 30px 70px;
 }
 
 .sign .recovery-password.open {
@@ -3745,7 +3721,7 @@ ul.page-numbers .next {
 }
 
 .sign .instructions {
-  padding-bottom: 40px;
+  padding: 30px 70px;
 }
 
 .sign .instructions .login-form--btns {
