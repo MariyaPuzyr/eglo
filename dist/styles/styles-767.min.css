@@ -989,8 +989,20 @@ ul.page-numbers .next {
 }
 
 .header-top-menu--item .mobile-menu--hamburger-icon {
-  height: 15px;
-  display: inline-grid;
+  height: 13px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-right: 10px;
 }
 
@@ -1285,8 +1297,8 @@ ul.page-numbers .next {
   content: '';
   -webkit-mask: url("../img/svg/arrow-down-menu.svg") no-repeat center;
   mask: url("../img/svg/arrow-down-menu.svg") no-repeat center;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   background: currentColor;
   width: 8px;
   height: 5px;
@@ -1294,6 +1306,10 @@ ul.page-numbers .next {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .header-top-menu__menu-item .catalog-item__top .icon {

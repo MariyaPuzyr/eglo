@@ -16,10 +16,10 @@
     justify-content: space-between;
     padding: 10px 22px 10px 15px;
     .mobile-menu--hamburger-icon {
-      height: 15px;
-      display: inline-grid;
-      //flex-direction: column;
-      //justify-content: space-between;
+      height: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       margin-right: 10px;
       .line {
         width: 16px;
@@ -204,12 +204,13 @@
           &::after {
             content: '';
             mask: url('../img/svg/arrow-down-menu.svg') no-repeat center;
-            mask-size: contain;
+            mask-size: cover;
             background: currentColor;
             width: 8px;
             height: 5px;
             margin: auto 20px auto auto;
             transition: .3s;
+            flex: 0 0 auto;
           }
           .icon {
             display: none;
