@@ -3203,6 +3203,12 @@ ul.page-numbers .next {
   display: none;
 }
 
+.sign .login-with img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .sign .login-with--title {
   font-size: 14px;
   line-height: 19px;

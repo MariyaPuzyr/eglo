@@ -140,6 +140,11 @@
       display: none;
     }
     &-with {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
       &--title {
         font-size: 14px;
         line-height: 19px;

@@ -3564,6 +3564,12 @@ ul.page-numbers .next {
   font-family: "OpenSans-Bold";
 }
 
+.sign .login-with img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .sign .login-with--title {
   font-size: 18px;
   line-height: 25px;
