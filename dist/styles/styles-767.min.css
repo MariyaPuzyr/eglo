@@ -989,7 +989,7 @@ ul.page-numbers .next {
 }
 
 .header-top-menu--item .mobile-menu--hamburger-icon {
-  height: 13px;
+  height: 14px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1008,9 +1008,8 @@ ul.page-numbers .next {
 
 .header-top-menu--item .mobile-menu--hamburger-icon .line {
   width: 16px;
-  height: 1px;
-  background: #000;
-  display: block;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
 }
 
 .header-top-menu .cart-item {
