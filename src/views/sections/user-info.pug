@@ -1,7 +1,13 @@
 .content
   .user-settings
     .user-info
-      img(src='./img/avatar.jpg').user-info__avatar
+      .user-info__avatar
+        form(action='#')
+          label.label
+            input(type='file')
+            figure.personal-figure
+              img.personal-avatar(src='./img/avatar.jpg' alt='avatar')
+              figcaption.personal-figcaption
       .user-info__settings--info
         .user-info__settings
           .user-info__settings--name

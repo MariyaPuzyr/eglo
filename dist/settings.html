@@ -330,126 +330,25 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <div class="user-settings">
-          <div class="user-info">
-            <div class="user-info__avatar">
-              <form action="#">
-                <label class="label">
-                  <input type="file">
-                  <figure class="personal-figure"><img class="personal-avatar" src="./img/avatar.jpg" alt="avatar">
-                    <figcaption class="personal-figcaption"></figcaption>
-                  </figure>
-                </label>
-              </form>
-            </div>
-            <div class="user-info__settings--info">
-              <div class="user-info__settings">
-                <div class="user-info__settings--name">
-                  <div class="user-info__settings--name-label">Пользователь:</div><span>Пахом Коломийко</span><a class="user-info__settings--edit" href="#"></a>
-                </div>
+      <div class="settings">
+        <div class="content">
+          <div class="settings-items">
+            <form action="#">
+              <h4>Детали учетной записи</h4>
+              <div class="settings-item">
+                <input class="settings-item--control" type="text" placeholder="Имя">
+                <input class="settings-item--control" type="text" placeholder="Фамилия">
+                <input class="settings-item--control" type="email" placeholder="Email">
               </div>
-              <div class="user-info__settings">
-                <div class="user-info__settings--name">
-                  <div class="user-info__settings--name-label">Email:</div><span>Mark@mail.com</span><a class="user-info__settings--edit" href="#"></a>
-                </div>
+              <h4>Смена пароля</h4>
+              <div class="settings-item">
+                <input class="settings-item--control" type="password" placeholder="Действующий пароль">
+                <input class="settings-item--control" type="password" placeholder="Новый пароль">
+                <input class="settings-item--control" type="password" placeholder="Подтвердите новый пароль">
               </div>
-            </div>
+              <button class="settings-item--btn" type="submit">Сохранить изменения</button>
+            </form>
           </div>
-          <div class="user-info">
-            <div class="user-info__links"><a class="user-info--out" href="#">Выход</a><a class="user-info--change-pass" href="#">Изменить пароль</a></div>
-            <div class="user-info__discount">Личная скидка:<span>3%</span></div>
-          </div>
-        </div>
-        <div class="user-orders">
-          <div class="mobile user-orders--title">Товары</div>
-          <div class="user-orders__list">
-            <div class="user-orders__list-header">
-              <div class="user-orders__list-header__item">Фото</div>
-              <div class="user-orders__list-header__item">Название</div>
-              <div class="user-orders__list-header__item">Дата</div>
-              <div class="user-orders__list-header__item">Количество, шт.</div>
-              <div class="user-orders__list-header__item">Цена, грн.</div>
-            </div>
-            <div class="user-orders__list-body">
-              <div class="user-orders__list-body__item">
-                <div class="cart-item--img order-items"><a class="cart-item--img__link" href="#"><img src="./img/product.png" alt=""></a>
-                  <div class="cart-item--delete"></div>
-                </div>
-                <div class="user-orders__list-body__item-cover"><a class="cart-item--info__name order-items" href="#">96188  SALOBRENA 1
-                    <div class="cart-item--info__description">40W; 4300 lm<br>L 595, B 595, H 50</div></a>
-                  <div class="date order-items">23.05.18</div>
-                  <form class="order-items" action="#">
-                    <div class="cart-item--info__count">
-                      <div class="cart-item--info__count--minus"></div>
-                      <input class="cart-item--info__count--control" type="text" placeholder="1">
-                      <div class="cart-item--info__count--plus"></div>
-                    </div>
-                  </form>
-                  <div class="cart-item--info__price order-items">6 055 грн</div>
-                </div><a class="user-orders__get-order" href="#">Заказать повторно</a>
-              </div>
-              <div class="user-orders__list-body__item">
-                <div class="cart-item--img order-items"><a class="cart-item--img__link" href="#"><img src="./img/product.png" alt=""></a>
-                  <div class="cart-item--delete"></div>
-                </div>
-                <div class="user-orders__list-body__item-cover"><a class="cart-item--info__name order-items" href="#">96188  SALOBRENA 1
-                    <div class="cart-item--info__description">40W; 4300 lm<br>L 595, B 595, H 50</div></a>
-                  <div class="date order-items">23.05.18</div>
-                  <form class="order-items" action="#">
-                    <div class="cart-item--info__count">
-                      <div class="cart-item--info__count--minus"></div>
-                      <input class="cart-item--info__count--control" type="text" placeholder="1">
-                      <div class="cart-item--info__count--plus"></div>
-                    </div>
-                  </form>
-                  <div class="cart-item--info__price order-items">6 055 грн</div>
-                </div><a class="user-orders__get-order" href="#">Заказать повторно</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-favorites">
-          <h2>Избранные товары</h2>
-          <div class="search-body">
-            <div class="product__item item">
-              <div class="product__item__info"><a class="product__item__ico" href="product.html" style="background-image: url('img/product.png')"></a>
-                <div class="product__popup"><a class="product__title">Sendero</a>
-                  <div class="product__price">96 188 грн</div>
-                  <div class="product__price old-price">96 188 грн</div>
-                  <div class="availability under-order">под заказаказ</div><a class="add-cart" href="#">В корзину</a><a class="buy" href="#">Оформление заказа</a>
-                </div>
-              </div>
-            </div>
-            <div class="product__item item">
-              <div class="product__item__info"><a class="product__item__ico" href="product.html" style="background-image: url('img/product-2.png')"></a>
-                <div class="product__popup"><a class="product__title">Sendero</a>
-                  <div class="product__price">96 188 грн</div>
-                  <div class="product__price old-price">96 188 грн</div>
-                  <div class="availability">в наличии</div><a class="add-cart" href="#">В корзину</a><a class="buy" href="#">Оформление заказа</a>
-                </div>
-              </div>
-            </div>
-            <div class="product__item item">
-              <div class="product__item__info"><a class="product__item__ico" href="product.html" style="background-image: url('img/product.png')"></a>
-                <div class="product__popup"><a class="product__title">Sendero</a>
-                  <div class="product__price">96 188 грн</div>
-                  <div class="product__price old-price">96 188 грн</div>
-                  <div class="availability under-order">под заказаказ</div><a class="add-cart" href="#">В корзину</a><a class="buy" href="#">Оформление заказа</a>
-                </div>
-              </div>
-            </div>
-            <div class="product__item item">
-              <div class="product__item__info"><a class="product__item__ico" href="product.html" style="background-image: url('img/product-2.png')"></a>
-                <div class="product__popup"><a class="product__title">Sendero</a>
-                  <div class="product__price">96 188 грн</div>
-                  <div class="product__price old-price">96 188 грн</div>
-                  <div class="availability">в наличии</div><a class="add-cart" href="#">В корзину</a><a class="buy" href="#">Оформление заказа</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-link__item"><a class="product-link" href="#">Открыть избранное</a></div>
         </div>
       </div>
       <div class="contacts">

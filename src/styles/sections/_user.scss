@@ -14,6 +14,52 @@
       width: 170px;
       height: 170px;
       margin-right: 20px;
+      input[type="file"] {
+        display: none;
+      }
+      .personal {
+        &-figure {
+          position: relative;
+          width: 170px;
+          height: 170px;
+          margin: 0;
+          border-radius: 50%;
+          overflow: hidden;
+          &:hover {
+            .personal-figcaption {
+              opacity: 1;
+            }
+          }
+        }
+        &-avatar {
+          cursor: pointer;
+          border-radius: 50%;
+          width: 170px;
+          height: 170px;
+          transition: all ease-in-out .3s;
+        }
+        &-figcaption {
+          cursor: pointer;
+          position: absolute;
+          bottom: 0;
+          width: inherit;
+          border-radius: 0 0 100% 100%;
+          opacity: 0;
+          background: rgba($title, .4);
+          transition: all ease-in-out .3s;
+          display: flex;
+          &::after {
+            content: '';
+            mask: url("../img/svg/camera.svg") no-repeat center;
+            background: $white;
+            width: 26px;
+            height: 20px;
+            display: flex;
+            margin: auto;
+            padding: 15px 0;
+          }
+        }
+      }
     }
     &__settings {
       @extend .d-center;
